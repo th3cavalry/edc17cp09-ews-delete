@@ -1,0 +1,494 @@
+CRITICAL MAPS - XDF v8 (High Memory Only)
+================================================================================
+
+=== EWS/Immobilizer (1 maps) ===
+
+  0x18A250 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+
+=== Torque Limiters (10 maps) ===
+
+  0x190B5A | Aschekorrektur_f_r_Motorschutzregenerationsschwellen
+    Size: 8 bytes
+    Desc: 530d cross-reference: Aschekorrektur fuer Motorschutzregenerationsschwellen | ty
+
+  0x195E92 | Abstand_zur_Volllast_bei_Anfahrbegrenzung
+    Size: 6 bytes
+    Desc: 530d cross-reference: Abstand zur Volllast bei Anfahrbegrenzung | type=CURVE | s
+
+  0x1AFD28 | Kennlinie_zur_Ermittelung_des_Begrenzungsmomentes_1_aus
+    Size: 20 bytes
+    Desc: 530d cross-reference: Kennlinie zur Ermittelung des Begrenzungsmomentes 1 aus de
+
+  0x1AFDF2 | Kennlinie_f_r_das_Begrenzungsmoment_bei_Systemfehlern
+    Size: 20 bytes
+    Desc: 530d cross-reference: Kennlinie fuer das Begrenzungsmoment bei Systemfehlern | t
+
+  0x1AFE18 | Begrenzungsmoment_PFlt_Notfahrbetrieb
+    Size: 16 bytes
+    Desc: 530d cross-reference: Begrenzungsmoment PFlt Notfahrbetrieb | type=CURVE | size=
+
+  0x1AFF44 | Kennlinie_zur_Ermittelung_des_Begrenzungsmomentes_3_aus
+    Size: 20 bytes
+    Desc: 530d cross-reference: Kennlinie zur Ermittelung des Begrenzungsmomentes 3 aus de
+
+  0x1B0BA8 | _berhitzungsschutz_Kennfeld
+    Size: 98 bytes
+    Desc: 530d cross-reference: Ueberhitzungsschutz-Kennfeld | type=CURVE | size=98 bytes
+
+  0x1B367C | Kennlinie_f_r_die_Begrenzung_der_Anzahl_der_Einspritzun
+    Size: 16 bytes
+    Desc: 530d cross-reference: Kennlinie fuer die Begrenzung der Anzahl der Einspritzunge
+
+  0x1ECD6B | Faktor_f_r_Generatorlastbegrenzung_f_r_Leerlaufstabilis
+    Size: 6 bytes
+    Desc: 530d cross-reference: Faktor fuer Generatorlastbegrenzung fuer Leerlaufstabilisi
+
+  0x1ECDB4 | Generatorstrombegrenzung_bei_Generatorhochtemparatur
+    Size: 18 bytes
+    Desc: 530d cross-reference: Generatorstrombegrenzung bei Generatorhochtemparatur | typ
+
+
+=== Driver's Wish (0 maps) ===
+
+
+=== DTC/CAN Errors (109 maps) ===
+
+  0x100B77 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1013BD | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1067C0 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x106804 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1074FF | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x108565 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x10924A | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x10CA72 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x10EB2C | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x10ECD7 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x11380B | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x113A7C | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x11AF46 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x11B8F6 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x11CEC1 | DFES_OBD_spezifischer_Fehlercode_f_r_Pr_fung_DFC_TrbChS
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/OBD spezifischer Fehlercode fuer Pruefung DFC_TrbChSC
+
+  0x11CF71 | DFES_OBD_spezifischer_Fehlercode_f_r_Pr_fung_DFC_TrbChO
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/OBD spezifischer Fehlercode fuer Pruefung DFC_TrbChOL
+
+  0x11D008 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x11D4F7 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x11D5B7 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x120D84 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1210FB | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1226D9 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x127C5C | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x129C34 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x12B869 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x12CDC4 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x12CDFC | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x133D2E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x13615E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x136F6E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1390C2 | Maske_zur_Selektion_der_Regenerationsstufen__bei_denen_
+    Size: 2 bytes
+    Desc: 530d cross-reference: Maske zur Selektion der Regenerationsstufen, bei denen die
+
+  0x13C57D | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1426EA | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x14B5DF | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x14D798 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x14E52C | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x14E5F8 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x14FA00 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1519D2 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x15230C | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1525E7 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x153081 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1537A5 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x154769 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x155F95 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x15992D | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x163C75 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x16BBF2 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x16BFF9 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x16DD93 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x16EBFC | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x172765 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x172C3E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x178F7F | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189A92 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189A96 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189AA8 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189B34 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189B68 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189B74 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189B76 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189B7E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189B80 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189BF8 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189C70 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189CD8 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189CEE | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189CF6 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189D4E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189D68 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189D7A | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189D7E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189D9E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189DA8 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189E6A | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189E72 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189E80 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189E82 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189ED2 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189EF0 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189F3E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x189F64 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A024 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A026 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A04E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A054 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A060 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A062 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A064 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A066 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A086 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A08C | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A098 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A0DC | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A0E0 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A10A | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A118 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A11A | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A120 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A132 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A15E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A160 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A16A | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A22E | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A2AA | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A2D4 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x18A318 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1A04C5 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC
+    Size: 2 bytes
+    Desc: 530d cross-reference: DFES/Hersteller spezifischer Fehlercode fuer Pruefung DFC_
+
+  0x1AADBA | Matrix_mit_Bitmasken_der_Stufen__die_von_der_aktuelle_B
+    Size: 352 bytes
+    Desc: 530d cross-reference: Matrix mit Bitmasken der Stufen, die von der aktuelle Betr
+
