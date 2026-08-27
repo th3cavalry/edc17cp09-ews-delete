@@ -1,0 +1,360 @@
+XDF v7 Map Audit Report
+================================================================================
+
+Total maps audited: 2201
+Overlap issues: 70
+Null/Empty issues: 7
+Header proximity issues: 15
+
+=== OVERLAP ISSUES ===
+
+Map 1: 0x000001 (4 bytes) - correction_factor_curve_for_the_MI1__based_on_rail
+Map 2: 0x000002 (4 bytes) - Kennlinie_zur_Anpassung_der_Rampensteigung_von_EGT
+Overlap: 0x000002 - 0x000005
+
+Map 1: 0x000002 (4 bytes) - Kennlinie_zur_Anpassung_der_Rampensteigung_von_EGT
+Map 2: 0x000004 (2 bytes) - __11
+Overlap: 0x000004 - 0x000006
+
+Map 1: 0x000004 (2 bytes) - __11
+Map 2: 0x000005 (2 bytes) - Obere_Schwelle_f_r_Schubabschalteverbot
+Overlap: 0x000005 - 0x000006
+
+Map 1: 0x00000D (2 bytes) - Bitmaske__gesetzte_Bits_in_IVActr_stUUp_f_hren_zur
+Map 2: 0x00000E (2 bytes) - Rampensteigung_enthaltende_Struktur_
+Overlap: 0x00000E - 0x00000F
+
+Map 1: 0x00000E (2 bytes) - Rampensteigung_enthaltende_Struktur_
+Map 2: 0x00000F (2 bytes) - Skalierungsfaktor_f_r_CAN_Gr__e
+Overlap: 0x00000F - 0x000010
+
+Map 1: 0x00000F (2 bytes) - Skalierungsfaktor_f_r_CAN_Gr__e
+Map 2: 0x000010 (10 bytes) - Kennlinie_zur_Auswahl_der_K_hlanforderung_des_Verb
+Overlap: 0x000010 - 0x000011
+
+Map 1: 0x000035 (2 bytes) - Bitmaske_zur_Erkennung_des_Schlupfs__w_hrend_die_K
+Map 2: 0x000036 (2 bytes) - __38
+Overlap: 0x000036 - 0x000037
+
+Map 1: 0x00004F (2 bytes) - Ersatzwert_f_r_EEPROM_Initialisierung_der_Status_R
+Map 2: 0x000050 (2 bytes) - Freischaltung_High
+Overlap: 0x000050 - 0x000051
+
+Map 1: 0x000050 (2 bytes) - Freischaltung_High
+Map 2: 0x000051 (2 bytes) - Status_zur_Aktivierung_der_Endstufe
+Overlap: 0x000051 - 0x000052
+
+Map 1: 0x000057 (2 bytes) - Grenzmoment_bei_defektem_E_L_fter
+Map 2: 0x000058 (2 bytes) - DFC_Verhaltens_Kontroll_Maske_f_r_Pr_fung_DFC_PInt
+Overlap: 0x000058 - 0x000059
+
+Map 1: 0x000058 (2 bytes) - DFC_Verhaltens_Kontroll_Maske_f_r_Pr_fung_DFC_PInt
+Map 2: 0x000059 (2 bytes) - Zeit_von_Eintritt_in_LAD_Zustand___Limit___bis_zur
+Overlap: 0x000059 - 0x00005A
+
+Map 1: 0x000060 (2 bytes) - Referenzperiode_der_Lufttemperatur_f_r_HFM6_Sensor
+Map 2: 0x000061 (2 bytes) - Devlib_Diagnose_Parameterstruktur.__13
+Overlap: 0x000061 - 0x000062
+
+Map 1: 0x000061 (2 bytes) - Devlib_Diagnose_Parameterstruktur.__13
+Map 2: 0x000062 (2 bytes) - Applikationswert_ID_Reserveverbraucher_2
+Overlap: 0x000062 - 0x000063
+
+Map 1: 0x000067 (2 bytes) - Schalter_zum_Setzen_von_IVDia_stTst__ber_den_Remot
+Map 2: 0x000068 (2 bytes) - Maximal_zul_ssige_Geschwindigkeit_f_r_Stellertest
+Overlap: 0x000068 - 0x000069
+
+Map 1: 0x00006A (2 bytes) - __258
+Map 2: 0x00006B (2 bytes) - Schalter_zur_Entscheidung_ob_der_offset_drift_test
+Overlap: 0x00006B - 0x00006C
+
+Map 1: 0x000089 (2 bytes) - DSCHED_Faktor_der_physikalischen_Priorit_t_f_r_den
+Map 2: 0x00008A (2 bytes) - _
+Overlap: 0x00008A - 0x00008B
+
+Map 1: 0x0000A7 (2 bytes) - Bitmaske_zur_Erkennung_des_offenen_Kupplungsstatus
+Map 2: 0x0000A8 (2 bytes) - _Normierung_f_r_die_Umrechnung
+Overlap: 0x0000A8 - 0x0000A9
+
+Map 1: 0x0000B1 (2 bytes) - Temperaturauswahl_f_r_Verlustmomentkennfeld
+Map 2: 0x0000B2 (6 bytes) - E_L_fteranforderung_Generator
+Overlap: 0x0000B2 - 0x0000B3
+
+Map 1: 0x0000ED (2 bytes) - DFC_Verhaltens_Kontroll_Maske_f_r_Pr_fung_DFC_MoCS
+Map 2: 0x0000EE (2 bytes) - Index_zur_Auswahl_des_Rohrmodells_f_r_Turboladerte
+Overlap: 0x0000EE - 0x0000EF
+
+Map 1: 0x000101 (2 bytes) - Hier_koennte_Ihr_Langbezeichner_stehen_12
+Map 2: 0x000102 (2 bytes) - Entprellparameter_f_r_den_Status_APP_gedr_ckt_nich
+Overlap: 0x000102 - 0x000103
+
+Map 1: 0x000115 (2 bytes) - L_nge_des_Streckenintervalls_zur_Begrenzung_der_Le
+Map 2: 0x000116 (2 bytes) - Maximale_Grenze_der_Generator_Last_Reaktionszeit
+Overlap: 0x000116 - 0x000117
+
+Map 1: 0x0001A1 (2 bytes) - Codewort_zur_Aktivierung_der_Fehlerreaktion_MM_Res
+Map 2: 0x0001A2 (2 bytes) - Index_zur_Auswahl_des_Rohrmodells_vor_dem_niederdr
+Overlap: 0x0001A2 - 0x0001A3
+
+Map 1: 0x0001F1 (2 bytes) - DFC_Verhaltens_Kontroll_Maske_f_r_Pr_fung_DFC_AirC
+Map 2: 0x0001F2 (2 bytes) - DDRC_Dauer_der_Fehlerentprellung_f_r_Pr_fung_DFC_R
+Overlap: 0x0001F2 - 0x0001F3
+
+Map 1: 0x000237 (2 bytes) - Schalter_f_r_Betriebsartauswahl_der_FMA__Indirect_
+Map 2: 0x000238 (2 bytes) - Untere_Schwelle_f_r_Schubabschalteverbot
+Overlap: 0x000238 - 0x000239
+
+Map 1: 0x000269 (2 bytes) - __456
+Map 2: 0x00026A (2 bytes) - Konstante_Prio_Reserveverbraucher_1_min
+Overlap: 0x00026A - 0x00026B
+
+Map 1: 0x0003F6 (6 bytes) - Wichtung_Soc_low_zust
+Map 2: 0x0003F7 (4 bytes) - Hier_koennte_Ihr_Langbezeichner_stehen_59
+Overlap: 0x0003F7 - 0x0003FB
+
+Map 1: 0x000567 (2 bytes) - maximales_F_rdervolumen_durch_die_Zumesseinheit
+Map 2: 0x000568 (2 bytes) - IBS_Parameter_19
+Overlap: 0x000568 - 0x000569
+
+Map 1: 0x0005C6 (2 bytes) - Kraftschlussschwelle_f_r_Eingangsbedingung___Kraft
+Map 2: 0x0005C7 (2 bytes) - Remote_Schalter_f_r_Bufferspannung
+Overlap: 0x0005C7 - 0x0005C8
+
+Map 1: 0x0005E4 (2 bytes) - Verz_gerungszeit_nach_Startabwurf
+Map 2: 0x0005E5 (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Overlap: 0x0005E5 - 0x0005E6
+
+Map 1: 0x0005E5 (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Map 2: 0x0005E6 (2 bytes) - Gewichtung_neue_zu_alten_Werten
+Overlap: 0x0005E6 - 0x0005E7
+
+Map 1: 0x0005F8 (2 bytes) - Gruppe_der_konfigurierbaren_unterst_tzten_PID_s_VI
+Map 2: 0x0005F9 (2 bytes) - Gruppe_der_konfigurierbaren_unterst_tzten_PID_s_An
+Overlap: 0x0005F9 - 0x0005FA
+
+Map 1: 0x0005F9 (2 bytes) - Gruppe_der_konfigurierbaren_unterst_tzten_PID_s_An
+Map 2: 0x0005FA (2 bytes) - Gruppe_der_konfigurierbaren_unterst_tzten_PID_s_CI
+Overlap: 0x0005FA - 0x0005FB
+
+Map 1: 0x000721 (2 bytes) - Konstante_Spannungskompensation_1
+Map 2: 0x000722 (2 bytes) - Konstante_Spannungskompensation_10
+Overlap: 0x000722 - 0x000723
+
+Map 1: 0x000732 (2 bytes) - K_Faktor_des_df_Tiefpass_Filters_zur_Berechnung_vo
+Map 2: 0x000733 (2 bytes) - Schalter_zur_Auswahl_der_Bedingung_f_r_die__berwac
+Overlap: 0x000733 - 0x000734
+
+Map 1: 0x000A83 (2 bytes) - Initialisierungswert_f_r_Umrechnungswirkungsgrade
+Map 2: 0x000A84 (2 bytes) - __433
+Overlap: 0x000A84 - 0x000A85
+
+Map 1: 0x000B59 (2 bytes) - minimaler_Wichtungsfaktor_fuer_minimale_HFM_Luftma
+Map 2: 0x000B5A (2 bytes) - Minimalwert_der_Fahrzeuggeschwindigkeit_f_r_linear
+Overlap: 0x000B5A - 0x000B5B
+
+Map 1: 0x000CA8 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_RailPCV42
+Map 2: 0x000CA9 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_RailCPC4
+Overlap: 0x000CA9 - 0x000CAA
+
+Map 1: 0x001040 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_RailMeUn22
+Map 2: 0x001041 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_RailMeUn1
+Overlap: 0x001041 - 0x001042
+
+Map 1: 0x001178 (2 bytes) - App_iGR_Low_Applikation_freigeschalten
+Map 2: 0x001179 (2 bytes) - Negative_L_ngsbeschleunigung_Ausblendung_Schwelle
+Overlap: 0x001179 - 0x00117A
+
+Map 1: 0x00171F (2 bytes) - Filterkonstante_Dffgen
+Map 2: 0x001720 (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Overlap: 0x001720 - 0x001721
+
+Map 1: 0x00311B (2 bytes) - Schalter_zur_Anzeige_von_dem_Vorhandensein_des_Kra
+Map 2: 0x00311C (2 bytes) - Konfiguration_der_Eingangsbedingung___externer_Mom
+Overlap: 0x00311C - 0x00311D
+
+Map 1: 0x003387 (2 bytes) - Faktor_zur_Berechnung_der_Qvm_Toleranzgrenzen
+Map 2: 0x003388 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_AirCtlGovDvtMax
+Overlap: 0x003388 - 0x003389
+
+Map 1: 0x0033B0 (2 bytes) - Anzahl_ELIN_Wiederholungen_bis_Flag
+Map 2: 0x0033B1 (4 bytes) - Anzahl_10er_Pakete_f_r_Steigungsberechnung_in_Abh_
+Overlap: 0x0033B1 - 0x0033B2
+
+Map 1: 0x00481C (2 bytes) - Schalter_zur_Begrenzung_von_ASDrf_trqInrSet_auf_Co
+Map 2: 0x00481D (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_EGRVlvLPSRCMin
+Overlap: 0x00481D - 0x00481E
+
+Map 1: 0x004F2A (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Map 2: 0x004F2B (2 bytes) - DFC_Abschalt_Maske_f_r_Pr_fung_DFC_PFlt_tOxiPreMax
+Overlap: 0x004F2B - 0x004F2C
+
+Map 1: 0x00540C (2 bytes) - DFES_OBD_spezifischer_Fehlercode_f_r_Pr_fung_DFC_A
+Map 2: 0x00540D (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Overlap: 0x00540D - 0x00540E
+
+Map 1: 0x005B3D (2 bytes) - Minimal_Regenerationsanforderung_f_r_Text_Botschaf
+Map 2: 0x005B3E (2 bytes) - F_nfte_Balken_von_Peistab
+Overlap: 0x005B3E - 0x005B3F
+
+Map 1: 0x006985 (2 bytes) - Grenze_f_r_Niveauberechnung_aus_Permittivit_t
+Map 2: 0x006986 (2 bytes) - DFES_OBD_spezifischer_Fehlercode_f_r_Pr_fung_DFC_R
+Overlap: 0x006986 - 0x006987
+
+Map 1: 0x006F6F (2 bytes) - Steigungswert_f_r_dynamische_Viskosit_t
+Map 2: 0x006F70 (2 bytes) - Hier_k_nnte_Ihr_Langbezeichner_stehen_5
+Overlap: 0x006F70 - 0x006F71
+
+Map 1: 0x0077CD (2 bytes) - Offsetwert_f_r_kinematische_Viskosit_t
+Map 2: 0x0077CE (2 bytes) - __45
+Overlap: 0x0077CE - 0x0077CF
+
+Map 1: 0x008374 (2 bytes) - Begrenzung_der_APS_unter_welchem_der_MIN_Fehler_be
+Map 2: 0x008375 (2 bytes) - Maxspannung_Reserveverbraucher_1
+Overlap: 0x008375 - 0x008376
+
+Map 1: 0x009B7F (2 bytes) - IBS_Parameter_6
+Map 2: 0x009B80 (2 bytes) - Kurbelwellendrehzahlgrenze_zur_Erkennung_auf_Motor
+Overlap: 0x009B80 - 0x009B81
+
+Map 1: 0x00CC54 (2 bytes) - __125
+Map 2: 0x00CC55 (2 bytes) - __259
+Overlap: 0x00CC55 - 0x00CC56
+
+Map 1: 0x014075 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_AFSSetyDrftMin
+Map 2: 0x014076 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_AltIOComNpl
+Overlap: 0x014076 - 0x014077
+
+Map 1: 0x0140AB (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_RailPSRCMin
+Map 2: 0x0140AC (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_IVPSplyVltgSRCMi
+Overlap: 0x0140AC - 0x0140AD
+
+Map 1: 0x0140BC (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_TrbCh4WinErr4
+Map 2: 0x0140BD (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_TrbChSCB
+Overlap: 0x0140BD - 0x0140BE
+
+Map 1: 0x015F76 (2 bytes) - DFES_OBD_spezifischer_Fehlercode_f_r_Pr_fung_DFC_N
+Map 2: 0x015F77 (2 bytes) - Max_Zahl_Vollzyklen_mit_Med
+Overlap: 0x015F77 - 0x015F78
+
+Map 1: 0x017549 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_AirCtlGovDvtEOMM
+Map 2: 0x01754A (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_PCVSRCMin
+Overlap: 0x01754A - 0x01754B
+
+Map 1: 0x01B356 (2 bytes) - __210
+Map 2: 0x01B357 (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Overlap: 0x01B357 - 0x01B358
+
+Map 1: 0x01C710 (4 bytes) - Umgebungstemperatur_Umrechnungskennlinie
+Map 2: 0x01C711 (4 bytes) - Kraftstofftemperaturabh_ngiger_Wirkungsgrad_der_Ho
+Overlap: 0x01C711 - 0x01C714
+
+Map 1: 0x01DBE4 (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Map 2: 0x01DBE5 (2 bytes) - DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fun
+Overlap: 0x01DBE5 - 0x01DBE6
+
+Map 1: 0x0269D2 (2 bytes) - DFES_OBD_spezifischer_Fehlercode_f_r_Pr_fung_DFC_A
+Map 2: 0x0269D3 (2 bytes) - IBS_Parameter_10
+Overlap: 0x0269D3 - 0x0269D4
+
+Map 1: 0x027BA4 (2 bytes) - __166
+Map 2: 0x027BA5 (2 bytes) - DFES_Fehlerklasse_f_r_Pr_fung_DFC_LSUHtrMin
+Overlap: 0x027BA5 - 0x027BA6
+
+Map 1: 0x03519E (2 bytes) - PreDriveCheck_Schwelle
+Map 2: 0x03519F (2 bytes) - Maxspannung_pos_und_neg_Gradient_Licht
+Overlap: 0x03519F - 0x0351A0
+
+Map 1: 0x035EB7 (22 bytes) - Faktor_zum_Parabelkennwerte_des_LAD_Steigungsbegre
+Map 2: 0x035EB8 (16 bytes) - Mnimaler_Str_mungswiderstand_abh_ngig_von_kontinui
+Overlap: 0x035EB8 - 0x035EC8
+
+Map 1: 0x03AAFE (16 bytes) - motortemperaturabh_ngige_Ansteuerbeginnkorrekturke
+Map 2: 0x03AB06 (8 bytes) - Gewichtungskennlinie_Fahrgeschwindigkeit
+Overlap: 0x03AB06 - 0x03AB0E
+
+Map 1: 0x03B7CA (8 bytes) - Kennlinie_f_r_den_minimalen_Raildruck_als_Stellwer
+Map 2: 0x03B7CC (16 bytes) - Temperaturabh_ngige_Kennlinie_zur_Korrektur_des_Kr
+Overlap: 0x03B7CC - 0x03B7D2
+
+Map 1: 0x195F18 (30 bytes) - Grenzmoment_Klima__ber_Getriebetemperatur
+Map 2: 0x195F22 (12 bytes) - Kennlinie_f_r_maximales_Delta_von_gelernter_und_ak
+Overlap: 0x195F22 - 0x195F2E
+
+Map 1: 0x1AE8DC (32 bytes) - Grundwert_P_Anteil_des__u_eren_Regelkreises_bei_Ei
+Map 2: 0x1AE8EC (16 bytes) - Grundwert_P_Anteil_des_Reglereingriffs__ber_Luftma
+Overlap: 0x1AE8EC - 0x1AE8FC
+
+Map 1: 0x1C06BC (128 bytes) - base_map_of_PiI1_SOE_time_calculation__if_PiI3_is_
+Map 2: 0x1C070C (8 bytes) - Molmasse_EG_in_Abh_ngigkeit_von_Lambda_Wert_im_Abg
+Overlap: 0x1C070C - 0x1C0714
+
+=== NULL/EMPTY ISSUES ===
+
+0x000001 (4 bytes) | correction_factor_curve_for_the_MI1__based_on_rail
+Description: 530d cross-reference: correction factor curve for the MI1, based on rail pressur
+
+0x000010 (10 bytes) | Kennlinie_zur_Auswahl_der_K_hlanforderung_des_Verb
+Description: 530d cross-reference: Kennlinie zur Auswahl der Kuehlanforderung des Verbrennung
+
+0x0000C4 (16 bytes) | Korrekturfaktor_f_r_Motordrehzahl_f_r_negative_Ein
+Description: 530d cross-reference: Korrekturfaktor fuer Motordrehzahl fuer negative Eingangsg
+
+0x0003F4 (2 bytes) | __2
+Description: 530d cross-reference: / | type=VALUE | size=2 bytes
+
+0x0033D1 (200 bytes) | Kennfeld_f_r_den_Basiswert_des_NOx_Massenstroms_na
+Description: 530d cross-reference: Kennfeld fuer den Basiswert des NOx-Massenstroms nach Verb
+
+0x188CAC (36 bytes) | zul_ssiges_Moment_des_Drehzahlreglers
+Description: 530d cross-reference: zulaessiges Moment des Drehzahlreglers | type=CURVE | size
+
+0x1AAC80 (64 bytes) | Kennfeld_Ebene_2_Offset
+Description: 530d cross-reference: Kennfeld Ebene 2 Offset | type=CURVE | size=64 bytes
+
+=== HEADER PROXIMITY ISSUES ===
+
+0x00032A | QVC_U00___Qualit_tsindex_U00_Ruhestromeinfluss
+Description: 530d cross-reference: QVC U00 - Qualitaetsindex U00 Ruhestromeinfluss | type=CUR
+
+0x00079C | Matrix_zur_Auswahl_des_Kennfeldes_f_r_die_Freigabe
+Description: 530d cross-reference: Matrix zur Auswahl des Kennfeldes fuer die Freigabe der Vo
+
+0x02044D | Senken_Sie_ATL_Druck_Verh_ltnisbegrenzung_f_r_Hyst
+Description: 530d cross-reference: Senken Sie ATL Druck-Verhaeltnisbegrenzung fuer Hysteresis
+
+0x03A8C4 | Gewichtungsfaktor_f_r_die_Raildrucksollwertkorrekt
+Description: 530d cross-reference: Gewichtungsfaktor fuer die Raildrucksollwertkorrektur in A
+
+0x03AAF8 | Korrekturfaktorextrapolationsverlauf_unterhalb_der
+Description: 530d cross-reference: Korrekturfaktorextrapolationsverlauf unterhalb der Luftmas
+
+0x03B74C | Kennfeld_des_motodrehzahl__einspritzmengenabh_ngig
+Description: 530d cross-reference: Kennfeld des motodrehzahl-/einspritzmengenabhaengigen Absc
+
+0x03B7CC | Temperaturabh_ngige_Kennlinie_zur_Korrektur_des_Kr
+Description: 530d cross-reference: Temperaturabhaengige Kennlinie zur Korrektur des Kraftstof
+
+0x03E58C | Momentenoffset_auf_Zielreserve_Generatorlimitierun
+Description: 530d cross-reference: Momentenoffset auf Zielreserve Generatorlimitierung | type
+
+0x18CB02 | Korrekturfaktor_f_r_die_Wirkungsgradschwelle_abh_n
+Description: 530d cross-reference: Korrekturfaktor fuer die Wirkungsgradschwelle abhaengig vo
+
+0x193158 | Maximal_zul_ssige_Moment_bei_aktiver_Schaltdrehzah
+Description: 530d cross-reference: Maximal zulaessige Moment bei aktiver Schaltdrehzahlregler
+
+0x197394 | Kennfeld_f_r_Diagnose_Teil1_NDRM_1
+Description: 530d cross-reference: Kennfeld fuer Diagnose Teil1 NDRM | type=CURVE | size=16 b
+
+0x1A191C | Kennlinie_zur_Ermittlung_des_unteren_Grenzwertes_d
+Description: 530d cross-reference: Kennlinie zur Ermittlung des unteren Grenzwertes des PID-R
+
+0x1A37AA | Kennlinie__spannungsabh_ngige_Ladezeit_der_Injekto
+Description: 530d cross-reference: Kennlinie: spannungsabhaengige Ladezeit der Injektorvorber
+
+0x1B60B0 | Matrix_f_r_die_Faktorisierungskennlinien_der_Umsch
+Description: 530d cross-reference: Matrix fuer die Faktorisierungskennlinien der Umschaltramp
+
+0x1E007E | ansauglufttemperaturabh_ngige_Korrekturkennlinie__
+Description: 530d cross-reference: ansauglufttemperaturabhaengige Korrekturkennlinie -1 fuer 
+
