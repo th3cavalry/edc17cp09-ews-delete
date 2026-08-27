@@ -1,0 +1,5 @@
+DRIVER'S WISH MAPS - XDF v8 (High Memory Only)
+================================================================================
+
+  0x196F44 | Rampensteigungen_f_r_Ersatzwert_bei_Fahrpedal_Bremse_Plausibilit_tsverletzung_
+    Size: 2
