@@ -1,0 +1,125 @@
+[
+  {
+    "our_off": 1919540,
+    "our_dims": "16\u00d716",
+    "matches": [
+      {
+        "name": "SmkLim_rLamSmkMin_MAP",
+        "offset": 428854,
+        "score": 0.953125,
+        "axes": "X=Epm_nEng, Y=SmkLim_mAirPerCyl",
+        "units": "(EngN, AirMassPerCyl)"
+      },
+      {
+        "name": "InjCrv_phiMI1Bas1_MAP",
+        "offset": 255084,
+        "score": 0.9453125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "SmkLim_rLamATSCorEOM1_MAP",
+        "offset": 421310,
+        "score": 0.921875,
+        "axes": "X=Epm_nEng, Y=SmkLim_mAirPerCyl",
+        "units": "(EngN, AirMassPerCyl)"
+      },
+      {
+        "name": "SmkLim_rLamATSCorEOM2_MAP",
+        "offset": 421890,
+        "score": 0.921875,
+        "axes": "X=Epm_nEng, Y=SmkLim_mAirPerCyl",
+        "units": "(EngN, AirMassPerCyl)"
+      },
+      {
+        "name": "Lub_mLvl2Ms_MAP",
+        "offset": 318376,
+        "score": 0.9140625,
+        "axes": "X=Oil_lSwmp, Y=Lub_tOilLvl_mp",
+        "units": "(OneToOne, Temp_Cels)"
+      }
+    ]
+  },
+  {
+    "our_off": 1946092,
+    "our_dims": "16\u00d716",
+    "matches": [
+      {
+        "name": "InjCrv_phiMI1Bas1_MAP",
+        "offset": 255084,
+        "score": 0.83984375,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "InjCrv_phiMI1Bas2_MAP",
+        "offset": 256244,
+        "score": 0.7578125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "Rail_pSetPointATSCor_MAP",
+        "offset": 377698,
+        "score": 0.75,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PhyMod_trq2qBas4_MAP",
+        "offset": 362784,
+        "score": 0.7421875,
+        "axes": "X=Epm_nEng, Y=PthSet_trqInrSet",
+        "units": "(EngN, Trq)"
+      },
+      {
+        "name": "Rail_pSetPointETSCor1_MAP",
+        "offset": 375952,
+        "score": 0.6953125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1946608,
+    "our_dims": "16\u00d716",
+    "matches": [
+      {
+        "name": "InjCrv_phiMI1Bas1_MAP",
+        "offset": 255084,
+        "score": 0.83203125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "InjCrv_phiMI1Bas2_MAP",
+        "offset": 256244,
+        "score": 0.75390625,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "Rail_pSetPointATSCor_MAP",
+        "offset": 377698,
+        "score": 0.71875,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "Rail_pSetPointETSCor1_MAP",
+        "offset": 375952,
+        "score": 0.69921875,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "Rail_pSetPointETSCor_MAP",
+        "offset": 378278,
+        "score": 0.6875,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  }
+]

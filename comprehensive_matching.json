@@ -1,0 +1,379 @@
+[
+  {
+    "our_off": 1919540,
+    "our_dims": "16\u00d716",
+    "matches": [
+      {
+        "name": "SmkLim_rLamSmkMin_MAP",
+        "offset": 428854,
+        "score": 0.953125,
+        "axes": "X=Epm_nEng, Y=SmkLim_mAirPerCyl",
+        "units": "(EngN, AirMassPerCyl)"
+      },
+      {
+        "name": "InjCrv_phiMI1Bas1_MAP",
+        "offset": 255084,
+        "score": 0.9453125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "SmkLim_rLamATSCorEOM1_MAP",
+        "offset": 421310,
+        "score": 0.921875,
+        "axes": "X=Epm_nEng, Y=SmkLim_mAirPerCyl",
+        "units": "(EngN, AirMassPerCyl)"
+      }
+    ]
+  },
+  {
+    "our_off": 1946092,
+    "our_dims": "16\u00d716",
+    "matches": [
+      {
+        "name": "InjCrv_phiMI1Bas1_MAP",
+        "offset": 255084,
+        "score": 0.83984375,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "InjCrv_phiMI1Bas2_MAP",
+        "offset": 256244,
+        "score": 0.7578125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "Rail_pSetPointATSCor_MAP",
+        "offset": 377698,
+        "score": 0.75,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1946608,
+    "our_dims": "16\u00d716",
+    "matches": [
+      {
+        "name": "InjCrv_phiMI1Bas1_MAP",
+        "offset": 255084,
+        "score": 0.83203125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "InjCrv_phiMI1Bas2_MAP",
+        "offset": 256244,
+        "score": 0.75390625,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "Rail_pSetPointATSCor_MAP",
+        "offset": 377698,
+        "score": 0.71875,
+        "axes": "X=Epm_nEng, Y=InjCtl_qCurr",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1923176,
+    "our_dims": "12\u00d712",
+    "matches": [
+      {
+        "name": "PCR_pDesBasLPEOMQnt2_MAP",
+        "offset": 338328,
+        "score": 0.7361111111111112,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPHiAltdEOMQnt2_MAP",
+        "offset": 339008,
+        "score": 0.7361111111111112,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPEOMQnt1_MAP",
+        "offset": 337988,
+        "score": 0.7222222222222222,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1923468,
+    "our_dims": "12\u00d712",
+    "matches": [
+      {
+        "name": "PCR_pDesBasLPEOMQnt1_MAP",
+        "offset": 337988,
+        "score": 0.75,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPEOMQnt2_MAP",
+        "offset": 338328,
+        "score": 0.75,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPHiAltdEOMQnt1_MAP",
+        "offset": 338668,
+        "score": 0.75,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1923856,
+    "our_dims": "12\u00d712",
+    "matches": [
+      {
+        "name": "PCR_pDesBasLPEOMQnt2_MAP",
+        "offset": 338328,
+        "score": 0.6875,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPHiAltdEOMQnt2_MAP",
+        "offset": 339008,
+        "score": 0.6875,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPEOMQnt1_MAP",
+        "offset": 337988,
+        "score": 0.6805555555555556,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1924148,
+    "our_dims": "12\u00d712",
+    "matches": [
+      {
+        "name": "PCR_pDesBasLPEOMQnt1_MAP",
+        "offset": 337988,
+        "score": 0.7708333333333334,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPEOMQnt2_MAP",
+        "offset": 338328,
+        "score": 0.7708333333333334,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPHiAltdEOMQnt2_MAP",
+        "offset": 339008,
+        "score": 0.7708333333333334,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1924876,
+    "our_dims": "12\u00d712",
+    "matches": [
+      {
+        "name": "PCR_pDesBasLPEOMQnt1_MAP",
+        "offset": 337988,
+        "score": 0.6875,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPEOMQnt2_MAP",
+        "offset": 338328,
+        "score": 0.6875,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "PCR_pDesBasLPHiAltdEOMQnt1_MAP",
+        "offset": 338668,
+        "score": 0.6875,
+        "axes": "X=Epm_nEng, Y=PCR_qDesValInlLP_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1916080,
+    "our_dims": "16\u00d78",
+    "matches": [
+      {
+        "name": "InjCrv_tiPiI1DynCor_MAP",
+        "offset": 272562,
+        "score": 0.8125,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1949460,
+    "our_dims": "16\u00d78",
+    "matches": [
+      {
+        "name": "QWC_facFTS_MAP",
+        "offset": 363764,
+        "score": 0.7734375,
+        "axes": "X=RailP_pFlt, Y=QWC_tCor",
+        "units": "(Pres_Rail, Temp_Cels)"
+      }
+    ]
+  },
+  {
+    "our_off": 1811390,
+    "our_dims": "10\u00d78",
+    "matches": [
+      {
+        "name": "InjCrv_tiPiI1APSCor1_MAP",
+        "offset": 282590,
+        "score": 0.9,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "InjCrv_tiPiI1APSCor2_MAP",
+        "offset": 282790,
+        "score": 0.9,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "InjCrv_tiPiI1ATSCor2_MAP",
+        "offset": 283298,
+        "score": 0.9,
+        "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1790986,
+    "our_dims": "8\u00d78",
+    "matches": [
+      {
+        "name": "KF_RF_AFU",
+        "offset": 409684,
+        "score": 0.9375,
+        "axes": "X=Tmot, Y=Pu",
+        "units": "(Def_t_sw_q0p01, Def_p_uw_q0p039)"
+      },
+      {
+        "name": "AirCtl_mDesGear_MAP",
+        "offset": 211904,
+        "score": 0.90625,
+        "axes": "X=Epm_nEng, Y=AirCtl_qDesVal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "ASMod_phiSOIRef_MAP",
+        "offset": 189448,
+        "score": 0.90625,
+        "axes": "X=Epm_nEng, Y=ASMod_qBrn_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1812186,
+    "our_dims": "8\u00d78",
+    "matches": [
+      {
+        "name": "KF_RF_AFU",
+        "offset": 409684,
+        "score": 0.9375,
+        "axes": "X=Tmot, Y=Pu",
+        "units": "(Def_t_sw_q0p01, Def_p_uw_q0p039)"
+      },
+      {
+        "name": "AirCtl_mDesGear_MAP",
+        "offset": 211904,
+        "score": 0.921875,
+        "axes": "X=Epm_nEng, Y=AirCtl_qDesVal",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "ASMod_phiSOIRef_MAP",
+        "offset": 189448,
+        "score": 0.921875,
+        "axes": "X=Epm_nEng, Y=ASMod_qBrn_mp",
+        "units": "(EngN, InjMass)"
+      }
+    ]
+  },
+  {
+    "our_off": 1949184,
+    "our_dims": "8\u00d78",
+    "matches": [
+      {
+        "name": "PhyMod_facPCRCorr0_MAP",
+        "offset": 358830,
+        "score": 0.84375,
+        "axes": "X=Epm_nEng, Y=PhyMod_pPCRDiff0_mp",
+        "units": "(EngN, Pres_hPa)"
+      },
+      {
+        "name": "PhyMod_facPCRCorr1_MAP",
+        "offset": 359004,
+        "score": 0.84375,
+        "axes": "X=Epm_nEng, Y=PhyMod_pPCRDiff1_mp",
+        "units": "(EngN, Pres_hPa)"
+      },
+      {
+        "name": "KF_RF_AFU",
+        "offset": 409684,
+        "score": 0.8125,
+        "axes": "X=Tmot, Y=Pu",
+        "units": "(Def_t_sw_q0p01, Def_p_uw_q0p039)"
+      }
+    ]
+  },
+  {
+    "our_off": 1960274,
+    "our_dims": "8\u00d78",
+    "matches": [
+      {
+        "name": "ASMod_phiSOIRef_MAP",
+        "offset": 189448,
+        "score": 0.96875,
+        "axes": "X=Epm_nEng, Y=ASMod_qBrn_mp",
+        "units": "(EngN, InjMass)"
+      },
+      {
+        "name": "ACCtl_trqFastLim_MAP",
+        "offset": 177776,
+        "score": 0.9375,
+        "axes": "X=Epm_nEng, Y=ACCtl_trqInrACDiff_mp",
+        "units": "(EngN, Trq)"
+      },
+      {
+        "name": "KF_RF_AFU",
+        "offset": 409684,
+        "score": 0.9375,
+        "axes": "X=Tmot, Y=Pu",
+        "units": "(Def_t_sw_q0p01, Def_p_uw_q0p039)"
+      }
+    ]
+  }
+]

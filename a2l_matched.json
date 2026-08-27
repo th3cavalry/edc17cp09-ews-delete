@@ -1,0 +1,29 @@
+[
+  {
+    "idx": 0,
+    "our_offset": 214346,
+    "our_dims": "21x32",
+    "a2l_name": "AirCtl_mEngTempCorBasEOMQnt3_MAP",
+    "a2l_offset": 214532,
+    "a2l_type": "MAP",
+    "a2l_desc": ""
+  },
+  {
+    "idx": 1,
+    "our_offset": 215690,
+    "our_dims": "21x32",
+    "a2l_name": "AirCtl_mTrmVal_MAP",
+    "a2l_offset": 215728,
+    "a2l_type": "MAP",
+    "a2l_desc": ""
+  },
+  {
+    "idx": 2,
+    "our_offset": 217034,
+    "our_dims": "21x32",
+    "a2l_name": "AirCtl_dmDesBasLP.Pos_C",
+    "a2l_offset": 217052,
+    "a2l_type": "VALUE",
+    "a2l_desc": "/"
+  }
+]

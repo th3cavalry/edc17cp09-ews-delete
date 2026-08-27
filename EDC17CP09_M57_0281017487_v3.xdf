@@ -1,0 +1,406 @@
+<XDFHEADER flags="0x3" KEY="EDC17CP09_US_X5_35d_M57" author="Hermes AI" description="BMW EDC17CP09 X5 35d (US) - M57N2 - Cross-referenced with 530d A2L" ECUID="0281017487" memsize="2097152" offset="0" signed="0" version="3.00">
+  <BINHEADER>
+    <flags>0x3</flags>
+    <version>3.00</version>
+  </BINHEADER>
+  <TABLE index="0" uniqueid="0x03454A" flags="0x11">
+    <title>Map_00_32x21</title>
+    <description>Unmatched map at 0x03454A, 32×21</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="32" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214240" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="21" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214304" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="672" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214346" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="1" uniqueid="0x034A8A" flags="0x11">
+    <title>Map_01_32x21</title>
+    <description>Unmatched map at 0x034A8A, 32×21</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="32" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214240" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="21" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214304" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="672" datatype="0" embedding="0" lsbfirst="1" math="0" offset="215690" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="2" uniqueid="0x034FCA" flags="0x11">
+    <title>Map_02_32x21</title>
+    <description>Unmatched map at 0x034FCA, 32×21</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="32" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214240" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="21" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214304" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="672" datatype="0" embedding="0" lsbfirst="1" math="0" offset="217034" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="3" uniqueid="0x1AA9D0" flags="0x11">
+    <title>Map_03_8x8</title>
+    <description>Unmatched map at 0x1AA9D0, 8×8</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1747244" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1747260" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1747408" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="4" uniqueid="0x1B448C" flags="0x11">
+    <title>Map_04_16x6</title>
+    <description>Unmatched map at 0x1B448C, 16×6</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1786774" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1786814" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="96" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1787020" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="5" uniqueid="0x1B540A" flags="0x11">
+    <title>KF_RF_AFU [94%]</title>
+    <description>Cross-ref: KF_RF_AFU | Axes: X=Tmot, Y=Pu | Units: (Def_t_sw_q0p01, Def_p_uw_q0p039)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1790952" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1790970" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1790986" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="6" uniqueid="0x1BA3BE" flags="0x11">
+    <title>InjCrv_tiPiI1APSCor1 [90%]</title>
+    <description>Cross-ref: InjCrv_tiPiI1APSCor1 | Axes: X=Epm_nEng, Y=InjCtl_qSetUnBal | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="10" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1811350" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1811370" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1811390" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="7" uniqueid="0x1BA6DA" flags="0x11">
+    <title>KF_RF_AFU [94%]</title>
+    <description>Cross-ref: KF_RF_AFU | Axes: X=Tmot, Y=Pu | Units: (Def_t_sw_q0p01, Def_p_uw_q0p039)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1812152" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1812170" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1812186" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="8" uniqueid="0x1C008C" flags="0x11">
+    <title>Map_08_4x6</title>
+    <description>Unmatched map at 0x1C008C, 4×6</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="4" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835116" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835136" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="24" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835148" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="9" uniqueid="0x1C0094" flags="0x11">
+    <title>Map_09_6x6</title>
+    <description>Unmatched map at 0x1C0094, 6×6</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835124" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835136" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="36" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835156" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="10" uniqueid="0x1D2F04" flags="0x11">
+    <title>Map_10_5x16</title>
+    <description>Unmatched map at 0x1D2F04, 5×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="5" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912514" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912548" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912580" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="11" uniqueid="0x1D2F0E" flags="0x11">
+    <title>Map_11_11x16</title>
+    <description>Unmatched map at 0x1D2F0E, 11×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="11" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912524" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912548" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="176" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912590" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="12" uniqueid="0x1D3148" flags="0x11">
+    <title>Map_12_4x16</title>
+    <description>Unmatched map at 0x1D3148, 4×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="4" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913094" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913128" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913160" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="13" uniqueid="0x1D3150" flags="0x11">
+    <title>Map_13_12x16</title>
+    <description>Unmatched map at 0x1D3150, 12×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913102" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913128" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="192" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913168" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="14" uniqueid="0x1D338C" flags="0x11">
+    <title>Map_14_5x16</title>
+    <description>Unmatched map at 0x1D338C, 5×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="5" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913674" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913708" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913740" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="15" uniqueid="0x1D3396" flags="0x11">
+    <title>Map_15_11x16</title>
+    <description>Unmatched map at 0x1D3396, 11×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="11" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913684" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913708" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="176" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913750" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="16" uniqueid="0x1D3A58" flags="0x11">
+    <title>Map_16_7x16</title>
+    <description>Unmatched map at 0x1D3A58, 7×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="7" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915414" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915448" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="112" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915480" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="17" uniqueid="0x1D3A66" flags="0x11">
+    <title>Map_17_9x16</title>
+    <description>Unmatched map at 0x1D3A66, 9×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="9" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915428" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915448" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915494" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="18" uniqueid="0x1D3CB0" flags="0x11">
+    <title>InjCrv_tiPiI1DynCor [81%]</title>
+    <description>Cross-ref: InjCrv_tiPiI1DynCor | Axes: X=Epm_nEng, Y=InjCtl_qSetUnBal | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916028" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916060" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="128" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916080" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="19" uniqueid="0x1D3EE0" flags="0x11">
+    <title>Map_19_5x16</title>
+    <description>Unmatched map at 0x1D3EE0, 5×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="5" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916574" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916608" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916640" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="20" uniqueid="0x1D3EEA" flags="0x11">
+    <title>Map_20_11x16</title>
+    <description>Unmatched map at 0x1D3EEA, 11×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="11" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916584" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916608" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="176" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916650" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="21" uniqueid="0x1D45AC" flags="0x11">
+    <title>Map_21_9x16</title>
+    <description>Unmatched map at 0x1D45AC, 9×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="9" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918314" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918348" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918380" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="22" uniqueid="0x1D45BE" flags="0x11">
+    <title>Map_22_7x16</title>
+    <description>Unmatched map at 0x1D45BE, 7×16</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="7" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918332" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918348" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="112" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918398" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="23" uniqueid="0x1D4802" flags="0x11">
+    <title>Map_23_7x6</title>
+    <description>Unmatched map at 0x1D4802, 7×6</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="7" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918928" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918966" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="42" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918978" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="24" uniqueid="0x1D4810" flags="0x11">
+    <title>Map_24_9x6</title>
+    <description>Unmatched map at 0x1D4810, 9×6</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="9" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918942" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918966" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="54" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918992" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="25" uniqueid="0x1D4A34" flags="0x11">
+    <title>SmkLim_rLamSmkMin [95%]</title>
+    <description>Cross-ref: SmkLim_rLamSmkMin | Axes: X=Epm_nEng, Y=SmkLim_mAirPerCyl | Units: (EngN, AirMassPerCyl)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1919474" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1919508" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="256" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1919540" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="26" uniqueid="0x1D5868" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt2 [74%]</title>
+    <description>Cross-ref: PCR_pDesBasLPEOMQnt2 | Axes: X=Epm_nEng, Y=PCR_qDesValInlLP_mp | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923128" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923152" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923176" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="27" uniqueid="0x1D598C" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt1 [75%]</title>
+    <description>Cross-ref: PCR_pDesBasLPEOMQnt1 | Axes: X=Epm_nEng, Y=PCR_qDesValInlLP_mp | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923128" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923152" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923468" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="28" uniqueid="0x1D5B10" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt2 [69%]</title>
+    <description>Cross-ref: PCR_pDesBasLPEOMQnt2 | Axes: X=Epm_nEng, Y=PCR_qDesValInlLP_mp | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923808" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923832" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923856" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="29" uniqueid="0x1D5C34" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt1 [77%]</title>
+    <description>Cross-ref: PCR_pDesBasLPEOMQnt1 | Axes: X=Epm_nEng, Y=PCR_qDesValInlLP_mp | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923808" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923832" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924148" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="30" uniqueid="0x1D5F0C" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt1 [69%]</title>
+    <description>Cross-ref: PCR_pDesBasLPEOMQnt1 | Axes: X=Epm_nEng, Y=PCR_qDesValInlLP_mp | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924828" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924852" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924876" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="31" uniqueid="0x1D6068" flags="0x11">
+    <title>Map_31_6x8</title>
+    <description>Unmatched map at 0x1D6068, 6×8</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1925172" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1925208" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="48" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1925224" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="32" uniqueid="0x1D9420" flags="0x11">
+    <title>Map_32_10x6</title>
+    <description>Unmatched map at 0x1D9420, 10×6</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="10" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1938428" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1938448" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="60" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1938464" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="33" uniqueid="0x1DB1EC" flags="0x11">
+    <title>InjCrv_phiMI1Bas1 [84%]</title>
+    <description>Cross-ref: InjCrv_phiMI1Bas1 | Axes: X=Epm_nEng, Y=InjCtl_qSetUnBal | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946024" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946056" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="256" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946092" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="34" uniqueid="0x1DB3F0" flags="0x11">
+    <title>InjCrv_phiMI1Bas1 [83%]</title>
+    <description>Cross-ref: InjCrv_phiMI1Bas1 | Axes: X=Epm_nEng, Y=InjCtl_qSetUnBal | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946024" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946056" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="256" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946608" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="35" uniqueid="0x1DBE00" flags="0x11">
+    <title>PhyMod_facPCRCorr0 [84%]</title>
+    <description>Cross-ref: PhyMod_facPCRCorr0 | Axes: X=Epm_nEng, Y=PhyMod_pPCRDiff0_mp | Units: (EngN, Pres_hPa)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949150" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949168" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949184" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="36" uniqueid="0x1DBF14" flags="0x11">
+    <title>QWC_facFTS [77%]</title>
+    <description>Cross-ref: QWC_facFTS | Axes: X=RailP_pFlt, Y=QWC_tCor | Units: (Pres_Rail, Temp_Cels)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949410" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949444" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="128" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949460" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="37" uniqueid="0x1DC0AC" flags="0x11">
+    <title>Map_37_16x10</title>
+    <description>Unmatched map at 0x1DC0AC, 16×10</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949812" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="10" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949846" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="160" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949868" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="38" uniqueid="0x1DE74E" flags="0x11">
+    <title>Map_38_16x14</title>
+    <description>Unmatched map at 0x1DE74E, 16×14</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1959694" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="14" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1959728" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="224" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1959758" resolution="1.0" size="16" units=""/>
+  </TABLE>
+  <TABLE index="39" uniqueid="0x1DE952" flags="0x11">
+    <title>ASMod_phiSOIRef [97%]</title>
+    <description>Cross-ref: ASMod_phiSOIRef | Axes: X=Epm_nEng, Y=ASMod_qBrn_mp | Units: (EngN, InjMass)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1"/>
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1960240" resolution="1.0" size="16" units=""/>
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1960258" resolution="1.0" size="16" units=""/>
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1960274" resolution="1.0" size="16" units=""/>
+  </TABLE>
+</XDFHEADER>

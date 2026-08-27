@@ -1,0 +1,610 @@
+<?xml version="1.0" ?>
+<XDF version="1.0">
+  <XDFHEADER>
+    <XDFVERSION>1.0</XDFVERSION>
+    <XDFNAME>EDC17CP09_M57_0281017487</XDFNAME>
+    <XDFDESC>BMW EDC17CP09 M57 3.0D - US Spec X5 35d (E70)</XDFDESC>
+    <XDFBIN>mpc_full.bin</XDFBIN>
+    <XDFSIZE>2097152</XDFSIZE>
+  </XDFHEADER>
+  <TABLE uniqueid="0x0000" name="Engine Speed Normalization" category="Engine Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x03454A"/>
+    <EMBEDDEDDATA mmedrowcount="21"/>
+    <EMBEDDEDDATA mmedcolcount="32"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Index"/>
+    <LABEL index="2"/>
+    <LABEL value="Index"/>
+    <LABEL index="3"/>
+    <LABEL value="Factor"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0001" name="Load Calculation Table 1" category="Engine Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x034A8A"/>
+    <EMBEDDEDDATA mmedrowcount="21"/>
+    <EMBEDDEDDATA mmedcolcount="32"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Parameter 1"/>
+    <LABEL index="2"/>
+    <LABEL value="Parameter 2"/>
+    <LABEL index="3"/>
+    <LABEL value="Load Value"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0002" name="Load Calculation Table 2" category="Engine Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x034FCA"/>
+    <EMBEDDEDDATA mmedrowcount="21"/>
+    <EMBEDDEDDATA mmedcolcount="32"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Parameter 1"/>
+    <LABEL index="2"/>
+    <LABEL value="Parameter 2"/>
+    <LABEL index="3"/>
+    <LABEL value="Load Value"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0003" name="Temperature Compensation (High Temp)" category="Temperature Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1AA9D0"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="8"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Temperature [°C ×0.1]"/>
+    <LABEL index="2"/>
+    <LABEL value="Temperature [°C ×0.1]"/>
+    <LABEL index="3"/>
+    <LABEL value="Factor"/>
+    <MATH equation="X*0.1" var="X"/>
+    <MATH equation="X*0.1" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0004" name="Sensor Calibration" category="Engine Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1B448C"/>
+    <EMBEDDEDDATA mmedrowcount="6"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Raw Value"/>
+    <LABEL index="2"/>
+    <LABEL value="Raw Value"/>
+    <LABEL index="3"/>
+    <LABEL value="Calibrated"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0005" name="Start of Injection - Main (SOI)" category="Injection System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1B540A"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="8"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="3"/>
+    <LABEL value="Timing [°BTDC]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0006" name="Driver Wish - Pedal to Torque Request" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1BA3BE"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="10"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Pedal Position [%]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque Request [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0007" name="Injection Duration - Main Injection" category="Injection System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1BA6DA"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="8"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="3"/>
+    <LABEL value="Duration [µs]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0008" name="Fuel Quantity Limiter (High RPM)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1C008C"/>
+    <EMBEDDEDDATA mmedrowcount="6"/>
+    <EMBEDDEDDATA mmedcolcount="4"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Max Fuel [mg]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0009" name="Fuel Quantity Limiter (Extended)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1C0094"/>
+    <EMBEDDEDDATA mmedrowcount="6"/>
+    <EMBEDDEDDATA mmedcolcount="6"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Parameter"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Max Fuel [mg]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x000A" name="Torque Limiter - Mode 1" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D2F04"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="5"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x000B" name="Torque Limiter - Mode 1 (Detailed)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D2F0E"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="11"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x000C" name="Torque Limiter - Mode 2" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3148"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="4"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x000D" name="Torque Limiter - Mode 2 (Detailed)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3150"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="12"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x000E" name="Torque Limiter - Mode 3" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D338C"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="5"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x000F" name="Torque Limiter - Mode 3 (Detailed)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3396"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="11"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0010" name="Torque Limiter - Mode 4" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3A58"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="7"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0011" name="Torque Limiter - Mode 4 (Detailed)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3A66"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="9"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0012" name="Rail Pressure Request" category="Rail System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3CB0"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="3"/>
+    <LABEL value="Pressure [bar]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0013" name="Torque Limiter - Mode 5" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3EE0"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="5"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0014" name="Torque Limiter - Mode 5 (Detailed)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D3EEA"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="11"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0015" name="Torque Limiter - Mode 6" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D45AC"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="9"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0016" name="Torque Limiter - Mode 6 (Narrow)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D45BE"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="7"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Parameter"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0017" name="Temperature Compensation - Low Range" category="Temperature Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D4802"/>
+    <EMBEDDEDDATA mmedrowcount="6"/>
+    <EMBEDDEDDATA mmedcolcount="7"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Temperature [°C]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Correction Factor"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*0.001" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0018" name="Temperature Compensation - Mid Range" category="Temperature Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D4810"/>
+    <EMBEDDEDDATA mmedrowcount="6"/>
+    <EMBEDDEDDATA mmedcolcount="9"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Temperature [°C]"/>
+    <LABEL index="2"/>
+    <LABEL value="Parameter"/>
+    <LABEL index="3"/>
+    <LABEL value="Correction Factor"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*0.001" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0019" name="Volumetric Efficiency Map" category="Boost &amp; Airpath" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D4A34"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Efficiency [%]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*0.1" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x001A" name="FMTC - Fuel to Torque Conversion 1" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D5868"/>
+    <EMBEDDEDDATA mmedrowcount="12"/>
+    <EMBEDDEDDATA mmedcolcount="12"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x001B" name="Injection Duration - Rail Pressure Dependent 1" category="Injection System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D598C"/>
+    <EMBEDDEDDATA mmedrowcount="12"/>
+    <EMBEDDEDDATA mmedcolcount="12"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Rail Pressure [bar]"/>
+    <LABEL index="2"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="3"/>
+    <LABEL value="Duration [µs]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x001C" name="FMTC - Fuel to Torque Conversion 2" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D5B10"/>
+    <EMBEDDEDDATA mmedrowcount="12"/>
+    <EMBEDDEDDATA mmedcolcount="12"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x001D" name="Injection Duration - Rail Pressure Dependent 2" category="Injection System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D5C34"/>
+    <EMBEDDEDDATA mmedrowcount="12"/>
+    <EMBEDDEDDATA mmedcolcount="12"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Rail Pressure [bar]"/>
+    <LABEL index="2"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="3"/>
+    <LABEL value="Duration [µs]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x001E" name="FMTC - Fuel to Torque Conversion 3" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D5F0C"/>
+    <EMBEDDEDDATA mmedrowcount="12"/>
+    <EMBEDDEDDATA mmedcolcount="12"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x001F" name="Idle Speed Control" category="Idle Control" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D6068"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="6"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Target RPM"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0020" name="Sensor Linearization" category="Engine Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1D9420"/>
+    <EMBEDDEDDATA mmedrowcount="6"/>
+    <EMBEDDEDDATA mmedcolcount="10"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Raw Input"/>
+    <LABEL index="2"/>
+    <LABEL value="Raw Input"/>
+    <LABEL index="3"/>
+    <LABEL value="Linearized Output"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0021" name="Driver Wish - Torque Request (Large)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DB1EC"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Pedal Position [%]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Torque [Nm]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0022" name="Driver Wish - Fuel Request (Large)" category="Torque Structure" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DB3F0"/>
+    <EMBEDDEDDATA mmedrowcount="16"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Pedal Position [%]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Fuel [mg]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0023" name="Rail Pressure Request - Low Range" category="Rail System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DBE00"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="8"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Rail Pressure [bar]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Target Pressure [bar]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0024" name="Rail Pressure Limiter" category="Rail System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DBF14"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Rail Pressure [bar]"/>
+    <LABEL index="2"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="3"/>
+    <LABEL value="Max Pressure [bar]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0025" name="Temperature Compensation - Narrow Range" category="Temperature Management" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DC0AC"/>
+    <EMBEDDEDDATA mmedrowcount="10"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Temperature [°C ×0.1]"/>
+    <LABEL index="2"/>
+    <LABEL value="Temperature [°C ×0.1]"/>
+    <LABEL index="3"/>
+    <LABEL value="Factor"/>
+    <MATH equation="X*0.1" var="X"/>
+    <MATH equation="X*0.1" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0026" name="Boost Pressure Request" category="Boost &amp; Airpath" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DE74E"/>
+    <EMBEDDEDDATA mmedrowcount="14"/>
+    <EMBEDDEDDATA mmedcolcount="16"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Load [%]"/>
+    <LABEL index="3"/>
+    <LABEL value="Boost [mbar]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+  <TABLE uniqueid="0x0027" name="Injection Duration - Extended Range" category="Injection System" type="3D">
+    <EMBEDDEDDATA mmedaddress="0x1DE952"/>
+    <EMBEDDEDDATA mmedrowcount="8"/>
+    <EMBEDDEDDATA mmedcolcount="8"/>
+    <EMBEDDEDDATA mmedelementsizebytes="2"/>
+    <LABEL index="1"/>
+    <LABEL value="Engine Speed [RPM]"/>
+    <LABEL index="2"/>
+    <LABEL value="Fuel Quantity [mm³]"/>
+    <LABEL index="3"/>
+    <LABEL value="Duration [µs]"/>
+    <MATH equation="X*1.0" var="X"/>
+    <MATH equation="X*1.0" var="Y"/>
+    <MATH equation="X*1.0" var="Z"/>
+  </TABLE>
+</XDF>
