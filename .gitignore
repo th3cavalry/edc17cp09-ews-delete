@@ -1,7 +1,13 @@
 .venv/
 __pycache__/
 *.pyc
-*.bin
 *.class
-*.jar
 ghidra_proj/
+
+# Non-XDF work
+bmw_x5_e70_35d_orig.bin
+TC1796_*.bin
+mpc_swapped.bin*
+mpc_ews_deleted*.bin
+original*
+*.rar
