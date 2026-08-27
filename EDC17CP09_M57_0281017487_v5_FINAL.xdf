@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='utf-8'?>
+<XDFHEADER flags="0x3" KEY="EDC17CP09_US_X5_35d_M57_COMPLETE" author="Hermes AI" description="BMW EDC17CP09 X5 35d (US) - M57N2 - Complete 40-map definition with cross-reference" ECUID="0281017487" memsize="2097152" offset="0" signed="0" version="4.0">
+  <BINHEADER>
+    <flags>0x3</flags>
+    <version>4.0</version>
+  </BINHEADER>
+  <TABLE index="0" uniqueid="0x03454A" flags="0x11">
+    <title>AirCtl_AirMassFactor_MAP</title>
+    <description>Inferred function: Air mass factor map (X5-specific)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="32" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214240" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="21" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214304" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="672" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214346" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="1" uniqueid="0x034A8A" flags="0x11">
+    <title>AirCtl_PressureComp_MAP</title>
+    <description>Inferred function: Pressure compensation map (X5-specific)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="32" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214240" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="21" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214304" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="672" datatype="0" embedding="0" lsbfirst="1" math="0" offset="215690" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="2" uniqueid="0x034FCA" flags="0x11">
+    <title>AirCtl_TempCorrection_MAP</title>
+    <description>Inferred function: Temperature correction map (X5-specific)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="32" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214240" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="21" datatype="0" embedding="0" lsbfirst="1" math="0" offset="214304" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="672" datatype="0" embedding="0" lsbfirst="1" math="0" offset="217034" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="3" uniqueid="0x1AA9D0" flags="0x11">
+    <title>KF_DFHRFMAXK</title>
+    <description>Matched via axis similarity (98% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1747244" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1747260" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1747408" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="4" uniqueid="0x1B448C" flags="0x11">
+    <title>InjCrv_RailPressure_MAP</title>
+    <description>Inferred function: Rail pressure target map</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1786774" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1786814" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="96" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1787020" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="5" uniqueid="0x1B540A" flags="0x11">
+    <title>KF_RF_AFU</title>
+    <description>Cross-referenced via byte pattern matching (94% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1790952" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1790970" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1790986" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="6" uniqueid="0x1BA3BE" flags="0x11">
+    <title>InjCrv_tiPiI1APSCor1_MAP</title>
+    <description>Cross-referenced via byte pattern matching (90% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="10" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1811350" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1811370" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1811390" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="7" uniqueid="0x1BA6DA" flags="0x11">
+    <title>KF_RF_AFU</title>
+    <description>Cross-referenced via byte pattern matching (94% confidence) | 530d match: correction_value_for_engine_temperature_dependent_pilot_injections_quantity_correction (100%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1812152" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1812170" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1812186" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="8" uniqueid="0x1C008C" flags="0x11">
+    <title>KF_PMRIBAT5</title>
+    <description>Matched via axis similarity (83% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="4" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835116" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835136" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="24" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835148" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="9" uniqueid="0x1C0094" flags="0x11">
+    <title>AirCtl_mMinLPDvt_MAP</title>
+    <description>Matched via axis similarity (100% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835124" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835136" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="36" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1835156" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="10" uniqueid="0x1D2F04" flags="0x11">
+    <title>InjCrv_phiMI1LowRPM_MAP</title>
+    <description>Inferred function: Injection timing low RPM range</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="5" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912514" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912548" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912580" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="11" uniqueid="0x1D2F0E" flags="0x11">
+    <title>InjCrv_phiMI1HighRPM_MAP</title>
+    <description>Inferred function: Injection timing high RPM range</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="11" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912524" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912548" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="176" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1912590" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="12" uniqueid="0x1D3148" flags="0x11">
+    <title>InjCrv_StartPulse_MAP</title>
+    <description>Inferred function: Injection start pulse map</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="4" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913094" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913128" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913160" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="13" uniqueid="0x1D3150" flags="0x11">
+    <title>InjCrv_phiMI1MidRPM_MAP</title>
+    <description>Inferred function: Injection timing mid RPM range</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913102" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913128" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="192" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913168" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="14" uniqueid="0x1D338C" flags="0x11">
+    <title>InjCrv_phiMI2LowRPM_MAP</title>
+    <description>Inferred function: Post-injection timing low RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="5" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913674" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913708" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913740" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="15" uniqueid="0x1D3396" flags="0x11">
+    <title>InjCrv_phiMI2HighRPM_MAP</title>
+    <description>Inferred function: Post-injection timing high RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="11" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913684" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913708" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="176" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1913750" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="16" uniqueid="0x1D3A58" flags="0x11">
+    <title>InjCrv_tiPiI1LowRPM_MAP</title>
+    <description>Inferred function: Pilot injection duration low RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="7" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915414" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915448" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="112" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915480" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="17" uniqueid="0x1D3A66" flags="0x11">
+    <title>InjCrv_tiPiI1HighRPM_MAP</title>
+    <description>Inferred function: Pilot injection duration high RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="9" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915428" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915448" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1915494" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="18" uniqueid="0x1D3CB0" flags="0x11">
+    <title>InjCrv_tiPiI1DynCor_MAP</title>
+    <description>Cross-referenced via byte pattern matching (81% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916028" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916060" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="128" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916080" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="19" uniqueid="0x1D3EE0" flags="0x11">
+    <title>InjCrv_tiPiI2LowRPM_MAP</title>
+    <description>Inferred function: Second pilot injection low RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="5" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916574" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916608" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="80" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916640" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="20" uniqueid="0x1D3EEA" flags="0x11">
+    <title>InjCrv_tiPiI2HighRPM_MAP</title>
+    <description>Inferred function: Second pilot injection high RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="11" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916584" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916608" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="176" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1916650" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="21" uniqueid="0x1D45AC" flags="0x11">
+    <title>InjCrv_qPoI2LowRPM_MAP</title>
+    <description>Inferred function: Post-injection quantity low RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="9" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918314" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918348" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918380" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="22" uniqueid="0x1D45BE" flags="0x11">
+    <title>InjCrv_qPoI2HighRPM_MAP</title>
+    <description>Inferred function: Post-injection quantity high RPM</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="7" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918332" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918348" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="112" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918398" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="23" uniqueid="0x1D4802" flags="0x11">
+    <title>InjCrv_qPoI2ETSCor_MAP</title>
+    <description>Matched via axis similarity (70% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="7" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918928" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918966" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="42" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918978" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="24" uniqueid="0x1D4810" flags="0x11">
+    <title>InjCrv_qPoI2Correction_MAP</title>
+    <description>Inferred function: Post-injection correction factors</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="9" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918942" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918966" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="54" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1918992" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="25" uniqueid="0x1D4A34" flags="0x11">
+    <title>SmkLim_rLamSmkMin_MAP</title>
+    <description>Cross-referenced via byte pattern matching (95% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1919474" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1919508" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="256" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1919540" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="26" uniqueid="0x1D5868" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt2_MAP</title>
+    <description>Cross-referenced via byte pattern matching (74% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923128" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923152" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923176" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="27" uniqueid="0x1D598C" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt1_MAP</title>
+    <description>Cross-referenced via byte pattern matching (75% confidence) | 530d match: Unknown (74%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923128" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923152" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923468" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="28" uniqueid="0x1D5B10" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt2_MAP</title>
+    <description>Cross-referenced via byte pattern matching (69% confidence) | 530d match: Unknown (90%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923808" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923832" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923856" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="29" uniqueid="0x1D5C34" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt1_MAP</title>
+    <description>Cross-referenced via byte pattern matching (77% confidence) | 530d match: Unknown (66%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923808" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1923832" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924148" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="30" uniqueid="0x1D5F0C" flags="0x11">
+    <title>PCR_pDesBasLPEOMQnt1_MAP</title>
+    <description>Cross-referenced via byte pattern matching (69% confidence) | 530d match: Unknown (82%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924828" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="12" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924852" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="144" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1924876" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="31" uniqueid="0x1D6068" flags="0x11">
+    <title>PCR_RailPressureCorr_MAP</title>
+    <description>Inferred function: Rail pressure correction map</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1925172" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1925208" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="48" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1925224" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="32" uniqueid="0x1D9420" flags="0x11">
+    <title>TorqueCalc_LowLoad_MAP</title>
+    <description>Inferred function: Torque calculation low load</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="10" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1938428" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="6" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1938448" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="60" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1938464" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="33" uniqueid="0x1DB1EC" flags="0x11">
+    <title>InjCrv_phiMI1Bas1_MAP</title>
+    <description>Cross-referenced via byte pattern matching (84% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946024" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946056" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="256" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946092" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="34" uniqueid="0x1DB3F0" flags="0x11">
+    <title>InjCrv_phiMI1Bas1_MAP</title>
+    <description>Cross-referenced via byte pattern matching (83% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946024" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946056" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="256" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1946608" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="35" uniqueid="0x1DBE00" flags="0x11">
+    <title>PhyMod_facPCRCorr0_MAP</title>
+    <description>Cross-referenced via byte pattern matching (84% confidence) | 530d match: KF_zum_ermitteln_der_Verlustleistung_in_Abgas_und_Motorumgebung (100%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949150" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949168" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949184" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="36" uniqueid="0x1DBF14" flags="0x11">
+    <title>QWC_facFTS_MAP</title>
+    <description>Cross-referenced via byte pattern matching (77% confidence)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949410" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949444" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="128" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949460" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="37" uniqueid="0x1DC0AC" flags="0x11">
+    <title>QWC_WaterTempCorrection_MAP</title>
+    <description>Inferred function: Water injection temperature correction</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949812" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="10" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949846" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="160" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1949868" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="38" uniqueid="0x1DE74E" flags="0x11">
+    <title>ASMod_EmissionsControl_MAP</title>
+    <description>Inferred function: Emissions control strategy map</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="16" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1959694" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="14" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1959728" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="224" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1959758" resolution="1.0" size="16" units="" />
+  </TABLE>
+  <TABLE index="39" uniqueid="0x1DE952" flags="0x11">
+    <title>ASMod_phiSOIRef_MAP</title>
+    <description>Cross-referenced via byte pattern matching (97% confidence) | 530d match: Unknown (100%)</description>
+    <MATH equation="X" id="0">
+      <VAR id="0" shiftcount="0" signed="0" type="Constant" value="1" />
+    </MATH>
+    <XAXIS uniqueid="0x1" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1960240" resolution="1.0" size="16" units="" />
+    <YAXIS uniqueid="0x2" index="0" indexcount="8" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1960258" resolution="1.0" size="16" units="" />
+    <ZAXIS uniqueid="0x3" index="0" indexcount="64" datatype="0" embedding="0" lsbfirst="1" math="0" offset="1960274" resolution="1.0" size="16" units="" />
+  </TABLE>
+</XDFHEADER>
