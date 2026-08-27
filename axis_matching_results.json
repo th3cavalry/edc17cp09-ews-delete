@@ -1,0 +1,50 @@
+[
+  {
+    "our_off": 1747408,
+    "our_dims": "8\u00d78",
+    "match": {
+      "name": "KF_DFHRFMAXK",
+      "offset": 414002,
+      "score": 0.9799503858856561,
+      "x_sim": 0.977631588390009,
+      "y_sim": 0.9822691833813032,
+      "axes": "X=Nkw, Y=Mk_soll_omar"
+    }
+  },
+  {
+    "our_off": 1835148,
+    "our_dims": "4\u00d76",
+    "match": {
+      "name": "KF_PMRIBAT5",
+      "offset": 405416,
+      "score": 0.8348529474350339,
+      "x_sim": 0.9495192307692307,
+      "y_sim": 0.7201866641008372,
+      "axes": "X=T_batt, Y=I_batt"
+    }
+  },
+  {
+    "our_off": 1835156,
+    "our_dims": "6\u00d76",
+    "match": {
+      "name": "AirCtl_mMinLPDvt_MAP",
+      "offset": 227330,
+      "score": 1.0,
+      "x_sim": 1.0,
+      "y_sim": 1.0,
+      "axes": "X=Epm_nEng, Y=AirCtl_qMon"
+    }
+  },
+  {
+    "our_off": 1918978,
+    "our_dims": "7\u00d76",
+    "match": {
+      "name": "InjCrv_qPoI2ETSCor_MAP",
+      "offset": 303962,
+      "score": 0.703657114664676,
+      "x_sim": 0.5,
+      "y_sim": 0.9073142293293519,
+      "axes": "X=Epm_nEng, Y=InjCtl_qSetUnBal"
+    }
+  }
+]
