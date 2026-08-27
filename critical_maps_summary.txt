@@ -1,0 +1,48 @@
+CRITICAL MAPS FOR TUNERPRO MODIFICATION
+========================================
+
+EWS / Immobilizer (18 maps)
+---------------------------
+0x00038B | Faktor_auf_maximales_Motormoment_zur_Bestimmung_der_NA_Momentenbilanz
+0x007F6B | Faktor_auf_I_Anteil_LL_Regler_zur_Bestimmung_der_NA_Momentenbilanz
+0x18A250 | DFES_Hersteller_spezifischer_Fehlercode_f_r_Pr_fung_DFC_EpmCaSI1ErrSig
+0x1936FC | Kennfeld_zur_Bestimmung_des_Initialisierungsstartmoments_HLSDem_trqReqStrt
+0x1B31D8 | Kennlinie__Bestimmung_der_Solladezeit_aus_dem_Raildruck
+0x1B31F8 | Kennlinie__Bestimmung_der_Ladepuls_Pausezeit_aus_der_Sollladezeit
+0x1B3202 | Kennlinie__Bestimmung_der_Entladepuls_Pausezeit_aus_der_Soll_Entladezeit
+0x1B321C | Kennlinie__Bestimmung_der_Spannungskompensation_aus_der_Aktortemperatur
+0x1B327E | Kennfeld__Bestimmung_des_Ladestroms_aus_Ladezeit_und_Spannung
+0x1ED7B8 | Kennfeld_Bestimmung_Minspannung_Elektrische_Lenkhilfe_bei_defektem_Generator
+
+DPF / EGR System (153 maps)
+---------------------------
+Key DPF/EGR maps include:
+- Regeneration thresholds and limits
+- Filter mass flow calculations
+- Particulate filter temperature models
+- Backpressure monitoring
+- Regeneration request flags
+
+Driver's Wish (AccPed) (13 maps)
+---------------------------------
+0x000B42 | Minimale_Drehzahl_bei_Fahrpedal_Bremse_Unplausibilit_t
+0x000C81 | Fahrpedalersatzwert_bei_Defekt_beider_Geber
+0x0021D4 | Schwellwert_Fahrerwunschmoment_f_r_Status_Fahrerwunsch_aktiv
+0x0041DC | Fahrpedalwinkel_Schwelle_f_r_R_cksetzen_der_Leerlaufanh
+0x004F9B | Grenze_f_r_Fahrpedalwertgradient_im_Ersatzbetrieb
+0x196F44 | Rampensteigungen_f_r_Ersatzwert_bei_Fahrpedal_Bremse_Pl
+
+Torque Limiters (6 maps)
+------------------------
+0x0003FF | Faktor_auf_Maximalmoment_bei_normaler_Lenkung
+0x000C55 | Grenzmoment_bei_Ausfall_CAN_Signal_Drehmomentanf._Klima
+0x005C46 | Zeitschwelle__um_Dfp_PfltOvldInhRgn_und_Dfp_PfltOvldTrq
+
+CAN Bus Error Masks (849 maps)
+------------------------------
+Most are DFES error codes - look for:
+- CAN communication errors
+- Bus-off states
+- Message timeout flags
+- Signal quality checks
+
