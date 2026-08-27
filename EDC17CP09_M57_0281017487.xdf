@@ -1,0 +1,1046 @@
+<?xml version="1.0"?>
+<!--
+  BMW M57 EDC17CP09 - RECONSTRUCTED TunerPro XDF
+  HW: 0281017487   Part: 1039S46986
+  SW (config): 10375506116137U6A   SW (app): 10375135896137T6A
+  File: 2,097,152 bytes (0x200000) stock read, all 11 checksums valid.
+
+  TABLE LABELS ARE RECONSTRUCTED FROM AXIS SHAPE/SPACING.
+  VERIFY against a dyno datalog before tuning. Addresses, sizes and
+  endianness (little-endian, 16-bit) come from a direct scan of this stock file.
+
+  Flash regions & checksums (recompute ALL after any edit):
+    0x000000-0x003FFF  Dataset #1    ADD32  @0x34
+    0x004000-0x00E803  Customer blk   CRC32  @0x4034, @0x4054
+    0x014000-0x017EFF  TuneProtect    CRC32  @0x14034
+    0x018000-0x01FEFF  Startup blk    CRC32  @0x18034, @0x18054  (EWS/VIN/CVN)
+    0x020000-0x17FF03  App SW         ADD32  @0x20034, @0x20054, @0x20074
+-->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <deftitle>BMW M57 EDC17CP09 0281017487 (stock reconstructed)</deftitle>
+    <description>Reconstructed EDC17CP09 M57 definition from OpenRemap scan of a stock 2011 X5 read. Map labels verified by axis shape only - confirm on a dyno before tuning.</description>
+    <author>REX (Hermes) - generated from scan of HW 0281017487</author>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="16" sigdigits="4" outputtype="1" signed="0" lsbfirst="1" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x200000" regionflags="0x0" name="Binary File" desc="2MB EDC17CP09 flash (TC1796)" />
+    <CATEGORY index="0x10" name="Fuel / request" />
+    <CATEGORY index="0x11" name="Torque / limiters (RPM x RPM)" />
+    <CATEGORY index="0x12" name="Injection (RPM x MAP)" />
+    <CATEGORY index="0x13" name="Other" />
+    <CATEGORY index="0x14" name="Config / EWS / VIN" />
+  </XDFHEADER>
+  <!-- ============ ECU IDENT / CONFIG / EWS / CVN (reference) ============ -->
+  <XDFTABLE uniqueid="0x0010" flags="0x10">
+    <title>Startup Block Header @0x180000</title>
+    <description>Block size + CRC pointer region. EWS/immobilizer auth area begins 0x180034.</description>
+    <CATEGORYMEM index="0" category="0x20" />
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x180000" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0011" flags="0x10">
+    <title>Config SW #1 @0x18001A</title>
+    <description>ASCII software identifier: 10375506116137U6A</description>
+    <CATEGORYMEM index="0" category="0x20" />
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x18001A" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" />
+      <units>ascii</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0012" flags="0x10">
+    <title>VIN @0x180099</title>
+    <description>Vehicle Identification Number (ASCII). Currently: 0089ZH0A7UABGK244</description>
+    <CATEGORYMEM index="0" category="0x20" />
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x180099" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" />
+      <units>ascii</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0013" flags="0x10">
+    <title>HW / Part @0x00FD00</title>
+    <description>Hardware number + BMW part: 0281017487 / 1039S46986</description>
+    <CATEGORYMEM index="0" category="0x20" />
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x00FD00" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="22" />
+      <units>ascii</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0014" flags="0x10">
+    <title>CVN Checksum @0x1FE90C</title>
+    <description>Calibration Verification Number (CVN) for this software version. Recompute after edits.</description>
+    <CATEGORYMEM index="0" category="0x20" />
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x1FE90C" mmedelementsizebits="32" mmedrowcount="1" mmedcolcount="1" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x0201" flags="0x30">
+    <title>Map 0x0003454A (21 rows x 32 cols) | Fuel / request</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: mbar (MAP) [151..270]; Y-axis: mbar (MAP) [274..320]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x10" />
+    <XDFAXIS id="x" uniqueid="0x0201">
+      <EMBEDDEDDATA mmedaddress="0x000344E0" mmedelementsizebits="16" mmedcolcount="32" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>32</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0201">
+      <EMBEDDEDDATA mmedaddress="0x00034520" mmedelementsizebits="16" mmedrowcount="21" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>21</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x0003454A" mmedelementsizebits="16" mmedrowcount="21" mmedcolcount="32" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0202" flags="0x30">
+    <title>Map 0x00034A8A (21 rows x 32 cols) | Fuel / request</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: mbar (MAP) [151..270]; Y-axis: mbar (MAP) [274..320]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x10" />
+    <XDFAXIS id="x" uniqueid="0x0202">
+      <EMBEDDEDDATA mmedaddress="0x000344E0" mmedelementsizebits="16" mmedcolcount="32" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>32</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0202">
+      <EMBEDDEDDATA mmedaddress="0x00034520" mmedelementsizebits="16" mmedrowcount="21" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>21</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x00034A8A" mmedelementsizebits="16" mmedrowcount="21" mmedcolcount="32" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0203" flags="0x30">
+    <title>Map 0x00034FCA (21 rows x 32 cols) | Fuel / request</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: mbar (MAP) [151..270]; Y-axis: mbar (MAP) [274..320]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x10" />
+    <XDFAXIS id="x" uniqueid="0x0203">
+      <EMBEDDEDDATA mmedaddress="0x000344E0" mmedelementsizebits="16" mmedcolcount="32" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>32</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0203">
+      <EMBEDDEDDATA mmedaddress="0x00034520" mmedelementsizebits="16" mmedrowcount="21" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>21</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x00034FCA" mmedelementsizebits="16" mmedrowcount="21" mmedcolcount="32" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0204" flags="0x30">
+    <title>Map 0x001AA9D0 (8 rows x 8 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..11500]; Y-axis: RPM [80..11000]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0204">
+      <EMBEDDEDDATA mmedaddress="0x001AA92C" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0204">
+      <EMBEDDEDDATA mmedaddress="0x001AA93C" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001AA9D0" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0205" flags="0x30">
+    <title>Map 0x001B448C (6 rows x 16 cols) | Injection (RPM x MAP)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..7500]; Y-axis: mbar (MAP) [191..251]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x12" />
+    <XDFAXIS id="x" uniqueid="0x0205">
+      <EMBEDDEDDATA mmedaddress="0x001B4396" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0205">
+      <EMBEDDEDDATA mmedaddress="0x001B43BE" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001B448C" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0206" flags="0x30">
+    <title>Map 0x001B540A (8 rows x 8 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [8..2200]; Y-axis: RPM [0..7000]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0206">
+      <EMBEDDEDDATA mmedaddress="0x001B53E8" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0206">
+      <EMBEDDEDDATA mmedaddress="0x001B53FA" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001B540A" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0207" flags="0x30">
+    <title>Map 0x001BA3BE (8 rows x 10 cols) | Injection (RPM x MAP)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..4500]; Y-axis: mbar (MAP) [100..350]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x12" />
+    <XDFAXIS id="x" uniqueid="0x0207">
+      <EMBEDDEDDATA mmedaddress="0x001BA396" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>10</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0207">
+      <EMBEDDEDDATA mmedaddress="0x001BA3AA" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>mbar (MAP)</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001BA3BE" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="10" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0208" flags="0x30">
+    <title>Map 0x001BA6DA (8 rows x 8 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [8..2200]; Y-axis: RPM [0..7000]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0208">
+      <EMBEDDEDDATA mmedaddress="0x001BA6B8" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0208">
+      <EMBEDDEDDATA mmedaddress="0x001BA6CA" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001BA6DA" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0209" flags="0x30">
+    <title>Map 0x001C008C (6 rows x 4 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..1500]; Y-axis: RPM [5000..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0209">
+      <EMBEDDEDDATA mmedaddress="0x001C006C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>4</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0209">
+      <EMBEDDEDDATA mmedaddress="0x001C0080" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001C008C" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="4" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x020a" flags="0x30">
+    <title>Map 0x001C0094 (6 rows x 6 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2000..4500]; Y-axis: RPM [5000..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x020a">
+      <EMBEDDEDDATA mmedaddress="0x001C0074" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x020a">
+      <EMBEDDEDDATA mmedaddress="0x001C0080" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001C0094" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x020b" flags="0x30">
+    <title>Map 0x001D2F04 (16 rows x 5 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..2500]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x020b">
+      <EMBEDDEDDATA mmedaddress="0x001D2EC2" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x020b">
+      <EMBEDDEDDATA mmedaddress="0x001D2EE4" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D2F04" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="5" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x020c" flags="0x30">
+    <title>Map 0x001D2F0E (16 rows x 11 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [3000..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x020c">
+      <EMBEDDEDDATA mmedaddress="0x001D2ECC" mmedelementsizebits="16" mmedcolcount="11" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>11</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x020c">
+      <EMBEDDEDDATA mmedaddress="0x001D2EE4" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D2F0E" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="11" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x020d" flags="0x30">
+    <title>Map 0x001D3148 (16 rows x 4 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..2000]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x020d">
+      <EMBEDDEDDATA mmedaddress="0x001D3106" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>4</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x020d">
+      <EMBEDDEDDATA mmedaddress="0x001D3128" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3148" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="4" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x020e" flags="0x30">
+    <title>Map 0x001D3150 (16 rows x 12 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2500..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x020e">
+      <EMBEDDEDDATA mmedaddress="0x001D310E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x020e">
+      <EMBEDDEDDATA mmedaddress="0x001D3128" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3150" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x020f" flags="0x30">
+    <title>Map 0x001D338C (16 rows x 5 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..2500]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x020f">
+      <EMBEDDEDDATA mmedaddress="0x001D334A" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x020f">
+      <EMBEDDEDDATA mmedaddress="0x001D336C" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D338C" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="5" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0210" flags="0x30">
+    <title>Map 0x001D3396 (16 rows x 11 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [3000..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0210">
+      <EMBEDDEDDATA mmedaddress="0x001D3354" mmedelementsizebits="16" mmedcolcount="11" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>11</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0210">
+      <EMBEDDEDDATA mmedaddress="0x001D336C" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3396" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="11" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0211" flags="0x30">
+    <title>Map 0x001D3A58 (16 rows x 7 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..3500]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0211">
+      <EMBEDDEDDATA mmedaddress="0x001D3A16" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>7</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0211">
+      <EMBEDDEDDATA mmedaddress="0x001D3A38" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3A58" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="7" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0212" flags="0x30">
+    <title>Map 0x001D3A66 (16 rows x 9 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [4000..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0212">
+      <EMBEDDEDDATA mmedaddress="0x001D3A24" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>9</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0212">
+      <EMBEDDEDDATA mmedaddress="0x001D3A38" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3A66" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="9" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0213" flags="0x30">
+    <title>Map 0x001D3CB0 (8 rows x 16 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..7500]; Y-axis: ? [967..1125]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0213">
+      <EMBEDDEDDATA mmedaddress="0x001D3C7C" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0213">
+      <EMBEDDEDDATA mmedaddress="0x001D3C9C" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>?</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3CB0" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0214" flags="0x30">
+    <title>Map 0x001D3EE0 (16 rows x 5 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..2500]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0214">
+      <EMBEDDEDDATA mmedaddress="0x001D3E9E" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0214">
+      <EMBEDDEDDATA mmedaddress="0x001D3EC0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3EE0" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="5" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0215" flags="0x30">
+    <title>Map 0x001D3EEA (16 rows x 11 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [3000..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0215">
+      <EMBEDDEDDATA mmedaddress="0x001D3EA8" mmedelementsizebits="16" mmedcolcount="11" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>11</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0215">
+      <EMBEDDEDDATA mmedaddress="0x001D3EC0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D3EEA" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="11" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0216" flags="0x30">
+    <title>Map 0x001D45AC (16 rows x 9 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..4500]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0216">
+      <EMBEDDEDDATA mmedaddress="0x001D456A" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>9</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0216">
+      <EMBEDDEDDATA mmedaddress="0x001D458C" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D45AC" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="9" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0217" flags="0x30">
+    <title>Map 0x001D45BE (16 rows x 7 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [5000..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0217">
+      <EMBEDDEDDATA mmedaddress="0x001D457C" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>7</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0217">
+      <EMBEDDEDDATA mmedaddress="0x001D458C" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D45BE" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="7" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0218" flags="0x30">
+    <title>Map 0x001D4802 (6 rows x 7 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..3000]; Y-axis: ? [743..930]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0218">
+      <EMBEDDEDDATA mmedaddress="0x001D47D0" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>7</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0218">
+      <EMBEDDEDDATA mmedaddress="0x001D47F6" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="16" />
+      <units>?</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D4802" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="7" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0219" flags="0x30">
+    <title>Map 0x001D4810 (6 rows x 9 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [3500..7500]; Y-axis: ? [743..930]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0219">
+      <EMBEDDEDDATA mmedaddress="0x001D47DE" mmedelementsizebits="16" mmedcolcount="9" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>9</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0219">
+      <EMBEDDEDDATA mmedaddress="0x001D47F6" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="16" />
+      <units>?</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D4810" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="9" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x021a" flags="0x30">
+    <title>Map 0x001D4A34 (16 rows x 16 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [16..8800]; Y-axis: RPM [0..7500]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x021a">
+      <EMBEDDEDDATA mmedaddress="0x001D49F2" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x021a">
+      <EMBEDDEDDATA mmedaddress="0x001D4A14" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D4A34" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x021b" flags="0x30">
+    <title>Map 0x001D5868 (12 rows x 12 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2000..7500]; Y-axis: mg/stroke [1145..2250]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x021b">
+      <EMBEDDEDDATA mmedaddress="0x001D5838" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x021b">
+      <EMBEDDEDDATA mmedaddress="0x001D5850" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D5868" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x021c" flags="0x30">
+    <title>Map 0x001D598C (12 rows x 12 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2000..7500]; Y-axis: mg/stroke [1145..2250]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x021c">
+      <EMBEDDEDDATA mmedaddress="0x001D5838" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x021c">
+      <EMBEDDEDDATA mmedaddress="0x001D5850" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D598C" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x021d" flags="0x30">
+    <title>Map 0x001D5B10 (12 rows x 12 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2000..7500]; Y-axis: mg/stroke [1145..2250]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x021d">
+      <EMBEDDEDDATA mmedaddress="0x001D5AE0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x021d">
+      <EMBEDDEDDATA mmedaddress="0x001D5AF8" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D5B10" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x021e" flags="0x30">
+    <title>Map 0x001D5C34 (12 rows x 12 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2000..7500]; Y-axis: mg/stroke [1145..2250]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x021e">
+      <EMBEDDEDDATA mmedaddress="0x001D5AE0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x021e">
+      <EMBEDDEDDATA mmedaddress="0x001D5AF8" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D5C34" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x021f" flags="0x30">
+    <title>Map 0x001D5F0C (12 rows x 12 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2000..7500]; Y-axis: mg/stroke [1145..2250]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x021f">
+      <EMBEDDEDDATA mmedaddress="0x001D5EDC" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x021f">
+      <EMBEDDEDDATA mmedaddress="0x001D5EF4" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>12</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D5F0C" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0220" flags="0x30">
+    <title>Map 0x001D6068 (8 rows x 6 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..2500]; Y-axis: mg/stroke [1015..1672]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0220">
+      <EMBEDDEDDATA mmedaddress="0x001D6034" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0220">
+      <EMBEDDEDDATA mmedaddress="0x001D6058" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D6068" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="6" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0221" flags="0x30">
+    <title>Map 0x001D9420 (6 rows x 10 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: ? [1719..2109]; Y-axis: ? [1797..2188]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0221">
+      <EMBEDDEDDATA mmedaddress="0x001D93FC" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" />
+      <units>?</units>
+      <indexcount>10</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0221">
+      <EMBEDDEDDATA mmedaddress="0x001D9410" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="16" />
+      <units>?</units>
+      <indexcount>6</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001D9420" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="10" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0222" flags="0x30">
+    <title>Map 0x001DB1EC (16 rows x 16 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..7750]; Y-axis: RPM [0..7750]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0222">
+      <EMBEDDEDDATA mmedaddress="0x001DB1A8" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0222">
+      <EMBEDDEDDATA mmedaddress="0x001DB1C8" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DB1EC" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0223" flags="0x30">
+    <title>Map 0x001DB3F0 (16 rows x 16 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..7750]; Y-axis: RPM [0..7750]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0223">
+      <EMBEDDEDDATA mmedaddress="0x001DB1A8" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0223">
+      <EMBEDDEDDATA mmedaddress="0x001DB1C8" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DB3F0" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0224" flags="0x30">
+    <title>Map 0x001DBE00 (8 rows x 8 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [8..7000]; Y-axis: RPM [2000..12000]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0224">
+      <EMBEDDEDDATA mmedaddress="0x001DBDDE" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0224">
+      <EMBEDDEDDATA mmedaddress="0x001DBDF0" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DBE00" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0225" flags="0x30">
+    <title>Map 0x001DBF14 (8 rows x 16 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: mg/stroke [8..15000]; Y-axis: mg/stroke [2531..3531]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0225">
+      <EMBEDDEDDATA mmedaddress="0x001DBEE2" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0225">
+      <EMBEDDEDDATA mmedaddress="0x001DBF04" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>mg/stroke</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*0.1" />
+      <MATH equation="X*0.1" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DBF14" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0226" flags="0x30">
+    <title>Map 0x001DC0AC (10 rows x 16 cols) | Other</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [2531..4031]; Y-axis: ? [2531..2981]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x13" />
+    <XDFAXIS id="x" uniqueid="0x0226">
+      <EMBEDDEDDATA mmedaddress="0x001DC074" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0226">
+      <EMBEDDEDDATA mmedaddress="0x001DC096" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="16" />
+      <units>?</units>
+      <indexcount>10</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DC0AC" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0227" flags="0x30">
+    <title>Map 0x001DE74E (14 rows x 16 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [0..7500]; Y-axis: RPM [3000..7000]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0227">
+      <EMBEDDEDDATA mmedaddress="0x001DE70E" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0227">
+      <EMBEDDEDDATA mmedaddress="0x001DE730" mmedelementsizebits="16" mmedrowcount="14" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>14</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DE74E" mmedelementsizebits="16" mmedrowcount="14" mmedcolcount="16" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0228" flags="0x30">
+    <title>Map 0x001DE952 (8 rows x 8 cols) | Torque / limiters (RPM x RPM)</title>
+    <description>Auto-detected from scan of HW 0281017487 stock read. X-axis: RPM [8..2200]; Y-axis: RPM [0..7000]. VERIFY axis meaning against a datalog before tuning.</description>
+    <CATEGORYMEM index="0" category="0x11" />
+    <XDFAXIS id="x" uniqueid="0x0228">
+      <EMBEDDEDDATA mmedaddress="0x001DE930" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0228">
+      <EMBEDDEDDATA mmedaddress="0x001DE942" mmedelementsizebits="16" mmedrowcount="8" mmedmajorstridebits="16" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <DATEFROM expression="X*1.0" />
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x001DE952" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="16" />
+      <units>raw</units>
+      <MATH equation="X*1.0" />
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>

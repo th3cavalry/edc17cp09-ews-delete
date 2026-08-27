@@ -1,0 +1,68 @@
+=== MEMORY BLOCKS ===
+  ram              [00000000 .. 001fffff] size=2097152 readable=true
+  LDRAM.13         [d0000000 .. d001dfff] size=122880 readable=true
+  SPRAM.13         [d4000000 .. d4005fff] size=24576 readable=true
+  LDRAM.14         [e8400000 .. e841dfff] size=122880 readable=true
+  SPRAM.14         [e8500000 .. e8505fff] size=24576 readable=true
+  SCUWDT           [f0000000 .. f00000ff] size=256 readable=true
+  SBCU             [f0000100 .. f00001ff] size=256 readable=true
+  STM              [f0000200 .. f00002ff] size=256 readable=true
+  CERBERUS         [f0000400 .. f00004ff] size=256 readable=true
+  MSC0             [f0000800 .. f00008ff] size=256 readable=true
+  ASC0             [f0000a00 .. f0000aff] size=256 readable=true
+  ASC1             [f0000b00 .. f0000bff] size=256 readable=true
+  PORT0            [f0000c00 .. f0000cff] size=256 readable=true
+  PORT1            [f0000d00 .. f0000dff] size=256 readable=true
+  PORT2            [f0000e00 .. f0000eff] size=256 readable=true
+  PORT3            [f0000f00 .. f0000fff] size=256 readable=true
+  PORT4            [f0001000 .. f00010ff] size=256 readable=true
+  PORT5            [f0001100 .. f00011ff] size=256 readable=true
+  GPTA0            [f0001800 .. f0001fff] size=2048 readable=true
+  DMA              [f0003c00 .. f0003eff] size=768 readable=true
+  CAN              [f0004000 .. f0007fff] size=16384 readable=true
+  PCP.REG          [f0043f00 .. f0043fff] size=256 readable=true
+  PCP.PRAM         [f0050000 .. f0051fff] size=8192 readable=true
+  PCP.CMEM         [f0060000 .. f0065fff] size=24576 readable=true
+  SSC0             [f0100100 .. f01001ff] size=256 readable=true
+  SSC1             [f0100200 .. f01002ff] size=256 readable=true
+  FADC             [f0100300 .. f01003ff] size=256 readable=true
+  ADC0             [f0100400 .. f01004ff] size=256 readable=true
+  MLI0             [f010c000 .. f010c0ff] size=256 readable=true
+  MLI1             [f010c100 .. f010c1ff] size=256 readable=true
+  MCHK             [f010c200 .. f010c2ff] size=256 readable=true
+  MLI0stw          [f01e0000 .. f01e7fff] size=32768 readable=true
+  MLI1stw          [f01e8000 .. f01effff] size=32768 readable=true
+  MLI0ltw          [f0200000 .. f023ffff] size=262144 readable=true
+  MLI1ltw          [f0240000 .. f027ffff] size=262144 readable=true
+  PORT12           [f0300000 .. f03000ff] size=256 readable=true
+  CPU.CPS          [f7e0ff00 .. f7e0ffff] size=256 readable=true
+  CPU.SFRGPR       [f7e10000 .. f7e1ffff] size=65536 readable=true
+  PMU              [f8000500 .. f80005ff] size=256 readable=true
+  PMUflash         [f8001000 .. f80023ff] size=5120 readable=true
+  CPU.DMI          [f87ffc00 .. f87ffcff] size=256 readable=true
+  CPU.PMI          [f87ffd00 .. f87ffdff] size=256 readable=true
+  LBCU             [f87ffe00 .. f87ffeff] size=256 readable=true
+  LFI              [f87fff00 .. f87fffff] size=256 readable=true
+
+=== EWS global symbols (name -> address) ===
+  0x319f -> []
+  0x31a0 -> []
+  0x3586 -> []
+  0x3587 -> []
+  0x356b -> []
+  0x356c -> []
+  0x90e -> []
+  0x933 -> []
+  0x929 -> []
+  0x932 -> []
+  0x917 -> []
+  0x915 -> []
+  0x92d -> []
+  0x92c -> []
+  0x923 -> []
+  0x90d -> []
+  0x906 -> []
+  0x359e -> []
+  0x35ce -> []
+  0x35ae -> []
+  0x35be -> []

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+*.bin
+*.class
+*.jar
+ghidra_proj/
