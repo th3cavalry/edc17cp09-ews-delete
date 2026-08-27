@@ -1,0 +1,38 @@
+IMMO OFF DIFFERENCES ANALYSIS - US 335d
+========================================
+
+Files compared:
+- US 335d.bin (Immo ON)
+- US 335d Immo Off_CS_Fixed.bin (Immo OFF)
+
+Total byte differences: 61,318
+Difference regions: 30,722
+
+LARGE DIFFERENCES (>4 bytes):
+-----------------------------
+Region 1: 0x00A4B6 - 0x00A4B9 (4 bytes)
+  ON:  8b022022
+  OFF: 00008212
+
+Region 2: 0x0968D0 - 0x0968D3 (4 bytes)  
+  ON:  8b022022
+  OFF: 00008212
+
+Region 3: 0x0E5F4E - 0x0E5F51 (4 bytes)
+  ON:  8b022022
+  OFF: 00008212
+
+Pattern: 8B022022 → 00008212 (appears at 3 locations)
+
+SMALL DIFFERENCES (2 bytes):
+-----------------------------
+30,587 differences occurring every 128 bytes (0x80)
+This pattern is consistent with checksum/CRC recalculations
+
+The 3 large differences likely represent:
+- EWS/Immo check disabling
+- CAS (Central Access System) communication changes
+- Immobilizer validation bypass
+
+Note: The 2-byte differences at regular intervals are checksums being
+recalculated after the Immo disable patch.
