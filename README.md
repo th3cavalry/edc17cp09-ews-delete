@@ -1,6 +1,6 @@
 # EDC17CP09 XDF — TunerPro Definition from Binary RE
 
-Building a complete, accurate TunerPro XDF for the BMW EDC17CP09 M57 3.0d by reverse engineering the flash binary.
+Building a complete, accurate TunerPro XDF for the BMW EDC17CP09 M57 3.0d (US spec X5 35d, E70) by reverse engineering the flash binary.
 
 No DAMOS, no donor definition — pure binary analysis.
 
