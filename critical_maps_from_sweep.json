@@ -1,0 +1,570 @@
+{
+  "ews_candidates": [
+    {
+      "calib_addr": "0x040008",
+      "code_refs": [
+        "0x039904"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 08 00 00 38 a1 00 c0 01 00 01 00 08 08 00 00 94 0e 00 d0 01 00 01 00 10 10 04 00 a2 0e 00 d0"
+    },
+    {
+      "calib_addr": "0x04003A",
+      "code_refs": [
+        "0x02C1E0"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "4x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "04 00 ac 0e 00 d0 01 00 01 00 10 10 04 00 ae 0e 00 d0 01 00 01 00 10 10 04 00 b2 0e 00 d0 3f 00"
+    },
+    {
+      "calib_addr": "0x04005D",
+      "code_refs": [
+        "0x058D3E",
+        "0x058EF0"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 04 00 b2 0e 00 d0 5b 00 5b 00 10 10 04 00 b4 0e 00 d0 0d 00 0d 00 10 10 04 00 b6 0e 00 d0 0d"
+    },
+    {
+      "calib_addr": "0x0400B2",
+      "code_refs": [
+        "0x039B16"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "4x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "04 00 ca 0e 00 d0 38 00 38 00 10 10 04 00 ce 0e 00 d0 38 00 38 00 10 10 04 00 d0 0e 00 d0 38 00"
+    },
+    {
+      "calib_addr": "0x040404",
+      "code_refs": [
+        "0x02AF9C",
+        "0x0385AE"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 08 00 00 f1 2c 00 d0 01 00 01 00 08 08 00 00 40 2d 00 d0 01 00 01 00 08 08 00 00 40 10 00 d0"
+    },
+    {
+      "calib_addr": "0x040442",
+      "code_refs": [
+        "0x020074"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "4x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "04 00 a6 10 00 d0 01 00 01 00 10 10 04 00 d0 7c 00 c0 2f 00 2f 00 08 08 01 00 d4 7c 00 c0 2f 00"
+    },
+    {
+      "calib_addr": "0x0423D9",
+      "code_refs": [
+        "0x135FCE",
+        "0x175C4C"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 04 00 42 1c 00 d0 01 00 01 00 10 10 04 00 44 1c 00 d0 61 00 61 00 08 08 04 00 44 1c 00 d0 60"
+    },
+    {
+      "calib_addr": "0x042FD9",
+      "code_refs": [
+        "0x021888",
+        "0x050E76",
+        "0x06871A",
+        "0x0719FE",
+        "0x071B10"
+      ],
+      "num_code_refs": 24,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 04 00 c8 d9 00 c0 01 00 01 00 20 20 02 00 f4 0e 00 d0 89 00 89 00 10 10 04 00 04 21 00 d0 71"
+    },
+    {
+      "calib_addr": "0x043219",
+      "code_refs": [
+        "0x118A02"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 00 00 a1 2e 00 d0 01 00 01 00 08 08 00 00 52 21 00 d0 71 00 71 00 08 08 04 00 60 21 00 d0 71"
+    },
+    {
+      "calib_addr": "0x044419",
+      "code_refs": [
+        "0x117974"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "08 00 00 1f 36 00 d0 01 00 01 00 08 08 00 00 c4 75 00 d0 01 00 01 00 20 20 02 00 c8 75 00 d0 01"
+    },
+    {
+      "calib_addr": "0x044F3F",
+      "code_refs": [
+        "0x021C90",
+        "0x0F9922",
+        "0x0F9990"
+      ],
+      "num_code_refs": 3,
+      "struct_type": "CURVE",
+      "dimensions": "3x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "03 a9 48 bf 56 2a 00 1c 00 01 70 fc 03 46 fa 2a 24 6a 00 1d 00 02 6c ff ff a9 49 4a fc 6a 00 1f"
+    },
+    {
+      "calib_addr": "0x044F6F",
+      "code_refs": [
+        "0x07CDC0"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "5x1",
+      "category": "Uncategorized",
+      "first_bytes_hex": "05 24 55 fd ea 6c 00 22 00 01 70 ff ff a3 5e 54 a6 6c 00 24 00 01 70 ff ff a3 5f 9d 6d 6c 00 26"
+    }
+  ],
+  "drivers_wish_candidates": [
+    {
+      "calib_addr": "0x1908A8",
+      "code_refs": [
+        "0x126E54"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "10x0",
+      "category": "Emissions",
+      "first_bytes_hex": "0a 00 0c 00 0e 00 10 00 12 00 14 00 16 00 18 00 1a 00 1c 00 1e 00 20 00 22 00 24 00 26 00 28 00"
+    },
+    {
+      "calib_addr": "0x1908D2",
+      "code_refs": [
+        "0x0DADA8",
+        "0x0DAE4E"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "2D_MAP",
+      "dimensions": "2x0",
+      "category": "Emissions",
+      "first_bytes_hex": "02 00 04 00 06 00 08 00 0a 00 0c 00 0e 00 08 00 00 00 64 00 c8 00 2c 01 90 01 f4 01 58 02 bc 02"
+    },
+    {
+      "calib_addr": "0x191243",
+      "code_refs": [
+        "0x0D06A6"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "3x0",
+      "category": "Emissions",
+      "first_bytes_hex": "03 00 00 00 00 00 00 00 00 02 00 f0 03 02 00 f0 03 02 00 f0 03 f4 01 23 00 0a 00 05 03 03 00 00"
+    },
+    {
+      "calib_addr": "0x191F6F",
+      "code_refs": [
+        "0x074DBC",
+        "0x0F9076"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "2D_MAP",
+      "dimensions": "2x117",
+      "category": "Emissions",
+      "first_bytes_hex": "02 f4 02 75 03 b0 04 42 06 3c 07 36 08 dd 09 04 0b 91 0b 1e 0c 79 0c 79 0c 79 0c 00 00 3c 00 00"
+    },
+    {
+      "calib_addr": "0x192023",
+      "code_refs": [
+        "0x03CD78"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "2x38",
+      "category": "Emissions",
+      "first_bytes_hex": "02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 08"
+    },
+    {
+      "calib_addr": "0x192876",
+      "code_refs": [
+        "0x0A84AC"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "20x0",
+      "category": "Emissions",
+      "first_bytes_hex": "14 00 14 00 14 00 07 00 14 00 14 00 14 00 14 00 14 00 07 00 14 00 14 00 14 00 14 00 14 00 07 00"
+    },
+    {
+      "calib_addr": "0x192898",
+      "code_refs": [
+        "0x07984C"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "20x0",
+      "category": "Emissions",
+      "first_bytes_hex": "14 00 14 00 14 00 14 00 07 00 14 00 14 00 14 00 14 00 14 00 07 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "calib_addr": "0x1928F0",
+      "code_refs": [
+        "0x097FC0"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "10x0",
+      "category": "Emissions",
+      "first_bytes_hex": "0a 00 0a 00 0a 00 0a 00 0a 00 06 00 18 fc 0c fe 38 ff c8 00 f4 01 e8 03 0a 00 0a 00 0a 00 0a 00"
+    },
+    {
+      "calib_addr": "0x1928F4",
+      "code_refs": [
+        "0x098130"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "10x254",
+      "category": "Emissions",
+      "first_bytes_hex": "0a 00 0a 00 0a 00 06 00 18 fc 0c fe 38 ff c8 00 f4 01 e8 03 0a 00 0a 00 0a 00 0a 00 0a 00 0a 00"
+    },
+    {
+      "calib_addr": "0x193FA6",
+      "code_refs": [
+        "0x1305A2"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "4x6",
+      "category": "Emissions",
+      "first_bytes_hex": "04 00 00 00 40 06 54 0b 38 18 00 00 71 05 ae 0f 71 1d 00 00 29 04 e1 0a 33 13 56 15 c3 15 33 1b"
+    },
+    {
+      "calib_addr": "0x19783C",
+      "code_refs": [
+        "0x080484"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "25x50",
+      "category": "Emissions",
+      "first_bytes_hex": "19 00 19 00 19 00 19 00 32 73 32 73 32 73 32 73 32 73 32 73 32 73 32 73 32 73 32 73 32 73 32 73"
+    },
+    {
+      "calib_addr": "0x198140",
+      "code_refs": [
+        "0x0C1150"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "25x25",
+      "category": "Uncategorized",
+      "first_bytes_hex": "19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 19 00 90 01 90 01"
+    },
+    {
+      "calib_addr": "0x199000",
+      "code_refs": [
+        "0x0D6BA0",
+        "0x0D6BCE",
+        "0x0D6C4E",
+        "0x0F6B0E"
+      ],
+      "num_code_refs": 4,
+      "struct_type": "2D_MAP",
+      "dimensions": "3x50",
+      "category": "Uncategorized",
+      "first_bytes_hex": "03 00 00 00 32 00 c8 00 90 01 58 02 e8 03 00 00 00 10 00 20 85 23 9a 19 9a 19 5a 20 d5 14 d5 14"
+    },
+    {
+      "calib_addr": "0x199D1E",
+      "code_refs": [
+        "0x09EBE4"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "11x27",
+      "category": "Uncategorized",
+      "first_bytes_hex": "0b 00 0c 00 19 00 20 00 28 00 1a 00 1b 00 1a 00 1b 00 1d 00 1b 00 00 00 00 00 00 00 09 00 0c 00"
+    },
+    {
+      "calib_addr": "0x19BE7B",
+      "code_refs": [
+        "0x021606"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "2x12",
+      "category": "Uncategorized",
+      "first_bytes_hex": "02 55 02 0c 02 2b 00 9e 1b 60 01 45 05 08 00 00 00 96 00 2c 01 c2 01 58 02 ee 02 dc 05 a6 0e 00"
+    },
+    {
+      "calib_addr": "0x19FD7F",
+      "code_refs": [
+        "0x0B1576"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "24x35",
+      "category": "Uncategorized",
+      "first_bytes_hex": "18 00 00 00 00 b6 00 70 02 32 05 c6 0c d8 16 38 18 00 00 00 00 b1 00 63 02 23 05 a6 0c 72 16 d4"
+    },
+    {
+      "calib_addr": "0x19FF80",
+      "code_refs": [
+        "0x0928AE"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "2D_MAP",
+      "dimensions": "6x0",
+      "category": "Uncategorized",
+      "first_bytes_hex": "06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00"
+    }
+  ],
+  "torque_limiters": [
+    {
+      "calib_addr": "0x1AF03F",
+      "code_refs": [
+        "0x0A0FAE",
+        "0x0F25F4",
+        "0x0F27BC",
+        "0x0F3732",
+        "0x0F38FA"
+      ],
+      "num_code_refs": 8,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 00 00 00 00 00 00 ce ff ce ff ce ff ce ff ce ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ce"
+    },
+    {
+      "calib_addr": "0x1AF07F",
+      "code_refs": [
+        "0x0D1F2E",
+        "0x129EA0"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "SCALAR_1D",
+      "dimensions": "1x1 (2 bytes)",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1AF4D9",
+      "code_refs": [
+        "0x088452",
+        "0x1266F8",
+        "0x15BC24",
+        "0x169D92"
+      ],
+      "num_code_refs": 4,
+      "struct_type": "SCALAR_1D",
+      "dimensions": "1x1 (2 bytes)",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 64 00 64 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 64 00 64 00 64 00 64 00 64 00 64 00 00"
+    },
+    {
+      "calib_addr": "0x1B005D",
+      "code_refs": [
+        "0x0591D4"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "16x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "10 67 0f cf 0d aa 0c 80 0c 80 0c 80 0c 9b 16 10 16 1d 13 9c 11 45 10 96 0e 4b 0d 02 0b 29 0b fa"
+    },
+    {
+      "calib_addr": "0x1B0158",
+      "code_refs": [
+        "0x159FE6",
+        "0x15A03E"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "2D_MAP",
+      "dimensions": "20x255",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "14 00 19 00 14 00 d4 00 14 00 01 01 14 00 27 00 14 00 83 02 ff ff ff ff ff ff ff ff ed 01 ee 01"
+    },
+    {
+      "calib_addr": "0x1B043A",
+      "code_refs": [
+        "0x10E62E"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "6x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "06 18 06 18 06 18 ad 16 ad 16 ad 16 ad 16 5e 15 5e 15 5e 15 5e 15 7d 14 7d 14 7d 14 7d 14 f2 12"
+    },
+    {
+      "calib_addr": "0x1B0497",
+      "code_refs": [
+        "0x0CC9F6",
+        "0x0CCA2A",
+        "0x0CCAD4",
+        "0x0CCB08",
+        "0x0F4174"
+      ],
+      "num_code_refs": 6,
+      "struct_type": "CURVE",
+      "dimensions": "3x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "03 dc 05 d0 07 c4 09 b8 0b ac 0d 94 11 88 13 7c 15 70 17 64 19 58 1b 4c 1d 40 1f 34 21 28 23 1c"
+    },
+    {
+      "calib_addr": "0x1B04B1",
+      "code_refs": [
+        "0x08639E"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "1f 34 21 28 23 1c 25 10 27 04 29 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B0DDF",
+      "code_refs": [
+        "0x0CF5EE"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "SCALAR_1D",
+      "dimensions": "1x1 (2 bytes)",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B0F5F",
+      "code_refs": [
+        "0x0D8776"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 24 00 cd 0c cd 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 71 ef 0e 00 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B0F68",
+      "code_refs": [
+        "0x117544"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 71 ef 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B0F6F",
+      "code_refs": [
+        "0x08DBB2",
+        "0x12DEEA",
+        "0x13E7F8"
+      ],
+      "num_code_refs": 3,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 00 00 00 00 00 00 11 71 ef 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8f 53 03 00 cb"
+    },
+    {
+      "calib_addr": "0x1B0F7F",
+      "code_refs": [
+        "0x05CADA",
+        "0x08290E",
+        "0x0829B8"
+      ],
+      "num_code_refs": 3,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 8f 53 03 00 cb 08 9f 0c 23 10 00 00 00 00 00 00 02 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B0F82",
+      "code_refs": [
+        "0x0D6DAA"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "DTC_MASK",
+      "dimensions": "Nx2 mask array",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 00 00 00 00 00 00 00 8f 53 03 00 cb 08 9f 0c 23 10 00 00 00 00 00 00 02 00 00 00 00 00 32 00"
+    },
+    {
+      "calib_addr": "0x1B0FC5",
+      "code_refs": [
+        "0x06B722"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "10x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "0a 66 06 80 3e 28 00 83 23 00 00 d0 07 00 00 ca 02 00 00 99 00 00 00 e8 03 40 06 a0 0f 40 1f 01"
+    },
+    {
+      "calib_addr": "0x1B101F",
+      "code_refs": [
+        "0x163B80"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "CURVE",
+      "dimensions": "8x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "08 72 7c 00 00 02 ff 30 ff ff 00 38 3e 04 00 4c 04 ac 0d 58 1b e0 2e 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B1080",
+      "code_refs": [
+        "0x1006A2",
+        "0x159824",
+        "0x159856"
+      ],
+      "num_code_refs": 3,
+      "struct_type": "CURVE",
+      "dimensions": "16x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "10 10 10 10 00 00 00 00 00 00 00 00 00 00 01 00 00 00 ff ff c8 00 c8 00 ff ff 00 00 87 10 87 10"
+    },
+    {
+      "calib_addr": "0x1B1100",
+      "code_refs": [
+        "0x14B4F2",
+        "0x14B5C6"
+      ],
+      "num_code_refs": 2,
+      "struct_type": "CURVE",
+      "dimensions": "4x1",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "04 13 04 04 02 07 03 04 04 05 05 03 07 00 ee 02 00 00 c8 00 70 17 e8 03 10 27 20 03 00 00 00 00"
+    },
+    {
+      "calib_addr": "0x1B186F",
+      "code_refs": [
+        "0x096050"
+      ],
+      "num_code_refs": 1,
+      "struct_type": "SCALAR_1D",
+      "dimensions": "1x1 (2 bytes)",
+      "category": "Torque/Limiter",
+      "first_bytes_hex": "00 01 00 01 00 01 00 00 00 00 00 01 00 01 00 01 00 01 00 01 00 01 00 00 00 00 00 01 00 01 00 01"
+    }
+  ]
+}
