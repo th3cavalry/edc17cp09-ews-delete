@@ -1,125 +1,216 @@
-# EDC17CP09 XDF — TunerPro Definition from Binary RE
+# EDC17CP09 — EWS Immobilizer Reverse Engineering
 
-Building a complete, accurate TunerPro XDF for the BMW EDC17CP09 M57 3.0d (US spec X5 35d, E70) by reverse engineering the flash binary.
+**Bosch MED17 (EDC17CP09) • BMW M57N2 3.0d • E70 X5 35d (US)**
 
-No DAMOS, no donor definition — pure binary analysis.
+> A complete reverse-engineering package for the EDC17CP09 diesel ECU: a **1,336-table TunerPro XDF** calibration database, TriCore disassembly research, and a verified **EWS (immobilizer) delete patch** — packaged for community distribution.
 
-## Target
+---
 
-| Field | Value |
-|-------|-------|
-| ECU | Bosch EDC17CP09 |
-| Processor | Infineon TC1796 (TriCore) |
-| Hardware | 0281017487 |
-| Software | 10375506116137U6A |
-| Part Number | 851241701 |
-| Flash Size | 2 MB (0x200000) |
-| Calibration Region | 0x040000 – 0x200000 |
-| Code Region | 0x020000 – 0x180000 |
+## Target ECU
+
+| Property            | Value                                                                                   |
+| :------------------ | :-------------------------------------------------------------------------------------- |
+| ECU family          | Bosch MED17 — EDC17CP09                                                                 |
+| Engine              | BMW M57N2 3.0 L turbo-diesel, 6-cylinder                                                 |
+| Vehicle             | BMW E70 X5 35d, US specification                                                         |
+| ECU hardware number | `0281017487` — read from flash `0xFE33`                                                  |
+| ECU software number | `10375506116137U6A` — read from flash `0x001A`, replicated across all four flash banks   |
+| Flash size          | 2 MB (`0x200000`)                                                                        |
+| Dump checksums      | 11 / 11 valid (OpenRemap verification)                                                   |
+
+---
+
+## Safety Notice
+
+> ⚠️ **The XDF and patched binaries are ECU-specific.**
+> Calibration addresses are **not stable across firmware compilations**. The XDF filename embeds the exact hardware and software numbers it was built for:
+>
+> `EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf`
+>
+> **Do not load it on an ECU whose HW/SW numbers differ.** Incorrect addresses can corrupt calibrations and brick the unit.
+>
+> 🔋 **Keep a known-good flash tool and a backup of the stock dump** before flashing any modified binary, and verify all 11 checksums pass after any modification.
+
+---
+
+## Repository Contents
+
+| File                                                                  | Description                                             |
+| :-------------------------------------------------------------------- | :------------------------------------------------------ |
+| `mpc_full.bin`                                                        | Stock 2 MB flash dump — 11/11 checksums valid           |
+| `X5d_Stock_ImmoOff.bin`                                               | EWS-delete patched dump, stock layout                   |
+| `X5d_Stock_ImmoOff_CSFixed.bin`                                       | EWS-delete patched dump, checksums recalculated         |
+| `EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf`       | Final community XDF — 1,336 tables                      |
+| `gen_xdf.py`                                                          | XDF generator — deterministic, re-runnable              |
+| `master_dataset.json`                                                 | Merged, verified master dataset (all 1,336 entries)     |
+| `patch_ews_delete.py`                                                 | Standalone, self-verifying EWS patch script             |
+| `EDC17CP09_immo_diff_analysis.txt`                                    | 335d donor ON/OFF diff analysis                         |
+| `critical_maps_validated.json`                                        | Validated critical-map set                              |
+| `XDF_v8_DriversWish_ADC_1D_Corrected.json`                            | Corrected Driver's Wish 1D ADC curves                   |
+| `critical_maps_from_sweep.json`                                       | Pointer-sweep map set                                   |
+| `final_identification_v2.json`                                        | Address-keyed identification results                    |
+| `530d_curves*.json`, `a2l_*.json`, `*_matches*.json`                  | OLS/A2L cross-reference pipeline artifacts              |
+| `ghidra/`                                                             | Ghidra scripts and source (pointer sweep, analysis)     |
+
+---
+
+## XDF Calibration Database
+
+### Table Breakdown
+
+| Kind                 | Count | Title Prefix | Description                                                     |
+| :------------------- | ----: | :----------- | :-------------------------------------------------------------- |
+| 1D curves            |   989 | `CURV_`      | Flat N-word curves, incl. 60 verified ADC linearization curves  |
+| Scalars              |   172 | `SCAL_`      | 16-bit configuration and threshold values                       |
+| DTC / mask arrays    |   122 | `MASK_`      | N×2 diagnostic and event mask arrays                            |
+| 2D maps              |    53 | `MAP2_`      | True 2D grids (X × Y)                                           |
+| **Total**            | **1,336** |        |                                                                 |
+
+### Naming Convention
+
+Every title follows a strict, deterministic pattern — no freeform labels, no zero dimensions:
+
+| Pattern               | Meaning                                    | Example                 |
+| :-------------------- | :----------------------------------------- | :---------------------- |
+| `CURV_<addr>_<N>pt`   | 1D curve, N points, hex flash address      | `CURV_40008_8pt`        |
+| `MAP2_<addr>_<Y>x<X>` | 2D map, Y rows × X columns                 | `MAP2_4C01F_3x3`        |
+| `SCAL_<addr>`         | 16-bit scalar                              | `SCAL_6F63F`            |
+| `MASK_<addr>_<N>x2`   | N×2 mask array                             | `MASK_6F9A0_16x2`       |
+
+> ℹ️ **Addresses are flash offsets, not RAM addresses.** The XDF `BASEOFFSET` is `0`, so every table address can be used directly against the 2 MB dump.
+
+### Categories
+
+Nine TunerPro categories organize the tables by Bosch functional group:
+
+| Category               | Functional Group                                   |
+| :--------------------- | :------------------------------------------------- |
+| Engine Maps            | Core drive maps: torque, fueling, limits           |
+| Injection              | Injection timing and quantity tables               |
+| Rail Pressure          | Rail pressure control maps                         |
+| Torque / Limiter       | Torque management and limiter values               |
+| Emissions              | Emissions-related corrections                      |
+| Driver's Wish          | Driver demand (torque request) curves              |
+| DTC Masks              | DFES diagnostic and DTC mask arrays                |
+| Immobilizer / Security | WFS security and immobilization-related values     |
+| Scalar / Config        | General configuration values                       |
+
+---
 
 ## Methodology
 
-1. **Map detection** — OpenRemap `scan-maps` identifies candidate 2D/3D tables and their axes by pattern scoring
-2. **Ghidra cross-references** — Import the binary into Ghidra with TriCore language, then trace code reads to each table address. The calling function reveals what the table controls (fuel request, torque limit, boost target, etc.)
-3. **TriCore pointer sweep (Capstone)** — Disassemble all code regions with Capstone TriCore, find every `LD.H`/`LD.W` instruction that loads a calibration pointer, then follow the pointer chain to the actual table address in the flash. This recovers 1D scalars and DTC arrays that OpenRemap misses.
-4. **Axis classification** — Axis value ranges and step sizes identify physical units: RPM (800–7500, step 500), load/mbar (100–2500, step 50–250), fuel mass/mm³, rail pressure/bar, pedal position/%
-5. **EDC17 taxonomy** — Map the tables to standard Bosch EDC17 function groups:
-   - **Driver Request** (`DrvDesTorq`) — pedal-to-torque conversion
-   - **Torque Structure** — base torque, torque limits, smoke limiter
-   - **Fuel Quantity** (`EngPrt_qLim`) — injection quantity limits
-   - **Rail Pressure** (`Rail_pSetPointBas`) — common rail target
-   - **Injection Timing** (`InjCrv_phiMI1Bas`) — SOI angle
-   - **Injection Duration** (`InjVlv_tiET`) — injector open time
-   - **Boost Control** (`PCR_pDesBas`) — MAP target
-   - **VNT / Wastegate** (`PCR_VNTDesBas`) — turbo actuator duty
-   - **EGR** (`EGRCtrl`) — recirculation valve
-   - **Idle** — idle speed controller
-   - **Limiters** — RPM, torque, smoke, rail pressure caps
-5. **Scaling factors** — Determine the math equation for each axis and data column (e.g., raw ×0.1 = bar, raw ×1.0 = RPM)
-6. **Validation** — Write known test values, read back, confirm TunerPro displays correct physical units
+### 1. Binary Acquisition & Verification
 
-## Tools
+- Stock 2 MB flash dump acquired from a US E70 X5 35d
+- OpenRemap checksum verification: **11/11 valid**
+- HW and SW numbers extracted directly from the dump (ASCII strings, cross-bank replication confirms the live software)
 
-| Tool | Purpose |
-|------|---------|
-| Ghidra 12.1.3 | TriCore disassembly, decompiler, cross-reference tracing |
-| OpenRemap | Automated map/axis detection from raw binary |
-| medc17-checksum-tool | Validate and correct 11-block CRC after edits |
-| Python + capstone | Scripted binary analysis and disassembly |
-| TunerPro | Load and validate the XDF against the bin |
+### 2. Calibration Discovery — TriCore Pointer Sweep
 
-## File Structure
+- Full flash disassembled with **Capstone (TriCore)**; Ghidra used for cross-reference and annotation
+- 16-bit calibration pointer sweep across the binary; every candidate passed a binary-layout verification (word structure, monotonicity, payload sanity)
+- Result: **1,336 unique verified calibration objects**
 
+### 3. OLS / A2L Cross-Reference
+
+- 530d donor OLS file converted to A2L (reference mapping package)
+- Axis values and payload data matched to identify known curves; Bosch German curve descriptions carried into table descriptions where addresses matched
+
+### 4. Driver's Wish ADC Verification
+
+- Voltage linearization tables confirmed as **1D curves** (not 2D maps)
+- EDC17 ADC values are stored in **millivolts (0–5000)**
+- Payload filter: only curves scaling between **400 and 4800 mV** were accepted; structural headers (e.g. `[25, 25, 25]`) were rejected as garbage
+- **60 verified ADC curves** with real `[count][axis][values]` axes stored in flash
+
+### 5. XDF Generation
+
+- Classic TunerPro XDF dialect (v1.60): `XDFHEADER`, `BINHEADER`, `TABLEINFO`, `TABLE` with `Xaxis` / `Yaxis` / `Zaxis` nodes
+- **2D geometry rule:** `mmedcolcount = X-axis length`, `mmedrowcount = Y-axis length` — validated against a genuine TunerPro reference XDF (10/10 of its 2D tables follow this exactly)
+- Degenerate-dimension entries (e.g. `2x0`) are rendered as 1D curves, never as zero-dimension maps
+- Axes physically stored in flash carry real offsets; tables without a stored axis use linear index axes — no fabricated offsets
+
+---
+
+## EWS / Immobilizer Delete
+
+### Method
+
+A US 335d donor pair (immobilizer ON / OFF) was diffed. Three identical 4-byte changes were found, all sharing the same instruction-context signature:
+
+```text
+8B02 2022   →   0000 8212
 ```
-├── mpc_full.bin              # Stock 2MB flash dump (HW 0281017487, SW 10375506116137U6A, 11/11 checksums valid)
-├── scan_mpc.json             # OpenRemap output: 40 tables + 200 axes
-├── maps_decoded.json         # Decoded tables with axis offsets and raw values
-├── master_dataset.json       # Merged 1,336-entry map dataset (validated + sweep + Driver's Wish)
-├── gen_xdf.py                # XDF generator (reads master_dataset.json → versioned .xdf)
-├── verify_xdf.py            # Validates XDF XML structure and address correctness
-├── medc17_checksum_tool.py  # Checksum validation/correction utility
-├── README.md                # This file
-└── .gitignore               # Excludes venv, Ghidra project, non-XDF binaries
+
+The 335d donor sites (`0x00A4B6`, `0x0968D0`, `0x0E5F4E`) do not exist at the same offsets in the X5 dump. The shared context signature
+
+```text
+0F F4 80 20 8B 02 20 22 00 90
 ```
 
-## Usage
+was therefore located inside the X5 binary, and each candidate site was disassembled (Capstone, TriCore) to confirm it gates the EWS check.
+
+### Verified Patch Sites (X5 dump)
+
+| Site         | Original   | Patched    | Verification                          |
+| :----------- | :--------- | :--------- | :------------------------------------ |
+| `0x00A4B6`   | `8B022022` | `00008212` | Context signature + disassembly       |
+| `0x0908A6`   | `8B022022` | `00008212` | Context signature + disassembly       |
+| `0x0E2FA8`   | `8B022022` | `00008212` | Context signature + disassembly       |
+
+### Output Binaries
+
+| File                      | Notes                                            |
+| :------------------------ | :----------------------------------------------- |
+| `X5d_Stock_ImmoOff.bin`   | 3-site patch applied, stock layout               |
+| `X5d_Stock_ImmoOff_CSFixed.bin` | 3-site patch + checksums recalculated      |
+
+> ⚠️ **These binaries disable the immobilizer.** Use only on a vehicle where that is intended, and flash with a tool that can verify the result.
+
+---
+
+## Regenerating the XDF
 
 ```bash
-# 1. Generate XDF from the merged map dataset
-#    (HW/SW numbers are read from mpc_full.bin and embedded in the filename)
-python gen_xdf.py
-#    -> EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf
-
-# 2. Validate the output
-python verify_xdf.py
-
-# 3. Verify checksums on the binary
-python medc17_checksum_tool.py --verify mpc_full.bin
-
-# 4. Load in TunerPro
-#    Open EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf → load mpc_full.bin
+cd EDC17CP09
+python3 gen_xdf.py
 ```
 
-> **⚠️ ECU matching rule:** Calibration addresses shift between firmware
-> compilations. The XDF filename always carries the ECU **HW** and **SW**
-> numbers it was generated for (read from the flash dump at 0xfd00 / 0x1a).
-> Only load it on an ECU reporting the same HW/SW numbers, or addresses will
-> point at wrong data.
+The generator reads `master_dataset.json`, rebuilds the XDF deterministically, and prints a summary count only — no binary or hex data to stdout.
 
-## Status
+---
 
-| Phase | Status |
-|-------|--------|
-| Binary acquisition & validation | ✅ Done |
-| Map detection (OpenRemap) | ✅ 40 tables found |
-| Axis extraction | ✅ All monotonic, aligned |
-| Ghidra cross-reference tracing | 🔄 In progress |
-| Map naming (EDC17 taxonomy) | ✅ Done |
-| Scaling factor determination | ✅ Done |
-| XDF generation v1.0 (2D axis bug, generic filename) | ❌ Superseded |
-| XDF generation v1.1 (colcount=X, rowcount=Y, no 0-dim maps, HW/SW in filename) | ✅ Done |
-| Final XDF (complete coverage) | ✅ Done |
+## Project Status
 
-## Known Map Families (EDC17 Standard)
+| Workstream                                    | Status      |
+| :-------------------------------------------- | :---------- |
+| Binary acquisition & checksum verification    | ✅ Done      |
+| OpenRemap map detection (40 tables, 200 axes) | ✅ Done      |
+| TriCore pointer sweep (1,336 objects)         | ✅ Done      |
+| OLS / A2L cross-reference (530d donor)        | ✅ Done      |
+| Driver's Wish ADC 1D correction               | ✅ Done      |
+| EWS patch sites located & disassembled        | ✅ Done      |
+| Community XDF v1.1 (HW/SW-pinned filename)    | ✅ Released  |
+| Ghidra annotation pass                        | 🔄 In progress |
 
-Based on Bosch EDC17 architecture, these are the calibration groups we expect to find:
+---
 
-| Group | Function | Expected Maps | Status |
-|-------|----------|--------------|--------|
-| Driver Request | Pedal → torque demand | 12×12 (×5 variants per mode) | ✅ Detected |
-| Torque Limiters | Max torque caps | 16×5, 16×11 (low/high range pairs) | ✅ Detected |
-| Fuel Quantity | Injection mass limit | 6×16, 8×10 | ✅ Detected |
-| Rail Pressure | Common rail setpoint | 6×4, 6×6, 8×8 | ✅ Detected |
-| Injection Timing | SOI angle (°CA BTDC) | 8×8 | ✅ Detected |
-| Boost Target | MAP setpoint | 21×32 | ✅ Detected |
-| VNT/Wastegate | Turbo duty cycle | 8×16 | ✅ Detected |
-| RPM Limiter | Max RPM cap | 8×8 | ✅ Detected |
-| Main Torque | Primary torque structure | 16×16 | ✅ Detected |
+## Limitations
 
-## Contributing
+- **Labels are best-effort.** Table titles and descriptions derive from Bosch taxonomy and OLS cross-reference — verify against vehicle behavior before tuning.
+- **Axis values.** Only curves with axes physically stored in flash carry real axis values; all other tables use linear index axes (0…N−1). No offsets were fabricated.
+- **2D orientation.** Dimensions are stored as rows × columns; the vehicle-axis orientation of X/Y is not encoded in the ECU layout.
 
-This is a solo RE project. If you have EDC17CP09 experience, DAMOS files for HW 0281017487, or WinOLS definitions for this software version, open an issue or PR.
+---
 
-## License
+## Credits
 
-Reverse engineering for interoperability, research, and repair.
+- **Th3cavalry** — project owner, flash acquisition, verification
+- **Hermes (Nous Research)** — automation, disassembly, XDF generation
+- Community mapping references (530d OLS/A2L set)
+- OpenRemap — map scanning and checksum tooling
+- Ghidra / Capstone — TriCore disassembly
+
+---
+
+*Calibration data is provided for research and personal use. Verify every value before use on a moving vehicle.*
