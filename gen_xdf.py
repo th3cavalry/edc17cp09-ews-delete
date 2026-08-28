@@ -1,204 +1,306 @@
 #!/usr/bin/env python3
 """
-Generate a TunerPro XDF for a BMW M57 EDC17CP09 (HW 0281017487) from
-OpenRemap auto-detected tables + the ECU ident/config block.
+EDC17CP09 Community Release XDF generator (v1.0).
 
-Map labels are RECONSTRUCTED from axis shape/spacing and must be
-verified against a dyno datalog before any tuning. Addresses, sizes and
-endianness (little, 16-bit) come from the scan of the real stock file,
-so tables will line up in TunerPro.
+Iterates through the merged master dataset (master_dataset.json) and emits a
+complete classic TunerPro XDF (version 1.60 dialect, as used by the GM/LS XDFs
+and compatible with TunerPro v9/v10):
+
+    <XDFFORMAT version="1.60">
+      <XDFHEADER> flags/fileversion/deftitle/description/author
+                  BASEOFFSET / DEFAULTS / REGION
+                  <CATEGORY index name/> per Bosch-taxonomy folder
+      <TABLEINFO>
+        <XDFTABLE uniqueid flags> per master entry
+          <title>/<description>/<CATEGORYMEM>
+          <XDFAXIS id="x"/"y"/"z">   <- Xaxis, Yaxis, Zaxis nodes, always all three
+            <EMBEDDEDDATA .../>      (real flash address for embedded axes,
+                                      negative majorstride for linear index axes)
+            <indexcount>/<units>/<min>/<max>/<outputtype>
+            <LABEL .../>             (real axis values where stored, else index)
+            <MATH equation="X"><VAR id="X"/></MATH>
+
+Auto-categorization (Bosch taxonomy):
+  * DFES / DTC maps            -> DTC Masks
+  * EWS candidates + WFS scalars-> Immobilizer/Security
+  * Driver's Wish 1D ADC curves -> Driver's Wish
+  * Emissions / Torque / Rail / Injection kept as their own folders
+  * Scalars -> Scalar/Config, everything else -> Engine Maps
+
+Honesty rules (from prior corrections):
+  * <Xaxis> points at a real axis offset ONLY for the 60 Driver's Wish ADC
+    curves, which physically store [count][axis xN][values xN] in flash
+    (verified against mpc_full.bin).
+  * All other 1D/2D maps are flat value arrays with NO stored axis: they get a
+    linear index axis (EMBEDDEDDATA without mmedaddress, negative
+    majorstridebits) - no fabricated offsets.
+  * EMBEDDEDDATA.mmedaddress on the Z axis is always the real calib address.
+
+Data source: mpc_full.bin = 2 MB X5 35d flash dump; offsets are absolute
+flash addresses (BASEOFFSET 0).
 """
-import json, struct
+import json
+import os
+import sys
+import xml.etree.ElementTree as ET
 
-BIN = "/home/brandon/Documents/EDC17CP09/mpc_full.bin"
-SCAN = "/home/brandon/Documents/EDC17CP09/scan_mpc.json"
-OUT = "/home/brandon/Documents/EDC17CP09/EDC17CP09_M57_0281017487.xdf"
+HERE = os.path.dirname(os.path.abspath(__file__))
+MASTER = os.path.join(HERE, "master_dataset.json")
+OUT = os.path.join(HERE, "EDC17CP09_Community_Release_v1.xdf")
 
-d = open(BIN, 'rb').read()
-scan = json.load(open(SCAN))
-tables = sorted(scan["tables"], key=lambda t: t["offset"])
+TITLE = "EDC17CP09 (M57 3.0d, HW 0281017487) - Community Release v1.0"
+DESC = (
+    "BMW EDC17CP09 M57N2 X5 35d (US) - 2MB flash dump (mpc_full.bin).\n"
+    "1,336 calibration objects located by TriCore pointer sweep (Capstone/Ghidra)\n"
+    "plus 530d OLS cross-reference. 956 1D curves, 172 scalars, 122 DTC/mask\n"
+    "arrays, 86 2D grids. Axis values verified where physically stored in flash.\n"
+    "Labels/units are best-effort from Bosch taxonomy - verify before tuning."
+)
+AUTHOR = "Th3cavalry / Hermes"
 
-SW1 = "10375506116137U6A"   # config-block SW number @0x18001A
-SW2 = "10375135896137T6A"   # application SW @0x14001A
-HW = "0281017487"
-PART = "1039S46986"
-VIN = "".join(chr(d[0x180099+i]) for i in range(17))
+# ---------------------------------------------------------------- categories
+# Ordered; index used in CATEGORYMEM (decimal) and CATEGORY (hex).
+CATEGORIES = [
+    "DTC Masks",
+    "Immobilizer/Security",
+    "Driver's Wish",
+    "Emissions",
+    "Torque/Limiter",
+    "Rail Pressure",
+    "Injection",
+    "Scalar/Config",
+    "Engine Maps",
+]
+CAT_IDX = {c: i for i, c in enumerate(CATEGORIES)}
 
-def axis_kind(vals):
-    if not vals:
-        return ("?", "X*1.0")
-    lo, hi = min(vals), max(vals); span = hi - lo
-    diffs = [vals[i+1] - vals[i] for i in range(len(vals)-1)]
-    step = max(set(diffs), key=diffs.count) if diffs else 0
-    if span >= 1500 and lo >= 0 and hi <= 12000:
-        return ("RPM", "X*1.0")
-    if 90 <= lo and hi <= 400 and span >= 40:
-        return ("mbar (MAP)", "X*1.0")
-    if lo <= 20 and hi <= 120 and span <= 100 and abs(step) <= 10:
-        return ("degC", "X*1.0")
-    if lo >= 0 and hi <= 100 and step in (1, 2, 5):
-        return ("percent", "X*1.0")
-    if span > 500 and hi <= 15000:
-        return ("mg/stroke", "X*0.1")
-    return ("?", "X*1.0")
+# ---------------------------------------------------------------- helpers
+def parse_dims(d):
+    """'3x1' -> (3,1); '1x1 (2 bytes)' -> (1,1); 'Nx2 mask array' -> None; '3x3'->(3,3)"""
+    d = d.strip()
+    if d.endswith("(2 bytes)"):
+        return (1, 1)
+    if d.startswith("N"):
+        return None
+    if "x" in d:
+        a, b = d.split("x")
+        try:
+            return (int(a), int(b))
+        except ValueError:
+            return None
+    return None
 
-def category_for(t):
-    o = t['offset']
-    xv = [struct.unpack_from('<h', d, t['x_axis_offset']+i*2)[0] for i in range(t['cols'])]
-    yv = [struct.unpack_from('<h', d, t['y_axis_offset']+i*2)[0] for i in range(t['rows'])]
-    xu = axis_kind(xv)[0]; yu = axis_kind(yv)[0]
-    if o < 0x040000:
-        return "Fuel / request"
-    if xu == "RPM" and yu == "RPM":
-        return "Torque / limiters (RPM x RPM)"
-    if xu == "RPM" and yu.startswith("mbar"):
-        return "Injection (RPM x MAP)"
-    if xu.startswith("mbar") and yu == "RPM":
-        return "Boost / VNT (MAP x RPM)"
-    if yu == "RPM":
-        return "Maps (x ? x RPM)"
-    return "Other"
+def category_for(e):
+    """Bosch-taxonomy auto-categorization."""
+    src = e.get("src", "")
+    cat = e.get("category", "")
+    # EWS / immobilizer candidates (pointer-sweep group) always go to Immob
+    if src == "sweep:ews_candidates" or cat == "EWS/Immobilizer":
+        return "Immobilizer/Security"
+    # Driver's Wish 1D ADC curves (verified [count][axis][values])
+    if src == "adc_1d" or src == "sweep:drivers_wish_candidates":
+        return "Driver's Wish"
+    # DFES / DTC arrays -> DTC Masks
+    if cat in ("DTC/Error",):
+        return "DTC Masks"
+    if cat == "Emissions":
+        return "Emissions"
+    if cat == "Torque/Limiter":
+        return "Torque/Limiter"
+    if cat == "RailPressure":
+        return "Rail Pressure"
+    if cat == "Injection":
+        return "Injection"
+    if e.get("kind") == "scalar":
+        return "Scalar/Config"
+    return "Engine Maps"
 
-CATS = {}
-def cat_id(name):
-    if name not in CATS:
-        CATS[name] = 0x10 + len(CATS)
-    return CATS[name]
+def name_for(e):
+    cat = category_for(e)
+    a = e["addr"]
+    kind = e["kind"]
+    if e.get("name"):
+        return e["name"]
+    if kind == "curve":
+        return f"CURV_{a:04X}_{e['count']}pt"
+    if kind == "scalar":
+        return f"SCAL_{a:04X}"
+    if kind == "mask":
+        return f"MASK_{a:04X}"
+    if kind == "2d":
+        try:
+            r, c = e["dims"].split("x")
+            return f"MAP2_{a:04X}_{r}x{c}"
+        except Exception:
+            return f"MAP2_{a:04X}"
+    return f"MAP_{a:04X}"
 
-def esc(s):
-    return str(s).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+def desc_for(e):
+    parts = [
+        f"category={category_for(e)}",
+        f"kind={e['kind']}",
+        f"addr=0x{e['addr']:04X}",
+        f"src={e.get('src','?')}",
+    ]
+    if e.get("nrefs"):
+        parts.append(f"code_refs={e['nrefs']}")
+    if e.get("code_refs"):
+        parts.append("refs=" + ",".join(e["code_refs"][:4]))
+    if kind := e["kind"]:
+        if kind == "curve":
+            if e.get("has_axis"):
+                parts.append("layout=[count][axis][values] - axis verified in flash")
+            else:
+                parts.append("flat N-word curve, linear index axis (no stored axis)")
+        elif kind == "2d":
+            parts.append("2D grid row-major 16-bit, linear index axes")
+        elif kind == "mask":
+            parts.append("Nx2 word array (DFES/DTC related), 32 index slots")
+        elif kind == "scalar":
+            parts.append("single 16-bit scalar")
+    if e.get("axis"):
+        parts.append(f"axis={e['axis']}")
+    return "; ".join(parts)
 
-# ---- build table elements ----
-body = []
-uid = 0x200
-for t in tables:
-    o = t['offset']; c = t['cols']; r = t['rows']
-    xoff = t['x_axis_offset']; yoff = t['y_axis_offset']
-    xv = [struct.unpack_from('<h', d, xoff+i*2)[0] for i in range(c)]
-    yv = [struct.unpack_from('<h', d, yoff+i*2)[0] for i in range(r)]
-    xu, xm = axis_kind(xv); yu, ym = axis_kind(yv)
-    cat = category_for(t); cid = cat_id(cat)
-    uid += 1
-    body.append(f'''  <XDFTABLE uniqueid="0x{uid:04x}" flags="0x30">
-    <title>Map 0x{o:08X} ({r} rows x {c} cols) | {cat}</title>
-    <description>Auto-detected from scan of HW {HW} stock read. X-axis: {xu} [{min(xv)}..{max(xv)}]; Y-axis: {yu} [{min(yv)}..{max(yv)}]. VERIFY axis meaning against a datalog before tuning.</description>
-    <CATEGORYMEM index="0" category="0x{cid:02x}" />
-    <XDFAXIS id="x" uniqueid="0x{uid:04x}">
-      <EMBEDDEDDATA mmedaddress="0x{xoff:08X}" mmedelementsizebits="16" mmedcolcount="{c}" mmedmajorstridebits="16" />
-      <units>{esc(xu)}</units>
-      <indexcount>{c}</indexcount>
-      <DATEFROM expression="{xm}" />
-      <MATH equation="{xm}" />
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x{uid:04x}">
-      <EMBEDDEDDATA mmedaddress="0x{yoff:08X}" mmedelementsizebits="16" mmedrowcount="{r}" mmedmajorstridebits="16" />
-      <units>{esc(yu)}</units>
-      <indexcount>{r}</indexcount>
-      <DATEFROM expression="{ym}" />
-      <MATH equation="{ym}" />
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x{o:08X}" mmedelementsizebits="16" mmedrowcount="{r}" mmedcolcount="{c}" mmedmajorstridebits="16" />
-      <units>raw</units>
-      <MATH equation="X*1.0" />
-    </XDFAXIS>
-  </XDFTABLE>''')
+# ---------------------------------------------------------------- axis XML
+def linear_axis(parent, axid, count, units="", labels=None):
+    """Linear (index) axis: no stored data. TunerPro idiom = EMBEDDEDDATA
+    without mmedaddress and negative majorstridebits."""
+    ax = ET.SubElement(parent, "XDFAXIS", id=axid, uniqueid="0x0")
+    ET.SubElement(ax, "EMBEDDEDDATA",
+                  mmedelementsizebits="16",
+                  mmedmajorstridebits="-32",
+                  mmedminorstridebits="0")
+    u = ET.SubElement(ax, "units"); u.text = units
+    ic = ET.SubElement(ax, "indexcount"); ic.text = str(count)
+    ot = ET.SubElement(ax, "outputtype"); ot.text = "1"
+    mn = ET.SubElement(ax, "min"); mn.text = "0"
+    mx = ET.SubElement(ax, "max"); mx.text = str(count)
+    for i in range(count):
+        v = labels[i] if labels else i
+        ET.SubElement(ax, "LABEL", index=str(i), value=str(v))
+    m = ET.SubElement(ax, "MATH", equation="X")
+    ET.SubElement(m, "VAR", id="X")
+    return ax
 
-# ---- ident/config constants ----
-ident_tables = f'''  <!-- ============ ECU IDENT / CONFIG / EWS / CVN (reference) ============ -->
-  <XDFTABLE uniqueid="0x0010" flags="0x10">
-    <title>Startup Block Header @0x180000</title>
-    <description>Block size + CRC pointer region. EWS/immobilizer auth area begins 0x180034.</description>
-    <CATEGORYMEM index="0" category="0x{cat_id('Config / EWS / VIN')}" />
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x180000" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" />
-      <units>raw</units>
-      <MATH equation="X*1.0" />
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0011" flags="0x10">
-    <title>Config SW #1 @0x18001A</title>
-    <description>ASCII software identifier: {SW1}</description>
-    <CATEGORYMEM index="0" category="0x{cat_id('Config / EWS / VIN')}" />
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x18001A" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="16" />
-      <units>ascii</units>
-      <MATH equation="X*1.0" />
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0012" flags="0x10">
-    <title>VIN @0x180099</title>
-    <description>Vehicle Identification Number (ASCII). Currently: {esc(VIN)}</description>
-    <CATEGORYMEM index="0" category="0x{cat_id('Config / EWS / VIN')}" />
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x180099" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" />
-      <units>ascii</units>
-      <MATH equation="X*1.0" />
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0013" flags="0x10">
-    <title>HW / Part @0x00FD00</title>
-    <description>Hardware number + BMW part: {esc(HW)} / {esc(PART)}</description>
-    <CATEGORYMEM index="0" category="0x{cat_id('Config / EWS / VIN')}" />
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x00FD00" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="22" />
-      <units>ascii</units>
-      <MATH equation="X*1.0" />
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0014" flags="0x10">
-    <title>CVN Checksum @0x1FE90C</title>
-    <description>Calibration Verification Number (CVN) for this software version. Recompute after edits.</description>
-    <CATEGORYMEM index="0" category="0x{cat_id('Config / EWS / VIN')}" />
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x1FE90C" mmedelementsizebits="32" mmedrowcount="1" mmedcolcount="1" />
-      <units>raw</units>
-      <MATH equation="X*1.0" />
-    </XDFAXIS>
-  </XDFTABLE>
-'''
+def embedded_axis(parent, axid, addr, count, units="", labels=None,
+                  rowcount=None, colcount=None):
+    """Axis whose data is stored at flash offset addr (16-bit words)."""
+    ax = ET.SubElement(parent, "XDFAXIS", id=axid, uniqueid=f"0x{addr:04X}")
+    attrs = dict(mmedaddress=f"0x{addr:X}",
+                 mmedelementsizebits="16",
+                 mmedmajorstridebits="16",
+                 mmedminorstridebits="0",
+                 mmedcolcount=str(count))
+    if rowcount:
+        attrs["mmedrowcount"] = str(rowcount)
+    ET.SubElement(ax, "EMBEDDEDDATA", **attrs)
+    u = ET.SubElement(ax, "units"); u.text = units
+    ic = ET.SubElement(ax, "indexcount"); ic.text = str(count)
+    if labels:
+        for i, v in enumerate(labels):
+            ET.SubElement(ax, "LABEL", index=str(i), value=str(v))
+    m = ET.SubElement(ax, "MATH", equation="X")
+    ET.SubElement(m, "VAR", id="X")
+    return ax
 
-# ---- categories ----
-cat_xml = ""
-for name, cid in CATS.items():
-    cat_xml += f'    <CATEGORY index="0x{cid:02x}" name="{esc(name)}" />\n'
+def z_axis(parent, addr, count, units="", labels=None,
+           rowcount=None, colcount=None):
+    """Z axis = the data itself, flat 16-bit at flash addr."""
+    return embedded_axis(parent, "z", addr, count, units=units, labels=labels,
+                         rowcount=rowcount, colcount=colcount)
 
-# ---- assemble ----
-full = f'''<?xml version="1.0"?>
-<!--
-  BMW M57 EDC17CP09 - RECONSTRUCTED TunerPro XDF
-  HW: {HW}   Part: {PART}
-  SW (config): {SW1}   SW (app): {SW2}
-  File: 2,097,152 bytes (0x200000) stock read, all 11 checksums valid.
+# ---------------------------------------------------------------- main
+def build():
+    master = json.load(open(MASTER))
+    master.sort(key=lambda e: e["addr"])
 
-  TABLE LABELS ARE RECONSTRUCTED FROM AXIS SHAPE/SPACING.
-  VERIFY against a dyno datalog before tuning. Addresses, sizes and
-  endianness (little-endian, 16-bit) come from a direct scan of this stock file.
+    root = ET.Element("XDFFORMAT", version="1.60")
+    hdr = ET.SubElement(root, "XDFHEADER")
+    f = ET.SubElement(hdr, "flags"); f.text = "0x1"
+    fv = ET.SubElement(hdr, "fileversion"); fv.text = "2026-08"
+    dt = ET.SubElement(hdr, "deftitle"); dt.text = TITLE
+    ds = ET.SubElement(hdr, "description"); ds.text = DESC
+    au = ET.SubElement(hdr, "author"); au.text = AUTHOR
+    ET.SubElement(hdr, "BASEOFFSET", offset="0", subtract="0")
+    ET.SubElement(hdr, "DEFAULTS",
+                  datasizeinbits="16", sigdigits="2", outputtype="1",
+                  signed="0", lsbfirst="0", float="0")
+    ET.SubElement(hdr, "REGION",
+                  type="0xFFFFFFFF", startaddress="0x0", size="0x200000",
+                  regionflags="0x0", name="Flash 2MB",
+                  desc="X5 35d full flash dump (mpc_full.bin)")
+    for i, c in enumerate(CATEGORIES):
+        ET.SubElement(hdr, "CATEGORY", index=f"0x{i:X}", name=c)
 
-  Flash regions & checksums (recompute ALL after any edit):
-    0x000000-0x003FFF  Dataset #1    ADD32  @0x34
-    0x004000-0x00E803  Customer blk   CRC32  @0x4034, @0x4054
-    0x014000-0x017EFF  TuneProtect    CRC32  @0x14034
-    0x018000-0x01FEFF  Startup blk    CRC32  @0x18034, @0x18054  (EWS/VIN/CVN)
-    0x020000-0x17FF03  App SW         ADD32  @0x20034, @0x20054, @0x20074
--->
-<XDFFORMAT version="1.60">
-  <XDFHEADER>
-    <flags>0x1</flags>
-    <deftitle>BMW M57 EDC17CP09 {HW} (stock reconstructed)</deftitle>
-    <description>Reconstructed EDC17CP09 M57 definition from OpenRemap scan of a stock 2011 X5 read. Map labels verified by axis shape only - confirm on a dyno before tuning.</description>
-    <author>REX (Hermes) - generated from scan of HW {HW}</author>
-    <BASEOFFSET offset="0" subtract="0" />
-    <DEFAULTS datasizeinbits="16" sigdigits="4" outputtype="1" signed="0" lsbfirst="1" float="0" />
-    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x200000" regionflags="0x0" name="Binary File" desc="2MB EDC17CP09 flash (TC1796)" />
-{cat_xml}  </XDFHEADER>
-{ident_tables}
-''' + "\n".join(body) + """
-</XDFFORMAT>
-"""
+    tinfo = ET.SubElement(root, "TABLEINFO")
 
-open(OUT, 'w').write(full)
-print("WROTE", OUT, len(full), "bytes")
-print("tables (XDFTABLE):", len(tables) + 5, "(40 scan tables + 5 ident constants)")
-print("categories:", list(CATS.keys()))
-print("VIN:", VIN, "| SW:", SW1)
+    n_by_cat = {}
+    for idx, e in enumerate(master, start=1):
+        cat = category_for(e)
+        n_by_cat[cat] = n_by_cat.get(cat, 0) + 1
+        a = e["addr"]
+        t = ET.SubElement(tinfo, "XDFTABLE",
+                          uniqueid=f"0x{a:06X}", flags="0x0")
+        ti = ET.SubElement(t, "title"); ti.text = name_for(e)
+        de = ET.SubElement(t, "description"); de.text = desc_for(e)
+        ET.SubElement(t, "CATEGORYMEM", index="0", category=str(CAT_IDX[cat]))
+
+        kind = e["kind"]
+        if kind == "curve":
+            n = e["count"]
+            if e.get("has_axis"):
+                # [count][axis xN][values xN] physically in flash
+                # X axis = stored axis words at a+2
+                embedded_axis(t, "x", a + 2, n,
+                              units="mV" if e.get("src") == "adc_1d" else "raw",
+                              labels=e["axis"])
+                linear_axis(t, "y", 1)
+                z_axis(t, a + 2 + 2 * n, n)
+            else:
+                # flat values, linear index
+                linear_axis(t, "x", n)
+                linear_axis(t, "y", 1)
+                z_axis(t, a, n)
+        elif kind == "2d":
+            dims = parse_dims(e["dims"])
+            if dims and dims[0] > 0 and dims[1] > 0:
+                r, c = dims
+                linear_axis(t, "x", c)
+                linear_axis(t, "y", r)
+                z_axis(t, a, r * c, rowcount=r, colcount=c)
+            else:
+                # degenerate dims recorded (e.g. 2x0): treat as flat 1D
+                try:
+                    r = int(e["dims"].split("x")[0])
+                except Exception:
+                    r = 8
+                r = max(r, 1)
+                linear_axis(t, "x", r)
+                linear_axis(t, "y", 1)
+                z_axis(t, a, r)
+        elif kind == "scalar":
+            linear_axis(t, "x", 1)
+            linear_axis(t, "y", 1)
+            z_axis(t, a, 1)
+        elif kind == "mask":
+            # Nx2 word array; 32 index slots (typical DFES/DTC word arrays)
+            n = 32
+            linear_axis(t, "x", n)
+            linear_axis(t, "y", 1)
+            z_axis(t, a, n)
+        else:
+            linear_axis(t, "x", 1)
+            linear_axis(t, "y", 1)
+            z_axis(t, a, 1)
+
+    tree = ET.ElementTree(root)
+    ET.indent(tree, space="  ")
+    tree.write(OUT, encoding="utf-8", xml_declaration=True)
+
+    print(f"wrote {OUT}  ({os.path.getsize(OUT)} bytes)")
+    print(f"tables: {len(master)}")
+    for c in CATEGORIES:
+        print(f"  {c:22s} {n_by_cat.get(c, 0)}")
+
+if __name__ == "__main__":
+    build()

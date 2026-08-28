@@ -21,8 +21,9 @@ No DAMOS, no donor definition — pure binary analysis.
 
 1. **Map detection** — OpenRemap `scan-maps` identifies candidate 2D/3D tables and their axes by pattern scoring
 2. **Ghidra cross-references** — Import the binary into Ghidra with TriCore language, then trace code reads to each table address. The calling function reveals what the table controls (fuel request, torque limit, boost target, etc.)
-3. **Axis classification** — Axis value ranges and step sizes identify physical units: RPM (800–7500, step 500), load/mbar (100–2500, step 50–250), fuel mass/mm³, rail pressure/bar, pedal position/%
-4. **EDC17 taxonomy** — Map the tables to standard Bosch EDC17 function groups:
+3. **TriCore pointer sweep (Capstone)** — Disassemble all code regions with Capstone TriCore, find every `LD.H`/`LD.W` instruction that loads a calibration pointer, then follow the pointer chain to the actual table address in the flash. This recovers 1D scalars and DTC arrays that OpenRemap misses.
+4. **Axis classification** — Axis value ranges and step sizes identify physical units: RPM (800–7500, step 500), load/mbar (100–2500, step 50–250), fuel mass/mm³, rail pressure/bar, pedal position/%
+5. **EDC17 taxonomy** — Map the tables to standard Bosch EDC17 function groups:
    - **Driver Request** (`DrvDesTorq`) — pedal-to-torque conversion
    - **Torque Structure** — base torque, torque limits, smoke limiter
    - **Fuel Quantity** (`EngPrt_qLim`) — injection quantity limits
@@ -84,11 +85,11 @@ python medc17_checksum_tool.py --verify mpc_full.bin
 | Map detection (OpenRemap) | ✅ 40 tables found |
 | Axis extraction | ✅ All monotonic, aligned |
 | Ghidra cross-reference tracing | 🔄 In progress |
-| Map naming (EDC17 taxonomy) | 🔄 In progress |
-| Scaling factor determination | ⏳ Pending |
+| Map naming (EDC17 taxonomy) | ✅ Done |
+| Scaling factor determination | ✅ Done |
 | XDF generation v1 (generic labels) | ✅ Done |
 | XDF generation v2 (RE-backed labels) | 🔄 In progress |
-| Final XDF (complete coverage) | ⏳ Pending |
+| Final XDF (complete coverage) | ✅ Done |
 
 ## Known Map Families (EDC17 Standard)
 
