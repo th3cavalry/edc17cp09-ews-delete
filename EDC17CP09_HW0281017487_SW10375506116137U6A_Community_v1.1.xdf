@@ -3,16 +3,17 @@
   <XDFHEADER>
     <flags>0x1</flags>
     <fileversion>2026-08</fileversion>
-    <deftitle>EDC17CP09 (M57 3.0d, HW 0281017487) - Community Release v1.0</deftitle>
+    <deftitle>EDC17CP09 (M57 3.0d) HW 0281017487 / SW 10375506116137U6A - Community Release v1.1</deftitle>
     <description>BMW EDC17CP09 M57N2 X5 35d (US) - 2MB flash dump (mpc_full.bin).
-1,336 calibration objects located by TriCore pointer sweep (Capstone/Ghidra)
-plus 530d OLS cross-reference. 956 1D curves, 172 scalars, 122 DTC/mask
-arrays, 86 2D grids. Axis values verified where physically stored in flash.
-Labels/units are best-effort from Bosch taxonomy - verify before tuning.</description>
+ECU hardware number: 0281017487   ECU software number: 10375506116137U6A
+DO NOT use this file on an ECU whose HW/SW numbers differ - calibration addresses are not stable across compilations.
+1,336 calibration objects located by TriCore pointer sweep (Capstone/Ghidra) plus 530d OLS cross-reference: 956 1D curves, 172 scalars, 122 DTC/mask arrays, 86 2D grids (degenerate-dim entries rendered as 1D curves).
+Version provenance: HW 0281017487 from flash 0xFE33.
+Axis values verified where physically stored in flash; labels/units are best-effort from Bosch taxonomy - verify before tuning.</description>
     <author>Th3cavalry / Hermes</author>
     <BASEOFFSET offset="0" subtract="0" />
     <DEFAULTS datasizeinbits="16" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
-    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x200000" regionflags="0x0" name="Flash 2MB" desc="X5 35d full flash dump (mpc_full.bin)" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x200000" regionflags="0x0" name="Flash 2MB" desc="X5 35d full flash dump (mpc_full.bin), HW 0281017487 SW 10375506116137U6A" />
     <CATEGORY index="0x0" name="DTC Masks" />
     <CATEGORY index="0x1" name="Immobilizer/Security" />
     <CATEGORY index="0x2" name="Driver's Wish" />
@@ -2265,7 +2266,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x04C01F" flags="0x0">
       <title>MAP2_4C01F_3x3</title>
-      <description>category=Engine Maps; kind=2d; addr=0x4C01F; src=validated; code_refs=9; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x4C01F; src=validated; code_refs=9; 2D grid 3x3 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -2296,9 +2297,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x4C01F">
-        <EMBEDDEDDATA mmedaddress="0x4C01F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="9" mmedrowcount="3" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x4C01F" mmedelementsizebits="16" mmedrowcount="3" mmedcolcount="3" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>9</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -3505,7 +3506,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x04FB7F" flags="0x0">
       <title>MAP2_4FB7F_2x12</title>
-      <description>category=Engine Maps; kind=2d; addr=0x4FB7F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x4FB7F; src=validated; code_refs=1; 2D grid 2x12 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -3544,9 +3545,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x4FB7F">
-        <EMBEDDEDDATA mmedaddress="0x4FB7F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="24" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x4FB7F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>24</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -4641,7 +4642,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0524BF" flags="0x0">
       <title>MAP2_524BF_2x9</title>
-      <description>category=Engine Maps; kind=2d; addr=0x524BF; src=validated; code_refs=4; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x524BF; src=validated; code_refs=4; 2D grid 2x9 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -4677,9 +4678,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x524BF">
-        <EMBEDDEDDATA mmedaddress="0x524BF" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="18" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x524BF" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="9" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>18</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -9017,7 +9018,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x06F33F" flags="0x0">
       <title>MAP2_6F33F_2x31</title>
-      <description>category=Engine Maps; kind=2d; addr=0x6F33F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x6F33F; src=validated; code_refs=1; 2D grid 2x31 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -9075,9 +9076,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x6F33F">
-        <EMBEDDEDDATA mmedaddress="0x6F33F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="62" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x6F33F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="31" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>62</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -9391,8 +9392,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x06F63F" flags="0x0">
-      <title>MAP2_6F63F_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x6F63F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_6F63F_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x6F63F; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -10679,7 +10680,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0790C0" flags="0x0">
       <title>MAP2_790C0_2x6</title>
-      <description>category=Engine Maps; kind=2d; addr=0x790C0; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x790C0; src=validated; code_refs=1; 2D grid 2x6 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -10712,9 +10713,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x790C0">
-        <EMBEDDEDDATA mmedaddress="0x790C0" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="12" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x790C0" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>12</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -11438,7 +11439,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x08070D" flags="0x0">
       <title>MAP2_8070D_3x32</title>
-      <description>category=Engine Maps; kind=2d; addr=0x8070D; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x8070D; src=validated; code_refs=1; 2D grid 3x32 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -11498,9 +11499,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x8070D">
-        <EMBEDDEDDATA mmedaddress="0x8070D" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="96" mmedrowcount="3" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x8070D" mmedelementsizebits="16" mmedrowcount="3" mmedcolcount="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>96</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -11508,7 +11509,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x080808" flags="0x0">
       <title>MAP2_80808_2x2</title>
-      <description>category=Engine Maps; kind=2d; addr=0x80808; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x80808; src=validated; code_refs=1; 2D grid 2x2 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -11537,9 +11538,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x80808">
-        <EMBEDDEDDATA mmedaddress="0x80808" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="4" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x80808" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>4</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -12008,7 +12009,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x081C1C" flags="0x0">
       <title>MAP2_81C1C_2x22</title>
-      <description>category=Engine Maps; kind=2d; addr=0x81C1C; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x81C1C; src=validated; code_refs=2; 2D grid 2x22 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -12057,9 +12058,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x81C1C">
-        <EMBEDDEDDATA mmedaddress="0x81C1C" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="44" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x81C1C" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="22" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>44</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -12107,8 +12108,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x081C34" flags="0x0">
-      <title>MAP2_81C34_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x81C34; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_81C34_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x81C34; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -12738,7 +12739,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x082C09" flags="0x0">
       <title>MAP2_82C09_3x24</title>
-      <description>category=Engine Maps; kind=2d; addr=0x82C09; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x82C09; src=validated; code_refs=1; 2D grid 3x24 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -12790,9 +12791,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x82C09">
-        <EMBEDDEDDATA mmedaddress="0x82C09" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="72" mmedrowcount="3" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x82C09" mmedelementsizebits="16" mmedrowcount="3" mmedcolcount="24" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>72</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -13104,8 +13105,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x08307F" flags="0x0">
-      <title>MAP2_8307F_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x8307F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_8307F_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x8307F; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -13185,8 +13186,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0830DE" flags="0x0">
-      <title>MAP2_830DE_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x830DE; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_830DE_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x830DE; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -14746,7 +14747,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x087345" flags="0x0">
       <title>MAP2_87345_2x25</title>
-      <description>category=Engine Maps; kind=2d; addr=0x87345; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x87345; src=validated; code_refs=1; 2D grid 2x25 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -14798,9 +14799,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x87345">
-        <EMBEDDEDDATA mmedaddress="0x87345" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="50" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x87345" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="25" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>50</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -14859,8 +14860,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x087F1F" flags="0x0">
-      <title>MAP2_87F1F_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x87F1F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_87F1F_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x87F1F; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -15350,7 +15351,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x08A256" flags="0x0">
       <title>MAP2_8A256_5x14</title>
-      <description>category=Engine Maps; kind=2d; addr=0x8A256; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x8A256; src=validated; code_refs=1; 2D grid 5x14 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -15394,9 +15395,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x8A256">
-        <EMBEDDEDDATA mmedaddress="0x8A256" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="70" mmedrowcount="5" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x8A256" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>70</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -15404,7 +15405,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x08A427" flags="0x0">
       <title>MAP2_8A427_2x2</title>
-      <description>category=Engine Maps; kind=2d; addr=0x8A427; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x8A427; src=validated; code_refs=1; 2D grid 2x2 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -15433,9 +15434,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x8A427">
-        <EMBEDDEDDATA mmedaddress="0x8A427" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="4" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x8A427" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>4</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -15941,8 +15942,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x08B25A" flags="0x0">
-      <title>MAP2_8B25A_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x8B25A; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_8B25A_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x8B25A; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -16121,7 +16122,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x08C24F" flags="0x0">
       <title>MAP2_8C24F_2x5</title>
-      <description>category=Engine Maps; kind=2d; addr=0x8C24F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x8C24F; src=validated; code_refs=1; 2D grid 2x5 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -16153,9 +16154,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x8C24F">
-        <EMBEDDEDDATA mmedaddress="0x8C24F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="10" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x8C24F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>10</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -18375,7 +18376,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x09D000" flags="0x0">
       <title>MAP2_9D000_2x4</title>
-      <description>category=Engine Maps; kind=2d; addr=0x9D000; src=validated; code_refs=10; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x9D000; src=validated; code_refs=10; 2D grid 2x4 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -18406,9 +18407,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x9D000">
-        <EMBEDDEDDATA mmedaddress="0x9D000" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="8" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x9D000" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>8</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -18642,7 +18643,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0A0001" flags="0x0">
       <title>MAP2_A0001_4x13</title>
-      <description>category=Engine Maps; kind=2d; addr=0xA0001; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xA0001; src=validated; code_refs=2; 2D grid 4x13 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -18684,9 +18685,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xA0001">
-        <EMBEDDEDDATA mmedaddress="0xA0001" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="52" mmedrowcount="4" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xA0001" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="13" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>52</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -18865,7 +18866,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0A0F6F" flags="0x0">
       <title>MAP2_A0F6F_2x2</title>
-      <description>category=Engine Maps; kind=2d; addr=0xA0F6F; src=validated; code_refs=3; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xA0F6F; src=validated; code_refs=3; 2D grid 2x2 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -18894,9 +18895,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xA0F6F">
-        <EMBEDDEDDATA mmedaddress="0xA0F6F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="4" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xA0F6F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>4</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -18904,7 +18905,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0A107B" flags="0x0">
       <title>MAP2_A107B_4x12</title>
-      <description>category=Engine Maps; kind=2d; addr=0xA107B; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xA107B; src=validated; code_refs=1; 2D grid 4x12 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -18945,9 +18946,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xA107B">
-        <EMBEDDEDDATA mmedaddress="0xA107B" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="48" mmedrowcount="4" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xA107B" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>48</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -19411,7 +19412,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0A2FBF" flags="0x0">
       <title>MAP2_A2FBF_2x32</title>
-      <description>category=Engine Maps; kind=2d; addr=0xA2FBF; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xA2FBF; src=validated; code_refs=2; 2D grid 2x32 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -19470,9 +19471,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xA2FBF">
-        <EMBEDDEDDATA mmedaddress="0xA2FBF" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="64" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xA2FBF" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>64</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -19866,7 +19867,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0A825F" flags="0x0">
       <title>MAP2_A825F_2x11</title>
-      <description>category=Engine Maps; kind=2d; addr=0xA825F; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xA825F; src=validated; code_refs=2; 2D grid 2x11 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -19904,9 +19905,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xA825F">
-        <EMBEDDEDDATA mmedaddress="0xA825F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="22" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xA825F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>22</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -20118,7 +20119,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0AB47F" flags="0x0">
       <title>MAP2_AB47F_2x31</title>
-      <description>category=Engine Maps; kind=2d; addr=0xAB47F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xAB47F; src=validated; code_refs=1; 2D grid 2x31 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -20176,9 +20177,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xAB47F">
-        <EMBEDDEDDATA mmedaddress="0xAB47F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="62" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xAB47F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="31" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>62</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -20323,7 +20324,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0AF57F" flags="0x0">
       <title>MAP2_AF57F_2x12</title>
-      <description>category=Engine Maps; kind=2d; addr=0xAF57F; src=validated; code_refs=4; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xAF57F; src=validated; code_refs=4; 2D grid 2x12 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -20362,9 +20363,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xAF57F">
-        <EMBEDDEDDATA mmedaddress="0xAF57F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="24" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xAF57F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>24</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -20372,7 +20373,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0AF873" flags="0x0">
       <title>MAP2_AF873_2x18</title>
-      <description>category=Engine Maps; kind=2d; addr=0xAF873; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xAF873; src=validated; code_refs=1; 2D grid 2x18 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -20417,9 +20418,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xAF873">
-        <EMBEDDEDDATA mmedaddress="0xAF873" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="36" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xAF873" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>36</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -20478,7 +20479,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0AFE3F" flags="0x0">
       <title>MAP2_AFE3F_2x5</title>
-      <description>category=Engine Maps; kind=2d; addr=0xAFE3F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xAFE3F; src=validated; code_refs=1; 2D grid 2x5 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -20510,9 +20511,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xAFE3F">
-        <EMBEDDEDDATA mmedaddress="0xAFE3F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="10" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xAFE3F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>10</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -20746,7 +20747,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0B19EF" flags="0x0">
       <title>MAP2_B19EF_2x5</title>
-      <description>category=Engine Maps; kind=2d; addr=0xB19EF; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xB19EF; src=validated; code_refs=1; 2D grid 2x5 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -20778,9 +20779,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xB19EF">
-        <EMBEDDEDDATA mmedaddress="0xB19EF" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="10" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xB19EF" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>10</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -22134,7 +22135,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0C4499" flags="0x0">
       <title>MAP2_C4499_2x2</title>
-      <description>category=Engine Maps; kind=2d; addr=0xC4499; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xC4499; src=validated; code_refs=1; 2D grid 2x2 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -22163,9 +22164,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xC4499">
-        <EMBEDDEDDATA mmedaddress="0xC4499" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="4" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xC4499" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>4</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -23382,7 +23383,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0D046E" flags="0x0">
       <title>MAP2_D046E_2x6</title>
-      <description>category=Engine Maps; kind=2d; addr=0xD046E; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xD046E; src=validated; code_refs=1; 2D grid 2x6 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -23415,9 +23416,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xD046E">
-        <EMBEDDEDDATA mmedaddress="0xD046E" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="12" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xD046E" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>12</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -23655,7 +23656,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0D2F3F" flags="0x0">
       <title>MAP2_D2F3F_4x7</title>
-      <description>category=Engine Maps; kind=2d; addr=0xD2F3F; src=validated; code_refs=4; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xD2F3F; src=validated; code_refs=4; 2D grid 4x7 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -23691,9 +23692,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xD2F3F">
-        <EMBEDDEDDATA mmedaddress="0xD2F3F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="28" mmedrowcount="4" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xD2F3F" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>28</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -24578,7 +24579,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0E12DF" flags="0x0">
       <title>MAP2_E12DF_3x8</title>
-      <description>category=Engine Maps; kind=2d; addr=0xE12DF; src=validated; code_refs=3; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xE12DF; src=validated; code_refs=3; 2D grid 3x8 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -24614,9 +24615,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xE12DF">
-        <EMBEDDEDDATA mmedaddress="0xE12DF" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="24" mmedrowcount="3" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xE12DF" mmedelementsizebits="16" mmedrowcount="3" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>24</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -26395,7 +26396,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x0FA4D9" flags="0x0">
       <title>MAP2_FA4D9_2x11</title>
-      <description>category=Engine Maps; kind=2d; addr=0xFA4D9; src=validated; code_refs=3; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0xFA4D9; src=validated; code_refs=3; 2D grid 2x11 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -26433,9 +26434,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0xFA4D9">
-        <EMBEDDEDDATA mmedaddress="0xFA4D9" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="22" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0xFA4D9" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>22</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -29948,7 +29949,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1211BF" flags="0x0">
       <title>MAP2_1211BF_2x5</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1211BF; src=validated; code_refs=3; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1211BF; src=validated; code_refs=3; 2D grid 2x5 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -29980,9 +29981,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1211BF">
-        <EMBEDDEDDATA mmedaddress="0x1211BF" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="10" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1211BF" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>10</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -30126,8 +30127,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x126FDF" flags="0x0">
-      <title>MAP2_126FDF_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x126FDF; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_126FDF_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x126FDF; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -30631,7 +30632,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x130700" flags="0x0">
       <title>MAP2_130700_2x15</title>
-      <description>category=Engine Maps; kind=2d; addr=0x130700; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x130700; src=validated; code_refs=1; 2D grid 2x15 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -30673,9 +30674,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x130700">
-        <EMBEDDEDDATA mmedaddress="0x130700" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="30" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x130700" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="15" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>30</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -31123,7 +31124,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1358B2" flags="0x0">
       <title>MAP2_1358B2_2x2</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1358B2; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1358B2; src=validated; code_refs=1; 2D grid 2x2 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -31152,9 +31153,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1358B2">
-        <EMBEDDEDDATA mmedaddress="0x1358B2" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="4" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1358B2" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>4</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -34544,8 +34545,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x175F5F" flags="0x0">
-      <title>MAP2_175F5F_3x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x175F5F; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_175F5F_3pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x175F5F; src=validated; code_refs=1; degenerate dims '3x0' recorded at collection - treated as 1D curve of 3 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -35014,8 +35015,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x182CD9" flags="0x0">
-      <title>MAP2_182CD9_14x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x182CD9; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_182CD9_14pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x182CD9; src=validated; code_refs=1; degenerate dims '14x0' recorded at collection - treated as 1D curve of 14 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -35064,8 +35065,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x182F6F" flags="0x0">
-      <title>MAP2_182F6F_14x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x182F6F; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_182F6F_14pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x182F6F; src=validated; code_refs=2; degenerate dims '14x0' recorded at collection - treated as 1D curve of 14 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -35574,8 +35575,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x185319" flags="0x0">
-      <title>MAP2_185319_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x185319; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_185319_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x185319; src=validated; code_refs=2; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -37131,7 +37132,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x18C419" flags="0x0">
       <title>MAP2_18C419_2x2</title>
-      <description>category=Engine Maps; kind=2d; addr=0x18C419; src=validated; code_refs=6; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x18C419; src=validated; code_refs=6; 2D grid 2x2 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -37160,9 +37161,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x18C419">
-        <EMBEDDEDDATA mmedaddress="0x18C419" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="4" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x18C419" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>4</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -37548,7 +37549,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x18CFA5" flags="0x0">
       <title>MAP2_18CFA5_2x31</title>
-      <description>category=Engine Maps; kind=2d; addr=0x18CFA5; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x18CFA5; src=validated; code_refs=1; 2D grid 2x31 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -37606,9 +37607,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x18CFA5">
-        <EMBEDDEDDATA mmedaddress="0x18CFA5" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="62" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x18CFA5" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="31" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>62</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -39798,8 +39799,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1908A8" flags="0x0">
-      <title>MAP2_1908A8_10x0</title>
-      <description>category=Emissions; kind=2d; addr=0x1908A8; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1908A8_10pt</title>
+      <description>category=Emissions; kind=2d; addr=0x1908A8; src=validated; code_refs=1; degenerate dims '10x0' recorded at collection - treated as 1D curve of 10 words</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -39844,8 +39845,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1908D2" flags="0x0">
-      <title>MAP2_1908D2_2x0</title>
-      <description>category=Emissions; kind=2d; addr=0x1908D2; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1908D2_2pt</title>
+      <description>category=Emissions; kind=2d; addr=0x1908D2; src=validated; code_refs=2; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -40794,8 +40795,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x191243" flags="0x0">
-      <title>MAP2_191243_3x0</title>
-      <description>category=Emissions; kind=2d; addr=0x191243; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_191243_3pt</title>
+      <description>category=Emissions; kind=2d; addr=0x191243; src=validated; code_refs=1; degenerate dims '3x0' recorded at collection - treated as 1D curve of 3 words</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -41048,7 +41049,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x191F6F" flags="0x0">
       <title>MAP2_191F6F_2x117</title>
-      <description>category=Driver's Wish; kind=2d; addr=0x191F6F; src=sweep:drivers_wish_candidates; code_refs=2; refs=0x074DBC,0x0F9076; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Driver's Wish; kind=2d; addr=0x191F6F; src=sweep:drivers_wish_candidates; code_refs=2; 2D grid 2x117 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="2" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -41192,9 +41193,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x191F6F">
-        <EMBEDDEDDATA mmedaddress="0x191F6F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="234" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x191F6F" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="117" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>234</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -41350,7 +41351,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x192023" flags="0x0">
       <title>MAP2_192023_2x38</title>
-      <description>category=Driver's Wish; kind=2d; addr=0x192023; src=sweep:drivers_wish_candidates; code_refs=1; refs=0x03CD78; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Driver's Wish; kind=2d; addr=0x192023; src=sweep:drivers_wish_candidates; code_refs=1; 2D grid 2x38 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="2" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -41415,9 +41416,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x192023">
-        <EMBEDDEDDATA mmedaddress="0x192023" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="76" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x192023" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="38" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>76</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -41693,8 +41694,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x192876" flags="0x0">
-      <title>MAP2_192876_20x0</title>
-      <description>category=Emissions; kind=2d; addr=0x192876; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_192876_20pt</title>
+      <description>category=Emissions; kind=2d; addr=0x192876; src=validated; code_refs=1; degenerate dims '20x0' recorded at collection - treated as 1D curve of 20 words</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -41749,8 +41750,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x192898" flags="0x0">
-      <title>MAP2_192898_20x0</title>
-      <description>category=Emissions; kind=2d; addr=0x192898; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_192898_20pt</title>
+      <description>category=Emissions; kind=2d; addr=0x192898; src=validated; code_refs=1; degenerate dims '20x0' recorded at collection - treated as 1D curve of 20 words</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -41805,8 +41806,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1928F0" flags="0x0">
-      <title>MAP2_1928F0_10x0</title>
-      <description>category=Emissions; kind=2d; addr=0x1928F0; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1928F0_10pt</title>
+      <description>category=Emissions; kind=2d; addr=0x1928F0; src=validated; code_refs=1; degenerate dims '10x0' recorded at collection - treated as 1D curve of 10 words</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -41852,7 +41853,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1928F4" flags="0x0">
       <title>MAP2_1928F4_10x254</title>
-      <description>category=Driver's Wish; kind=2d; addr=0x1928F4; src=sweep:drivers_wish_candidates; code_refs=1; refs=0x098130; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Driver's Wish; kind=2d; addr=0x1928F4; src=sweep:drivers_wish_candidates; code_refs=1; 2D grid 10x254 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="2" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -42141,9 +42142,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1928F4">
-        <EMBEDDEDDATA mmedaddress="0x1928F4" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="2540" mmedrowcount="10" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1928F4" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="254" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>2540</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -43341,7 +43342,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x193FA6" flags="0x0">
       <title>MAP2_193FA6_4x6</title>
-      <description>category=Emissions; kind=2d; addr=0x193FA6; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Emissions; kind=2d; addr=0x193FA6; src=validated; code_refs=1; 2D grid 4x6 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="3" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -43376,9 +43377,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x193FA6">
-        <EMBEDDEDDATA mmedaddress="0x193FA6" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="24" mmedrowcount="4" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x193FA6" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>24</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -45287,7 +45288,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x19783C" flags="0x0">
       <title>MAP2_19783C_25x50</title>
-      <description>category=Driver's Wish; kind=2d; addr=0x19783C; src=sweep:drivers_wish_candidates; code_refs=1; refs=0x080484; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Driver's Wish; kind=2d; addr=0x19783C; src=sweep:drivers_wish_candidates; code_refs=1; 2D grid 25x50 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="2" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -45387,9 +45388,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x19783C">
-        <EMBEDDEDDATA mmedaddress="0x19783C" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="1250" mmedrowcount="25" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x19783C" mmedelementsizebits="16" mmedrowcount="25" mmedcolcount="50" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>1250</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -45744,7 +45745,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x198140" flags="0x0">
       <title>MAP2_198140_25x25</title>
-      <description>category=Engine Maps; kind=2d; addr=0x198140; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x198140; src=validated; code_refs=1; 2D grid 25x25 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -45819,9 +45820,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x198140">
-        <EMBEDDEDDATA mmedaddress="0x198140" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="625" mmedrowcount="25" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x198140" mmedelementsizebits="16" mmedrowcount="25" mmedcolcount="25" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>625</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -46036,7 +46037,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x199000" flags="0x0">
       <title>MAP2_199000_3x50</title>
-      <description>category=Driver's Wish; kind=2d; addr=0x199000; src=sweep:drivers_wish_candidates; code_refs=4; refs=0x0D6BA0,0x0D6BCE,0x0D6C4E,0x0F6B0E; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Driver's Wish; kind=2d; addr=0x199000; src=sweep:drivers_wish_candidates; code_refs=4; 2D grid 3x50 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="2" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -46114,9 +46115,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x199000">
-        <EMBEDDEDDATA mmedaddress="0x199000" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="150" mmedrowcount="3" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x199000" mmedelementsizebits="16" mmedrowcount="3" mmedcolcount="50" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>150</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -46272,7 +46273,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x199D1E" flags="0x0">
       <title>MAP2_199D1E_11x27</title>
-      <description>category=Engine Maps; kind=2d; addr=0x199D1E; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x199D1E; src=validated; code_refs=1; 2D grid 11x27 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -46335,9 +46336,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x199D1E">
-        <EMBEDDEDDATA mmedaddress="0x199D1E" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="297" mmedrowcount="11" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x199D1E" mmedelementsizebits="16" mmedrowcount="11" mmedcolcount="27" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>297</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -46852,7 +46853,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x19BE7B" flags="0x0">
       <title>MAP2_19BE7B_2x12</title>
-      <description>category=Engine Maps; kind=2d; addr=0x19BE7B; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x19BE7B; src=validated; code_refs=1; 2D grid 2x12 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -46891,9 +46892,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x19BE7B">
-        <EMBEDDEDDATA mmedaddress="0x19BE7B" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="24" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x19BE7B" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>24</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -47962,7 +47963,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x19FD7F" flags="0x0">
       <title>MAP2_19FD7F_24x35</title>
-      <description>category=Driver's Wish; kind=2d; addr=0x19FD7F; src=sweep:drivers_wish_candidates; code_refs=1; refs=0x0B1576; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Driver's Wish; kind=2d; addr=0x19FD7F; src=sweep:drivers_wish_candidates; code_refs=1; 2D grid 24x35 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="2" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -48046,9 +48047,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x19FD7F">
-        <EMBEDDEDDATA mmedaddress="0x19FD7F" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="840" mmedrowcount="24" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x19FD7F" mmedelementsizebits="16" mmedrowcount="24" mmedcolcount="35" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>840</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -48232,8 +48233,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x19FF80" flags="0x0">
-      <title>MAP2_19FF80_6x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x19FF80; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_19FF80_6pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x19FF80; src=validated; code_refs=1; degenerate dims '6x0' recorded at collection - treated as 1D curve of 6 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -48683,8 +48684,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1A0EBD" flags="0x0">
-      <title>MAP2_1A0EBD_32x0</title>
-      <description>category=Rail Pressure; kind=2d; addr=0x1A0EBD; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1A0EBD_32pt</title>
+      <description>category=Rail Pressure; kind=2d; addr=0x1A0EBD; src=validated; code_refs=2; degenerate dims '32x0' recorded at collection - treated as 1D curve of 32 words</description>
       <CATEGORYMEM index="0" category="5" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -48751,8 +48752,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1A0EDF" flags="0x0">
-      <title>MAP2_1A0EDF_32x0</title>
-      <description>category=Rail Pressure; kind=2d; addr=0x1A0EDF; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1A0EDF_32pt</title>
+      <description>category=Rail Pressure; kind=2d; addr=0x1A0EDF; src=validated; code_refs=1; degenerate dims '32x0' recorded at collection - treated as 1D curve of 32 words</description>
       <CATEGORYMEM index="0" category="5" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -49749,7 +49750,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1B0158" flags="0x0">
       <title>MAP2_1B0158_20x255</title>
-      <description>category=Torque/Limiter; kind=2d; addr=0x1B0158; src=sweep:torque_limiters; code_refs=2; refs=0x159FE6,0x15A03E; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Torque/Limiter; kind=2d; addr=0x1B0158; src=sweep:torque_limiters; code_refs=2; 2D grid 20x255 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="4" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -50049,9 +50050,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1B0158">
-        <EMBEDDEDDATA mmedaddress="0x1B0158" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="5100" mmedrowcount="20" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1B0158" mmedelementsizebits="16" mmedrowcount="20" mmedcolcount="255" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>5100</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -51226,8 +51227,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1BA003" flags="0x0">
-      <title>MAP2_1BA003_24x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1BA003; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1BA003_24pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1BA003; src=validated; code_refs=1; degenerate dims '24x0' recorded at collection - treated as 1D curve of 24 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -52580,8 +52581,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1CADD9" flags="0x0">
-      <title>MAP2_1CADD9_16x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1CADD9; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1CADD9_16pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1CADD9; src=validated; code_refs=2; degenerate dims '16x0' recorded at collection - treated as 1D curve of 16 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -52632,8 +52633,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1CAE59" flags="0x0">
-      <title>MAP2_1CAE59_32x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1CAE59; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1CAE59_32pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1CAE59; src=validated; code_refs=2; degenerate dims '32x0' recorded at collection - treated as 1D curve of 32 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -53039,8 +53040,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1CD019" flags="0x0">
-      <title>MAP2_1CD019_6x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1CD019; src=validated; code_refs=2; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1CD019_6pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1CD019; src=validated; code_refs=2; degenerate dims '6x0' recorded at collection - treated as 1D curve of 6 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -53082,7 +53083,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1CD4D9" flags="0x0">
       <title>MAP2_1CD4D9_16x30</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1CD4D9; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1CD4D9; src=validated; code_refs=1; 2D grid 16x30 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -53153,9 +53154,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1CD4D9">
-        <EMBEDDEDDATA mmedaddress="0x1CD4D9" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="480" mmedrowcount="16" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1CD4D9" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="30" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>480</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -54963,7 +54964,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D092B" flags="0x0">
       <title>MAP2_1D092B_24x11</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D092B; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1D092B; src=validated; code_refs=1; 2D grid 24x11 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -55023,9 +55024,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1D092B">
-        <EMBEDDEDDATA mmedaddress="0x1D092B" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="264" mmedrowcount="24" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1D092B" mmedelementsizebits="16" mmedrowcount="24" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>264</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -55459,7 +55460,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D16BF" flags="0x0">
       <title>MAP2_1D16BF_3x4</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D16BF; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1D16BF; src=validated; code_refs=1; 2D grid 3x4 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -55491,9 +55492,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1D16BF">
-        <EMBEDDEDDATA mmedaddress="0x1D16BF" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="12" mmedrowcount="3" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1D16BF" mmedelementsizebits="16" mmedrowcount="3" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>12</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -55946,7 +55947,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D2B02" flags="0x0">
       <title>MAP2_1D2B02_2x9</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D2B02; src=validated; code_refs=4; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1D2B02; src=validated; code_refs=4; 2D grid 2x9 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -55982,9 +55983,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1D2B02">
-        <EMBEDDEDDATA mmedaddress="0x1D2B02" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="18" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1D2B02" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="9" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>18</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -56122,7 +56123,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D3020" flags="0x0">
       <title>MAP2_1D3020_2x8</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D3020; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1D3020; src=validated; code_refs=1; 2D grid 2x8 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -56157,9 +56158,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1D3020">
-        <EMBEDDEDDATA mmedaddress="0x1D3020" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="16" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1D3020" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>16</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -57886,8 +57887,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D69C0" flags="0x0">
-      <title>MAP2_1D69C0_8x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D69C0; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D69C0_8pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D69C0; src=validated; code_refs=1; degenerate dims '8x0' recorded at collection - treated as 1D curve of 8 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58037,8 +58038,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D72DA" flags="0x0">
-      <title>MAP2_1D72DA_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D72DA; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D72DA_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D72DA; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58304,8 +58305,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D808D" flags="0x0">
-      <title>MAP2_1D808D_32x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D808D; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D808D_32pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D808D; src=validated; code_refs=1; degenerate dims '32x0' recorded at collection - treated as 1D curve of 32 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58440,8 +58441,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D80CF" flags="0x0">
-      <title>MAP2_1D80CF_32x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D80CF; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D80CF_32pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D80CF; src=validated; code_refs=1; degenerate dims '32x0' recorded at collection - treated as 1D curve of 32 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58618,8 +58619,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D88CA" flags="0x0">
-      <title>MAP2_1D88CA_8x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D88CA; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D88CA_8pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D88CA; src=validated; code_refs=1; degenerate dims '8x0' recorded at collection - treated as 1D curve of 8 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58663,7 +58664,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D8974" flags="0x0">
       <title>MAP2_1D8974_7x11</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D8974; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1D8974; src=validated; code_refs=1; 2D grid 7x11 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58706,17 +58707,17 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1D8974">
-        <EMBEDDEDDATA mmedaddress="0x1D8974" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="77" mmedrowcount="7" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1D8974" mmedelementsizebits="16" mmedrowcount="7" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>77</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D8ABC" flags="0x0">
-      <title>MAP2_1D8ABC_2x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D8ABC; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D8ABC_2pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D8ABC; src=validated; code_refs=1; degenerate dims '2x0' recorded at collection - treated as 1D curve of 2 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58889,8 +58890,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D8F40" flags="0x0">
-      <title>MAP2_1D8F40_12x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D8F40; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1D8F40_12pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1D8F40; src=validated; code_refs=1; degenerate dims '12x0' recorded at collection - treated as 1D curve of 12 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58938,7 +58939,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1D9060" flags="0x0">
       <title>MAP2_1D9060_5x8</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1D9060; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1D9060; src=validated; code_refs=1; 2D grid 5x8 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -58976,9 +58977,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1D9060">
-        <EMBEDDEDDATA mmedaddress="0x1D9060" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="40" mmedrowcount="5" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1D9060" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>40</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -59355,8 +59356,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1DBEA1" flags="0x0">
-      <title>MAP2_1DBEA1_3x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1DBEA1; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1DBEA1_3pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1DBEA1; src=validated; code_refs=1; degenerate dims '3x0' recorded at collection - treated as 1D curve of 3 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -61780,7 +61781,7 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1E0FBD" flags="0x0">
       <title>MAP2_1E0FBD_2x10</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1E0FBD; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <description>category=Engine Maps; kind=2d; addr=0x1E0FBD; src=validated; code_refs=1; 2D grid 2x10 row-major 16-bit, linear index axes</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -61817,9 +61818,9 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
         </MATH>
       </XDFAXIS>
       <XDFAXIS id="z" uniqueid="0x1E0FBD">
-        <EMBEDDEDDATA mmedaddress="0x1E0FBD" mmedelementsizebits="16" mmedmajorstridebits="16" mmedminorstridebits="0" mmedcolcount="20" mmedrowcount="2" />
-        <units />
+        <EMBEDDEDDATA mmedaddress="0x1E0FBD" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
         <indexcount>20</indexcount>
+        <units>raw</units>
         <MATH equation="X">
           <VAR id="X" />
         </MATH>
@@ -61981,8 +61982,8 @@ Labels/units are best-effort from Bosch taxonomy - verify before tuning.</descri
       </XDFAXIS>
     </XDFTABLE>
     <XDFTABLE uniqueid="0x1E2027" flags="0x0">
-      <title>MAP2_1E2027_32x0</title>
-      <description>category=Engine Maps; kind=2d; addr=0x1E2027; src=validated; code_refs=1; 2D grid row-major 16-bit, linear index axes</description>
+      <title>CURV_1E2027_32pt</title>
+      <description>category=Engine Maps; kind=2d; addr=0x1E2027; src=validated; code_refs=1; degenerate dims '32x0' recorded at collection - treated as 1D curve of 32 words</description>
       <CATEGORYMEM index="0" category="8" />
       <XDFAXIS id="x" uniqueid="0x0">
         <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />

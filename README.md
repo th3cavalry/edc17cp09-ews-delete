@@ -51,10 +51,11 @@ No DAMOS, no donor definition — pure binary analysis.
 ## File Structure
 
 ```
-├── mpc_full.bin              # Stock 2MB flash dump (HW 0281017487, 11/11 checksums valid)
+├── mpc_full.bin              # Stock 2MB flash dump (HW 0281017487, SW 10375506116137U6A, 11/11 checksums valid)
 ├── scan_mpc.json             # OpenRemap output: 40 tables + 200 axes
 ├── maps_decoded.json         # Decoded tables with axis offsets and raw values
-├── gen_xdf.py               # XDF generator (reads maps_decoded.json → .xdf)
+├── master_dataset.json       # Merged 1,336-entry map dataset (validated + sweep + Driver's Wish)
+├── gen_xdf.py                # XDF generator (reads master_dataset.json → versioned .xdf)
 ├── verify_xdf.py            # Validates XDF XML structure and address correctness
 ├── medc17_checksum_tool.py  # Checksum validation/correction utility
 ├── README.md                # This file
@@ -64,8 +65,10 @@ No DAMOS, no donor definition — pure binary analysis.
 ## Usage
 
 ```bash
-# 1. Generate XDF from decoded maps
+# 1. Generate XDF from the merged map dataset
+#    (HW/SW numbers are read from mpc_full.bin and embedded in the filename)
 python gen_xdf.py
+#    -> EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf
 
 # 2. Validate the output
 python verify_xdf.py
@@ -74,8 +77,14 @@ python verify_xdf.py
 python medc17_checksum_tool.py --verify mpc_full.bin
 
 # 4. Load in TunerPro
-#    Open EDC17CP09_M57_0281017487.xdf → load mpc_full.bin
+#    Open EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf → load mpc_full.bin
 ```
+
+> **⚠️ ECU matching rule:** Calibration addresses shift between firmware
+> compilations. The XDF filename always carries the ECU **HW** and **SW**
+> numbers it was generated for (read from the flash dump at 0xfd00 / 0x1a).
+> Only load it on an ECU reporting the same HW/SW numbers, or addresses will
+> point at wrong data.
 
 ## Status
 
@@ -87,8 +96,8 @@ python medc17_checksum_tool.py --verify mpc_full.bin
 | Ghidra cross-reference tracing | 🔄 In progress |
 | Map naming (EDC17 taxonomy) | ✅ Done |
 | Scaling factor determination | ✅ Done |
-| XDF generation v1 (generic labels) | ✅ Done |
-| XDF generation v2 (RE-backed labels) | 🔄 In progress |
+| XDF generation v1.0 (2D axis bug, generic filename) | ❌ Superseded |
+| XDF generation v1.1 (colcount=X, rowcount=Y, no 0-dim maps, HW/SW in filename) | ✅ Done |
 | Final XDF (complete coverage) | ✅ Done |
 
 ## Known Map Families (EDC17 Standard)
