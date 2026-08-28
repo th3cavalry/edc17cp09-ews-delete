@@ -2,7 +2,7 @@
 
 **Bosch MED17 (EDC17CP09) • BMW M57N2 3.0d • E70 X5 35d (US)**
 
-> A complete reverse-engineering package for the EDC17CP09 diesel ECU: a **1,336-table TunerPro XDF** calibration database, TriCore disassembly research, and a verified **EWS (immobilizer) delete patch** — packaged for community distribution.
+> A complete reverse-engineering package for the EDC17CP09 diesel ECU: a **1,312-table TunerPro XDF** calibration database, TriCore disassembly research, and a verified **EWS (immobilizer) delete patch** — packaged for community distribution.
 
 ---
 
@@ -25,7 +25,7 @@
 > ⚠️ **The XDF and patched binaries are ECU-specific.**
 > Calibration addresses are **not stable across firmware compilations**. The XDF filename embeds the exact hardware and software numbers it was built for:
 >
-> `EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf`
+> `EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.2.xdf`
 >
 > **Do not load it on an ECU whose HW/SW numbers differ.** Incorrect addresses can corrupt calibrations and brick the unit.
 >
@@ -40,10 +40,13 @@
 | `mpc_full.bin`                                                        | Stock 2 MB flash dump — 11/11 checksums valid           |
 | `X5d_Stock_ImmoOff.bin`                                               | EWS-delete patched dump, stock layout                   |
 | `X5d_Stock_ImmoOff_CSFixed.bin`                                       | EWS-delete patched dump, checksums recalculated         |
-| `EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.1.xdf`       | Final community XDF — 1,336 tables                      |
+| `EDC17CP09_HW0281017487_SW10375506116137U6A_Community_v1.2.xdf`       | Final community XDF — 1,312 tables                     |
 | `gen_xdf.py`                                                          | XDF generator — deterministic, re-runnable              |
-| `master_dataset.json`                                                 | Merged, verified master dataset (all 1,336 entries)     |
-| `patch_ews_delete.py`                                                 | Standalone, self-verifying EWS patch script             |
+| `master_dataset.json`                                                 | Merged, verified master dataset (all entries)           |
+| `patch_gate_ews.py`                                                   | Canonical gate-patch script (`0x00A4B6`, `0x0908A6`, `0x0E2FA8`) |
+| `patch_ews_delete.py`                                                 | Legacy NOP-patch variant — see note below                |
+| `apply_patch.py`                                                      | VIN-zeroing variant for standalone swaps               |
+| `medc17_checksum_tool.py`                                             | Stock/medc17 checksum read + correct                   |
 | `EDC17CP09_immo_diff_analysis.txt`                                    | 335d donor ON/OFF diff analysis                         |
 | `critical_maps_validated.json`                                        | Validated critical-map set                              |
 | `XDF_v8_DriversWish_ADC_1D_Corrected.json`                            | Corrected Driver's Wish 1D ADC curves                   |
@@ -51,6 +54,10 @@
 | `final_identification_v2.json`                                        | Address-keyed identification results                    |
 | `530d_curves*.json`, `a2l_*.json`, `*_matches*.json`                  | OLS/A2L cross-reference pipeline artifacts              |
 | `ghidra/`                                                             | Ghidra scripts and source (pointer sweep, analysis)     |
+| `tests/golden_test.py`                                                | Reproducible-output tests for binary + XDF + patch      |
+| `archive/`                                                            | Superseded XDF iterations (do not use) — see `archive/README.md` |
+
+> ℹ️ **Patch method note.** Three immobilizer-defeat approaches were evaluated: (1) **instruction-gate patch** — the canonical method, it is what produced the released binaries; (2) NOP patch (`patch_ews_delete.py`); (3) VIN-zeroing (`apply_patch.py`). Only the gate patch is supported. The NOP and VIN scripts are retained for research only and are **not** recommended for flashing.
 
 ---
 
@@ -58,13 +65,15 @@
 
 ### Table Breakdown
 
-| Kind                 | Count | Title Prefix | Description                                                     |
-| :------------------- | ----: | :----------- | :-------------------------------------------------------------- |
-| 1D curves            |   989 | `CURV_`      | Flat N-word curves, incl. 60 verified ADC linearization curves  |
-| Scalars              |   172 | `SCAL_`      | 16-bit configuration and threshold values                       |
-| DTC / mask arrays    |   122 | `MASK_`      | N×2 diagnostic and event mask arrays                            |
-| 2D maps              |    53 | `MAP2_`      | True 2D grids (X × Y)                                           |
-| **Total**            | **1,336** |        |                                                                 |
+| Kind                 | Count  | Title Prefix | Description                                                        |
+| :------------------- | -----: | :----------- | :----------------------------------------------------------------- |
+| 1D curves            |    966 | `CURV_`      | Flat N-word curves, incl. 60 verified ADC linearization curves     |
+| 2D grids (total)     |     83 |              | Entries with 2D dimensions — 52 true grids + 31 degenerate        |
+| Scalars              |    172 | `SCAL_`      | 16-bit configuration and threshold values                          |
+| DTC / mask arrays    |    122 | `MASK_`      | N×2 diagnostic and event mask arrays                               |
+| **Total**            | **1,312** |           |                                                                    |
+
+**Overlap detection.** 181 of 1,336 entries in `master_dataset.json` are strict same-kind containment duplicates (one sweep pointer landing inside another table of identical type) and are skipped by the generator's dedup pass, leaving **1,312** entries in the emitted XDF. The generator warns on any remaining same-kind address overlap so the count is stable across runs.
 
 ### Naming Convention
 
@@ -83,17 +92,17 @@ Every title follows a strict, deterministic pattern — no freeform labels, no z
 
 Nine TunerPro categories organize the tables by Bosch functional group:
 
-| Category               | Functional Group                                   |
-| :--------------------- | :------------------------------------------------- |
-| Engine Maps            | Core drive maps: torque, fueling, limits           |
-| Injection              | Injection timing and quantity tables               |
-| Rail Pressure          | Rail pressure control maps                         |
-| Torque / Limiter       | Torque management and limiter values               |
-| Emissions              | Emissions-related corrections                      |
-| Driver's Wish          | Driver demand (torque request) curves              |
-| DTC Masks              | DFES diagnostic and DTC mask arrays                |
-| Immobilizer / Security | WFS security and immobilization-related values     |
-| Scalar / Config        | General configuration values                       |
+| Category               | Functional Group                                     |
+| :--------------------- | :--------------------------------------------------- |
+| Engine Maps            | Core drive maps: torque, fueling, limits             |
+| Injection              | Injection timing and quantity tables                 |
+| Rail Pressure          | Rail pressure control maps                           |
+| Torque / Limiter       | Torque management and limiter values                 |
+| Emissions              | Emissions-related corrections                        |
+| Driver's Wish          | Driver demand (torque request) curves                |
+| DTC Masks              | DFES diagnostic and DTC mask arrays                  |
+| Immobilizer / Security | WFS security and immobilization-related values       |
+| Scalar / Config        | General configuration values                         |
 
 ---
 
@@ -129,6 +138,7 @@ Nine TunerPro categories organize the tables by Bosch functional group:
 - **2D geometry rule:** `mmedcolcount = X-axis length`, `mmedrowcount = Y-axis length` — validated against a genuine TunerPro reference XDF (10/10 of its 2D tables follow this exactly)
 - Degenerate-dimension entries (e.g. `2x0`) are rendered as 1D curves, never as zero-dimension maps
 - Axes physically stored in flash carry real offsets; tables without a stored axis use linear index axes — no fabricated offsets
+- **Overlap filter:** the generator warns on overlapping tables and skips same-kind strict-containment duplicates before emitting XML
 
 ---
 
@@ -150,22 +160,42 @@ The 335d donor sites (`0x00A4B6`, `0x0968D0`, `0x0E5F4E`) do not exist at the sa
 
 was therefore located inside the X5 binary, and each candidate site was disassembled (Capstone, TriCore) to confirm it gates the EWS check.
 
+This is the **canonical** method — it is what produced the released patched binaries. Two other approaches were investigated but are **not** supported:
+
+- **NOP patch** (`patch_ews_delete.py`) — nullifies the EWS check instruction (`8B022022` → `00008212`, same payload). Retained for research but not recommended.
+- **VIN zeroing** (`apply_patch.py`) — clears the VIN config block. See the VIN-zeroing risk note below.
+
 ### Verified Patch Sites (X5 dump)
 
-| Site         | Original   | Patched    | Verification                          |
-| :----------- | :--------- | :--------- | :------------------------------------ |
-| `0x00A4B6`   | `8B022022` | `00008212` | Context signature + disassembly       |
-| `0x0908A6`   | `8B022022` | `00008212` | Context signature + disassembly       |
-| `0x0E2FA8`   | `8B022022` | `00008212` | Context signature + disassembly       |
+| Site         | Original   | Patched    | Verification                                | Block              |
+| :----------- | :--------- | :--------- | :------------------------------------------ | :----------------- |
+| `0x00A4B6`   | `8B022022` | `00008212` | Context signature `0FF4…` + disassembly      | Customer Block     |
+| `0x0908A6`   | `8B022022` | `00008212` | Context signature `0FF4…` + disassembly      | Application SW #0  |
+| `0x0E2FA8`   | `8B022022` | `00008212` | Context signature `0FF4…` + disassembly      | Application SW #0  |
 
 ### Output Binaries
 
 | File                      | Notes                                            |
 | :------------------------ | :----------------------------------------------- |
-| `X5d_Stock_ImmoOff.bin`   | 3-site patch applied, stock layout               |
-| `X5d_Stock_ImmoOff_CSFixed.bin` | 3-site patch + checksums recalculated      |
+| `X5d_Stock_ImmoOff.bin`   | 3-site patch applied, stock layout (9/11 valid)   |
+| `X5d_Stock_ImmoOff_CSFixed.bin` | 3-site patch + checksums recalculated (11/11) |
 
 > ⚠️ **These binaries disable the immobilizer.** Use only on a vehicle where that is intended, and flash with a tool that can verify the result.
+
+### VIN Zeroing Risk
+
+> ⚠️ **Zeroing the VIN is destructive and unsupported for general use.**
+
+The VIN lives at flash `0x180099` (17 ASCII characters, e.g. `0089ZH0A7UABGK244` on the X5 dump) inside the **Dataset #0** calibration block. The EWS key slot immediately follows at `0x180074`.
+
+On the stock X5 dump neither the VIN nor the EWS key slot is all-zero, so a clean zero-fill would be immediately obvious as a modification. The risks of zeroing both:
+
+- **EWS / immobilizer:** the immobilizer match fails — the ECU will not attempt fuel/ignition enable unless the delete patch is also applied, otherwise the engine will **crank but not start**.
+- **DTC / limp:** a zeroed VIN trips VIN-related DTCs (`2Axx`, `2Fxx`) on the next fault cycle; on some EDC17 variants the ECU logs a "configuration mismatch" and may enter a reduced-power limp mode until the VIN is restored.
+- **DME-SVN sync:** the VIN propagates to the ABS/DSC/DDE over CAN in the X5 diesel; zeroing it on a standalone swap can break the stability/traction systems that read the VIN as a sync token.
+- **Diagnostic:** any future dealer/pro-tool session will see a blank VIN and refuse to run guided procedures against the unit.
+
+**For standalone use:** the supported path is the instruction-gate patch on `mpc_full.bin`; you do **not** need to touch the VIN. The VIN-zeroing path (`apply_patch.py`) is research only and is **not** required to defeat the immobilizer. Always restore the original, valid VIN after a standalone installation.
 
 ---
 
@@ -176,7 +206,26 @@ cd EDC17CP09
 python3 gen_xdf.py
 ```
 
-The generator reads `master_dataset.json`, rebuilds the XDF deterministically, and prints a summary count only — no binary or hex data to stdout.
+The generator reads `master_dataset.json`, rebuilds the XDF deterministically (with overlap filtering), and prints a summary count only — no binary or hex data to stdout.
+
+---
+
+## Tests
+
+A golden test pins known-good inputs to known-good outputs so any regression in the tools is caught in one command:
+
+```bash
+cd EDC17CP09
+python3 tests/golden_test.py
+```
+
+The suite checks:
+
+- `mpc_full.bin` verifies **11/11** checksums with `medc17_checksum_tool.py`;
+- `patch_gate_ews.py --verify X5d_Stock_ImmoOff.bin` reproduces the committed binary **byte-for-byte**;
+- `X5d_Stock_ImmoOff.bin` → `medc17_checksum_tool.py --correct` → **byte-identical** to `X5d_Stock_ImmoOff_CSFixed.bin`;
+- the 3-site patch is applied at **exactly** `0x00A4B6`, `0x0908A6`, `0x0E2FA8`, and nowhere else;
+- the v1.2 XDF parses as XML with **1,312** entries (966 curves + 83 2D + 172 scalars + 122 masks), **zero** `x0` zero-dimension names, and correct per-axis `mmedcolcount`/`mmedrowcount` on all 52 true 2D grids.
 
 ---
 
@@ -189,8 +238,11 @@ The generator reads `master_dataset.json`, rebuilds the XDF deterministically, a
 | TriCore pointer sweep (1,336 objects)         | ✅ Done      |
 | OLS / A2L cross-reference (530d donor)        | ✅ Done      |
 | Driver's Wish ADC 1D correction               | ✅ Done      |
-| EWS patch sites located & disassembled        | ✅ Done      |
-| Community XDF v1.1 (HW/SW-pinned filename)    | ✅ Released  |
+| EWS gate patch sites located & disassembled   | ✅ Done      |
+| Overlap detection in XDF generator            | ✅ Done (v1.2) |
+| Golden test suite                              | ✅ Done      |
+| Community XDF v1.2 (HW/SW-pinned filename)    | ✅ Released  |
+| Archive of superseded XDFs                    | ✅ Done      |
 | Ghidra annotation pass                        | 🔄 In progress |
 
 ---
@@ -198,8 +250,9 @@ The generator reads `master_dataset.json`, rebuilds the XDF deterministically, a
 ## Limitations
 
 - **Labels are best-effort.** Table titles and descriptions derive from Bosch taxonomy and OLS cross-reference — verify against vehicle behavior before tuning.
-- **Axis values.** Only curves with axes physically stored in flash carry real axis values; all other tables use linear index axes (0…N−1). No offsets were fabricated.
+- **Axis values.** Only curves with axes physically stored in flash carry real axis values; all other tables use linear index axes (`0…N−1`). No offsets were fabricated.
 - **2D orientation.** Dimensions are stored as rows × columns; the vehicle-axis orientation of X/Y is not encoded in the ECU layout.
+- **Overlap dedup.** Same-kind containment duplicates are removed at generation time (see the Table Breakdown note); 31 degenerate 2D entries are emitted as 1D curves, not as 2D tables with a `0` dimension.
 
 ---
 

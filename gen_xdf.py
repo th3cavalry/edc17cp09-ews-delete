@@ -142,6 +142,58 @@ def eff_curve_len(e):
     c = e.get("count")
     return int(c) if c else None
 
+# ---------------------------------------------------------------- overlap
+def rendered_span(e):
+    """(start, end) flash byte span as this generator will actually emit it."""
+    a = e["addr"]
+    kind = e["kind"]
+    if kind == "mask":
+        n = 32  # masks render as 32 index slots
+    elif kind == "scalar":
+        n = 1
+    else:
+        n = e.get("count") or eff_curve_len(e) or 1
+        if kind == "curve" and e.get("has_axis"):
+            # [count][axis xN][values xN] physically in flash: values start later
+            return a + 2 + 2 * n, a + 2 + 4 * n
+    return a, a + 2 * n
+
+def dedupe_contained(master):
+    """Skip entries whose full span is contained inside another entry of the
+    SAME kind - a strict sub-region of an identically-typed table is a
+    duplicate view of the same bytes (sweep artifact: e.g. a 4-word pointer
+    landing inside an 8-word table at the same 16-bit alignment).
+
+    Returns (kept_entries, skipped_count, cross_kind_partial_overlaps).
+    Cross-kind overlaps (a 2D grid over scalars, etc.) are kept - different
+    views of the same bytes can both be real - but counted so the user is
+    warned.
+    """
+    spans = [rendered_span(e) for e in master]
+    skip = set()
+    for i, e in enumerate(master):
+        s, en = spans[i]
+        for j, o in enumerate(master):
+            if i == j or o["kind"] != e["kind"]:
+                continue
+            os_, oe = spans[j]
+            if os_ <= s and oe >= en and (os_, oe) != (s, en):
+                skip.add(i)
+                break
+    kept = [e for i, e in enumerate(master) if i not in skip]
+
+    # cross-kind partial overlap census (report only, no skipping)
+    cross = 0
+    for i in range(len(kept)):
+        s1, e1 = spans[i]
+        for j in range(i + 1, len(kept)):
+            s2, e2 = spans[j]
+            if kept[i]["kind"] == kept[j]["kind"]:
+                continue
+            if s2 < e1 and s1 < e2:  # partial or full, different kind
+                cross += 1
+    return kept, len(skip), cross
+
 def is_genuine_2d(e):
     """True only when BOTH dimensions are >= 2. Anything else is a 1D
     curve in both naming and XDF structure."""
@@ -266,24 +318,38 @@ def build():
     master = json.load(open(MASTER))
     master.sort(key=lambda e: e["addr"])
 
+    # Overlap detection: drop same-kind entries that are strict sub-regions
+    # of another entry, warn about cross-kind partial overlaps.
+    master, n_skipped, n_cross = dedupe_contained(master)
+    if n_skipped or n_cross:
+        print("overlap check: %d same-kind contained entries skipped, "
+              "%d cross-kind partial overlaps kept (both views may be real)"
+              % (n_skipped, n_cross))
+
     hw, sw, ver_note = extract_hw_sw(BIN)
-    out_name = "EDC17CP09_HW%s_SW%s_Community_v1.1.xdf" % (hw, sw)
+    out_name = "EDC17CP09_HW%s_SW%s_Community_v1.2.xdf" % (hw, sw)
     out = os.path.join(HERE, out_name)
 
-    title = "EDC17CP09 (M57 3.0d) HW %s / SW %s - Community Release v1.1" % (hw, sw)
+    # dynamic kind census (never hardcode - the dataset is the source of truth)
+    census = {}
+    for e in master:
+        census[e["kind"]] = census.get(e["kind"], 0) + 1
+
+    title = "EDC17CP09 (M57 3.0d) HW %s / SW %s - Community Release v1.2" % (hw, sw)
     desc = (
         "BMW EDC17CP09 M57N2 X5 35d (US) - 2MB flash dump (mpc_full.bin).\n"
         "ECU hardware number: %s   ECU software number: %s\n"
         "DO NOT use this file on an ECU whose HW/SW numbers differ - "
         "calibration addresses are not stable across compilations.\n"
-        "1,336 calibration objects located by TriCore pointer sweep "
-        "(Capstone/Ghidra) plus 530d OLS cross-reference: 956 1D curves, "
-        "172 scalars, 122 DTC/mask arrays, 86 2D grids (degenerate-dim "
-        "entries rendered as 1D curves).\n"
+        "%d calibration objects located by TriCore pointer sweep "
+        "(Capstone/Ghidra) plus 530d OLS cross-reference: %d curves, "
+        "%d 2D grids, %d scalars, %d mask arrays.\n"
         "Version provenance: %s.\n"
         "Axis values verified where physically stored in flash; labels/units "
         "are best-effort from Bosch taxonomy - verify before tuning."
-    ) % (hw, sw, ver_note)
+    ) % (hw, sw, len(master),
+         census.get("curve", 0), census.get("2d", 0),
+         census.get("scalar", 0), census.get("mask", 0), ver_note)
 
     root = ET.Element("XDFFORMAT", version="1.60")
     hdr = ET.SubElement(root, "XDFHEADER")
