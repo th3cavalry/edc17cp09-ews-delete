@@ -1,0 +1,7849 @@
+[
+  {
+    "offset": 39159,
+    "name": "Adc_idxAirCClntIA_C",
+    "module": "Adc",
+    "param": "idxAirCClntIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 39598,
+    "name": "Adc_idxBrkPIA_C",
+    "module": "Adc",
+    "param": "idxBrkPIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 40033,
+    "name": "Adc_idxCEngDsTIA_C",
+    "module": "Adc",
+    "param": "idxCEngDsTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 40471,
+    "name": "Adc_idxCEngUsTIA_C",
+    "module": "Adc",
+    "param": "idxCEngUsTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 40909,
+    "name": "Adc_idxECBVlvIA_C",
+    "module": "Adc",
+    "param": "idxECBVlvIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 41346,
+    "name": "Adc_idxEGRVlvIA_C",
+    "module": "Adc",
+    "param": "idxEGRVlvIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 41783,
+    "name": "Adc_idxEGRVlvLPIA_C",
+    "module": "Adc",
+    "param": "idxEGRVlvLPIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 42222,
+    "name": "Adc_idxEnvTIA_C",
+    "module": "Adc",
+    "param": "idxEnvTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 42657,
+    "name": "Adc_idxFlFltDsPIA_C",
+    "module": "Adc",
+    "param": "idxFlFltDsPIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 43096,
+    "name": "Adc_idxFlFltUsPIA_C",
+    "module": "Adc",
+    "param": "idxFlFltUsPIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 43535,
+    "name": "Adc_idxFuelTIA_C",
+    "module": "Adc",
+    "param": "idxFuelTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 43971,
+    "name": "Adc_idxOilPIA_C",
+    "module": "Adc",
+    "param": "idxOilPIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 44406,
+    "name": "Adc_idxOilTIA_C",
+    "module": "Adc",
+    "param": "idxOilTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 44841,
+    "name": "Adc_idxPAirFltDsIA_C",
+    "module": "Adc",
+    "param": "idxPAirFltDsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 45281,
+    "name": "Adc_idxPIntkVUsIA_C",
+    "module": "Adc",
+    "param": "idxPIntkVUsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 45720,
+    "name": "Adc_idxPPFltDiffIA_C",
+    "module": "Adc",
+    "param": "idxPPFltDiffIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 46160,
+    "name": "Adc_idxPPFltUsIA_C",
+    "module": "Adc",
+    "param": "idxPPFltUsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 46598,
+    "name": "Adc_idxPTrbnUsIA_C",
+    "module": "Adc",
+    "param": "idxPTrbnUsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 47036,
+    "name": "Adc_idxStWhlAgIA_C",
+    "module": "Adc",
+    "param": "idxStWhlAgIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 47474,
+    "name": "Adc_idxTCACDsIA_C",
+    "module": "Adc",
+    "param": "idxTCACDsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 47911,
+    "name": "Adc_idxThrVlvIA_C",
+    "module": "Adc",
+    "param": "idxThrVlvIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 48348,
+    "name": "Adc_idxTOxiCatDsIA_C",
+    "module": "Adc",
+    "param": "idxTOxiCatDsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 48788,
+    "name": "Adc_idxTOxiCatUsIA_C",
+    "module": "Adc",
+    "param": "idxTOxiCatUsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 49228,
+    "name": "Adc_idxTPFltDsIA_C",
+    "module": "Adc",
+    "param": "idxTPFltDsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 49666,
+    "name": "Adc_idxTPFltUsIA_C",
+    "module": "Adc",
+    "param": "idxTPFltUsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 50104,
+    "name": "Adc_idxTrbChIA_C",
+    "module": "Adc",
+    "param": "idxTrbChIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 50540,
+    "name": "Adc_idxTTrbnUsIA_C",
+    "module": "Adc",
+    "param": "idxTTrbnUsIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 50978,
+    "name": "Adc_idxUCatUsTIA_C",
+    "module": "Adc",
+    "param": "idxUCatUsTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 51416,
+    "name": "Adc_idxUHtrPLDiaIA_C",
+    "module": "Adc",
+    "param": "idxUHtrPLDiaIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 51856,
+    "name": "Adc_idxUHtrTnkDiaIA_C",
+    "module": "Adc",
+    "param": "idxUHtrTnkDiaIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 52297,
+    "name": "Adc_idxUPmpPIA_C",
+    "module": "Adc",
+    "param": "idxUPmpPIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 52733,
+    "name": "Adc_idxUTnkTIA_C",
+    "module": "Adc",
+    "param": "idxUTnkTIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 53169,
+    "name": "Adc_idxVSwVlvIA_C",
+    "module": "Adc",
+    "param": "idxVSwVlvIA",
+    "suffix": "C"
+  },
+  {
+    "offset": 320287,
+    "name": "Air_dmAFSFrsh_MAP",
+    "module": "Air",
+    "param": "dmAFSFrsh",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 322979,
+    "name": "Air_mAFSFrshInit_MAP",
+    "module": "Air",
+    "param": "mAFSFrshInit",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 323420,
+    "name": "Air_mAFSFrshMax_C",
+    "module": "Air",
+    "param": "mAFSFrshMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 323858,
+    "name": "Air_mAFSFrshMin_C",
+    "module": "Air",
+    "param": "mAFSFrshMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 324296,
+    "name": "Air_mAFSFrshSumHiLim_C",
+    "module": "Air",
+    "param": "mAFSFrshSumHiLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 324739,
+    "name": "Air_mAFSFrshSumLoLim_C",
+    "module": "Air",
+    "param": "mAFSFrshSumLoLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 325182,
+    "name": "Air_nLimPIntkVUs_C",
+    "module": "Air",
+    "param": "nLimPIntkVUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 325622,
+    "name": "Air_numEngTempAFSt_C",
+    "module": "Air",
+    "param": "numEngTempAFSt",
+    "suffix": "C"
+  },
+  {
+    "offset": 326952,
+    "name": "Air_pDiffLimPIntkVUs_C",
+    "module": "Air",
+    "param": "pDiffLimPIntkVUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 327396,
+    "name": "Air_pTransfPIntkVUs_CUR",
+    "module": "Air",
+    "param": "pTransfPIntkVUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 327865,
+    "name": "Air_rDtyCycMaxTAFS_C",
+    "module": "Air",
+    "param": "rDtyCycMaxTAFS",
+    "suffix": "C"
+  },
+  {
+    "offset": 328305,
+    "name": "Air_rDtyCycMinTAFS_C",
+    "module": "Air",
+    "param": "rDtyCycMinTAFS",
+    "suffix": "C"
+  },
+  {
+    "offset": 333375,
+    "name": "Air_swtSelHFMSrc_C",
+    "module": "Air",
+    "param": "swtSelHFMSrc",
+    "suffix": "C"
+  },
+  {
+    "offset": 333892,
+    "name": "Air_swtSensPresTCACDs_C",
+    "module": "Air",
+    "param": "swtSensPresTCACDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 334400,
+    "name": "Air_swtSensPrsPIntkVUs_C",
+    "module": "Air",
+    "param": "swtSensPrsPIntkVUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 334882,
+    "name": "Air_swtSigTCACDs_C",
+    "module": "Air",
+    "param": "swtSigTCACDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 335320,
+    "name": "Air_tAFSPlausInit_C",
+    "module": "Air",
+    "param": "tAFSPlausInit",
+    "suffix": "C"
+  },
+  {
+    "offset": 335807,
+    "name": "Air_tAirFldB1_C",
+    "module": "Air",
+    "param": "tAirFldB1",
+    "suffix": "C"
+  },
+  {
+    "offset": 336290,
+    "name": "Air_tAirFldB2_C",
+    "module": "Air",
+    "param": "tAirFldB2",
+    "suffix": "C"
+  },
+  {
+    "offset": 336729,
+    "name": "Air_tCACDsB1_C",
+    "module": "Air",
+    "param": "tCACDsB1",
+    "suffix": "C"
+  },
+  {
+    "offset": 337167,
+    "name": "Air_tCACDsB2_C",
+    "module": "Air",
+    "param": "tCACDsB2",
+    "suffix": "C"
+  },
+  {
+    "offset": 337666,
+    "name": "Air_tDflOffsTCACDs_C",
+    "module": "Air",
+    "param": "tDflOffsTCACDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 338110,
+    "name": "Air_tDiffLim_C",
+    "module": "Air",
+    "param": "tDiffLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 338577,
+    "name": "Air_tiLPFiltPT1TCACDs_C",
+    "module": "Air",
+    "param": "tiLPFiltPT1TCACDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 339076,
+    "name": "Air_tiPT1T1PIntkVUs_C",
+    "module": "Air",
+    "param": "tiPT1T1PIntkVUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 339581,
+    "name": "Air_tiPT1T1SigPIntkVUs_C",
+    "module": "Air",
+    "param": "tiPT1T1SigPIntkVUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 340025,
+    "name": "Air_tiPT1TAFS_C",
+    "module": "Air",
+    "param": "tiPT1TAFS",
+    "suffix": "C"
+  },
+  {
+    "offset": 340460,
+    "name": "Air_tiRefSigPerMaxTAFS_C",
+    "module": "Air",
+    "param": "tiRefSigPerMaxTAFS",
+    "suffix": "C"
+  },
+  {
+    "offset": 340905,
+    "name": "Air_tiRefSigPerMinTAFS_C",
+    "module": "Air",
+    "param": "tiRefSigPerMinTAFS",
+    "suffix": "C"
+  },
+  {
+    "offset": 344149,
+    "name": "Air_tT0HiLim_C",
+    "module": "Air",
+    "param": "tT0HiLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 344587,
+    "name": "Air_tT0LoLim_C",
+    "module": "Air",
+    "param": "tT0LoLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 345089,
+    "name": "Air_tTransfTCACDs_CUR",
+    "module": "Air",
+    "param": "tTransfTCACDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 761128,
+    "name": "Brk_ctPlaDef_C",
+    "module": "Brk",
+    "param": "ctPlaDef",
+    "suffix": "C"
+  },
+  {
+    "offset": 763433,
+    "name": "Brk_stDflVal_C",
+    "module": "Brk",
+    "param": "stDflVal",
+    "suffix": "C"
+  },
+  {
+    "offset": 763948,
+    "name": "Brk_swtRedSensPrs_C",
+    "module": "Brk",
+    "param": "swtRedSensPrs",
+    "suffix": "C"
+  },
+  {
+    "offset": 764444,
+    "name": "Brk_tiDebPlaStat_C",
+    "module": "Brk",
+    "param": "tiDebPlaStat",
+    "suffix": "C"
+  },
+  {
+    "offset": 764930,
+    "name": "Brk_tiDebPla_C",
+    "module": "Brk",
+    "param": "tiDebPla",
+    "suffix": "C"
+  },
+  {
+    "offset": 765410,
+    "name": "Brk_tiDebResPla_C",
+    "module": "Brk",
+    "param": "tiDebResPla",
+    "suffix": "C"
+  },
+  {
+    "offset": 770218,
+    "name": "Calwup_swtWakeupEnaCpl_C",
+    "module": "Calwup",
+    "param": "swtWakeupEnaCpl",
+    "suffix": "C"
+  },
+  {
+    "offset": 770738,
+    "name": "Calwup_swtWakeupEna_C",
+    "module": "Calwup",
+    "param": "swtWakeupEna",
+    "suffix": "C"
+  },
+  {
+    "offset": 788736,
+    "name": "Clth_nNoGearShftDet_C",
+    "module": "Clth",
+    "param": "nNoGearShftDet",
+    "suffix": "C"
+  },
+  {
+    "offset": 789232,
+    "name": "Clth_stDflVal_C",
+    "module": "Clth",
+    "param": "stDflVal",
+    "suffix": "C"
+  },
+  {
+    "offset": 789718,
+    "name": "Clth_stOpn_C",
+    "module": "Clth",
+    "param": "stOpn",
+    "suffix": "C"
+  },
+  {
+    "offset": 790224,
+    "name": "Clth_stSlipClsd_C",
+    "module": "Clth",
+    "param": "stSlipClsd",
+    "suffix": "C"
+  },
+  {
+    "offset": 790729,
+    "name": "Clth_stSlipOpn_C",
+    "module": "Clth",
+    "param": "stSlipOpn",
+    "suffix": "C"
+  },
+  {
+    "offset": 791230,
+    "name": "Clth_stSlip_C",
+    "module": "Clth",
+    "param": "stSlip",
+    "suffix": "C"
+  },
+  {
+    "offset": 791710,
+    "name": "Clth_swtSig_C",
+    "module": "Clth",
+    "param": "swtSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 792181,
+    "name": "Clth_tiGearShft_C",
+    "module": "Clth",
+    "param": "tiGearShft",
+    "suffix": "C"
+  },
+  {
+    "offset": 792679,
+    "name": "Clth_vNoGearShftDet_C",
+    "module": "Clth",
+    "param": "vNoGearShftDet",
+    "suffix": "C"
+  },
+  {
+    "offset": 840923,
+    "name": "Com_aSideMax_C",
+    "module": "Com",
+    "param": "aSideMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 841361,
+    "name": "Com_aSideMin_C",
+    "module": "Com",
+    "param": "aSideMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 841799,
+    "name": "Com_bRecACC_C",
+    "module": "Com",
+    "param": "bRecACC",
+    "suffix": "C"
+  },
+  {
+    "offset": 842232,
+    "name": "Com_CCMsg_0_C",
+    "module": "Com",
+    "param": "CCMsg_0",
+    "suffix": "C"
+  },
+  {
+    "offset": 842665,
+    "name": "Com_CCMsg_0_ID_C",
+    "module": "Com",
+    "param": "CCMsg_0_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 843101,
+    "name": "Com_CCMsg_10_C",
+    "module": "Com",
+    "param": "CCMsg_10",
+    "suffix": "C"
+  },
+  {
+    "offset": 843535,
+    "name": "Com_CCMsg_10_ID_C",
+    "module": "Com",
+    "param": "CCMsg_10_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 843972,
+    "name": "Com_CCMsg_11_C",
+    "module": "Com",
+    "param": "CCMsg_11",
+    "suffix": "C"
+  },
+  {
+    "offset": 844406,
+    "name": "Com_CCMsg_11_ID_C",
+    "module": "Com",
+    "param": "CCMsg_11_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 844843,
+    "name": "Com_CCMsg_12_C",
+    "module": "Com",
+    "param": "CCMsg_12",
+    "suffix": "C"
+  },
+  {
+    "offset": 845277,
+    "name": "Com_CCMsg_12_ID_C",
+    "module": "Com",
+    "param": "CCMsg_12_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 845714,
+    "name": "Com_CCMsg_13_C",
+    "module": "Com",
+    "param": "CCMsg_13",
+    "suffix": "C"
+  },
+  {
+    "offset": 846148,
+    "name": "Com_CCMsg_13_ID_C",
+    "module": "Com",
+    "param": "CCMsg_13_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 846585,
+    "name": "Com_CCMsg_14_C",
+    "module": "Com",
+    "param": "CCMsg_14",
+    "suffix": "C"
+  },
+  {
+    "offset": 847019,
+    "name": "Com_CCMsg_14_ID_C",
+    "module": "Com",
+    "param": "CCMsg_14_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 847456,
+    "name": "Com_CCMsg_15_C",
+    "module": "Com",
+    "param": "CCMsg_15",
+    "suffix": "C"
+  },
+  {
+    "offset": 847890,
+    "name": "Com_CCMsg_15_ID_C",
+    "module": "Com",
+    "param": "CCMsg_15_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 848327,
+    "name": "Com_CCMsg_16_C",
+    "module": "Com",
+    "param": "CCMsg_16",
+    "suffix": "C"
+  },
+  {
+    "offset": 848761,
+    "name": "Com_CCMsg_16_ID_C",
+    "module": "Com",
+    "param": "CCMsg_16_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 849198,
+    "name": "Com_CCMsg_17_C",
+    "module": "Com",
+    "param": "CCMsg_17",
+    "suffix": "C"
+  },
+  {
+    "offset": 849632,
+    "name": "Com_CCMsg_17_ID_C",
+    "module": "Com",
+    "param": "CCMsg_17_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 850069,
+    "name": "Com_CCMsg_18_C",
+    "module": "Com",
+    "param": "CCMsg_18",
+    "suffix": "C"
+  },
+  {
+    "offset": 850503,
+    "name": "Com_CCMsg_18_ID_C",
+    "module": "Com",
+    "param": "CCMsg_18_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 850940,
+    "name": "Com_CCMsg_19_C",
+    "module": "Com",
+    "param": "CCMsg_19",
+    "suffix": "C"
+  },
+  {
+    "offset": 851374,
+    "name": "Com_CCMsg_19_ID_C",
+    "module": "Com",
+    "param": "CCMsg_19_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 851811,
+    "name": "Com_CCMsg_1_C",
+    "module": "Com",
+    "param": "CCMsg_1",
+    "suffix": "C"
+  },
+  {
+    "offset": 852244,
+    "name": "Com_CCMsg_1_ID_C",
+    "module": "Com",
+    "param": "CCMsg_1_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 852680,
+    "name": "Com_CCMsg_20_C",
+    "module": "Com",
+    "param": "CCMsg_20",
+    "suffix": "C"
+  },
+  {
+    "offset": 853114,
+    "name": "Com_CCMsg_20_ID_C",
+    "module": "Com",
+    "param": "CCMsg_20_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 853551,
+    "name": "Com_CCMsg_21_C",
+    "module": "Com",
+    "param": "CCMsg_21",
+    "suffix": "C"
+  },
+  {
+    "offset": 853985,
+    "name": "Com_CCMsg_21_ID_C",
+    "module": "Com",
+    "param": "CCMsg_21_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 854422,
+    "name": "Com_CCMsg_22_C",
+    "module": "Com",
+    "param": "CCMsg_22",
+    "suffix": "C"
+  },
+  {
+    "offset": 854856,
+    "name": "Com_CCMsg_22_ID_C",
+    "module": "Com",
+    "param": "CCMsg_22_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 855293,
+    "name": "Com_CCMsg_2_C",
+    "module": "Com",
+    "param": "CCMsg_2",
+    "suffix": "C"
+  },
+  {
+    "offset": 855726,
+    "name": "Com_CCMsg_2_ID_C",
+    "module": "Com",
+    "param": "CCMsg_2_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 856162,
+    "name": "Com_CCMsg_3_C",
+    "module": "Com",
+    "param": "CCMsg_3",
+    "suffix": "C"
+  },
+  {
+    "offset": 856595,
+    "name": "Com_CCMsg_3_ID_C",
+    "module": "Com",
+    "param": "CCMsg_3_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 857031,
+    "name": "Com_CCMsg_4_C",
+    "module": "Com",
+    "param": "CCMsg_4",
+    "suffix": "C"
+  },
+  {
+    "offset": 857464,
+    "name": "Com_CCMsg_4_ID_C",
+    "module": "Com",
+    "param": "CCMsg_4_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 857900,
+    "name": "Com_CCMsg_5_C",
+    "module": "Com",
+    "param": "CCMsg_5",
+    "suffix": "C"
+  },
+  {
+    "offset": 858333,
+    "name": "Com_CCMsg_5_ID_C",
+    "module": "Com",
+    "param": "CCMsg_5_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 858769,
+    "name": "Com_CCMsg_6_C",
+    "module": "Com",
+    "param": "CCMsg_6",
+    "suffix": "C"
+  },
+  {
+    "offset": 859202,
+    "name": "Com_CCMsg_6_ID_C",
+    "module": "Com",
+    "param": "CCMsg_6_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 859638,
+    "name": "Com_CCMsg_7_C",
+    "module": "Com",
+    "param": "CCMsg_7",
+    "suffix": "C"
+  },
+  {
+    "offset": 860071,
+    "name": "Com_CCMsg_7_ID_C",
+    "module": "Com",
+    "param": "CCMsg_7_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 860507,
+    "name": "Com_CCMsg_8_C",
+    "module": "Com",
+    "param": "CCMsg_8",
+    "suffix": "C"
+  },
+  {
+    "offset": 860940,
+    "name": "Com_CCMsg_8_ID_C",
+    "module": "Com",
+    "param": "CCMsg_8_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 861376,
+    "name": "Com_CCMsg_9_C",
+    "module": "Com",
+    "param": "CCMsg_9",
+    "suffix": "C"
+  },
+  {
+    "offset": 861809,
+    "name": "Com_CCMsg_9_ID_C",
+    "module": "Com",
+    "param": "CCMsg_9_ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 862245,
+    "name": "Com_ctACCSelfRec_C",
+    "module": "Com",
+    "param": "ctACCSelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 862683,
+    "name": "Com_ctHeatACSelfRec_C",
+    "module": "Com",
+    "param": "ctHeatACSelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 863124,
+    "name": "Com_ctTrqDemandAFSSelfRec_C",
+    "module": "Com",
+    "param": "ctTrqDemandAFSSelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 863571,
+    "name": "Com_ctTrqDemandSTESelfRec_C",
+    "module": "Com",
+    "param": "ctTrqDemandSTESelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 864908,
+    "name": "Com_dTestMsg_C",
+    "module": "Com",
+    "param": "dTestMsg",
+    "suffix": "C"
+  },
+  {
+    "offset": 865342,
+    "name": "Com_dTestSig_C",
+    "module": "Com",
+    "param": "dTestSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 868450,
+    "name": "Com_facTrqAC_MAP",
+    "module": "Com",
+    "param": "facTrqAC",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 868899,
+    "name": "Com_facTrqInrStrt_C",
+    "module": "Com",
+    "param": "facTrqInrStrt",
+    "suffix": "C"
+  },
+  {
+    "offset": 869338,
+    "name": "Com_nEISGovOffs_C",
+    "module": "Com",
+    "param": "nEISGovOffs",
+    "suffix": "C"
+  },
+  {
+    "offset": 869777,
+    "name": "Com_nEngOn_C",
+    "module": "Com",
+    "param": "nEngOn",
+    "suffix": "C"
+  },
+  {
+    "offset": 870211,
+    "name": "Com_qOvrRun_C",
+    "module": "Com",
+    "param": "qOvrRun",
+    "suffix": "C"
+  },
+  {
+    "offset": 870649,
+    "name": "Com_rAPPUnFltFAS_C",
+    "module": "Com",
+    "param": "rAPPUnFltFAS",
+    "suffix": "C"
+  },
+  {
+    "offset": 871087,
+    "name": "Com_RawMuxValId_C",
+    "module": "Com",
+    "param": "RawMuxValId",
+    "suffix": "C"
+  },
+  {
+    "offset": 871524,
+    "name": "Com_RawValIdA_C",
+    "module": "Com",
+    "param": "RawValIdA",
+    "suffix": "C"
+  },
+  {
+    "offset": 871959,
+    "name": "Com_RawValIdB_C",
+    "module": "Com",
+    "param": "RawValIdB",
+    "suffix": "C"
+  },
+  {
+    "offset": 872394,
+    "name": "Com_RawValIdC_C",
+    "module": "Com",
+    "param": "RawValIdC",
+    "suffix": "C"
+  },
+  {
+    "offset": 872829,
+    "name": "Com_RawValIdD_C",
+    "module": "Com",
+    "param": "RawValIdD",
+    "suffix": "C"
+  },
+  {
+    "offset": 873264,
+    "name": "Com_rWaterVlvClose_C",
+    "module": "Com",
+    "param": "rWaterVlvClose",
+    "suffix": "C"
+  },
+  {
+    "offset": 873704,
+    "name": "Com_rWaterVlvCtl_C",
+    "module": "Com",
+    "param": "rWaterVlvCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 874142,
+    "name": "Com_rWaterVlvDef_C",
+    "module": "Com",
+    "param": "rWaterVlvDef",
+    "suffix": "C"
+  },
+  {
+    "offset": 874580,
+    "name": "Com_rWaterVlvOpen_C",
+    "module": "Com",
+    "param": "rWaterVlvOpen",
+    "suffix": "C"
+  },
+  {
+    "offset": 875019,
+    "name": "Com_SelfRecID_C",
+    "module": "Com",
+    "param": "SelfRecID",
+    "suffix": "C"
+  },
+  {
+    "offset": 875454,
+    "name": "Com_stDewPntNotRchd_C",
+    "module": "Com",
+    "param": "stDewPntNotRchd",
+    "suffix": "C"
+  },
+  {
+    "offset": 875895,
+    "name": "Com_stDewPntRchd_C",
+    "module": "Com",
+    "param": "stDewPntRchd",
+    "suffix": "C"
+  },
+  {
+    "offset": 876333,
+    "name": "Com_stMskHeatACSig_C",
+    "module": "Com",
+    "param": "stMskHeatACSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 876773,
+    "name": "Com_stMskLenkradwinkelSig_C",
+    "module": "Com",
+    "param": "stMskLenkradwinkelSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 877220,
+    "name": "Com_stMskStateDscSig_C",
+    "module": "Com",
+    "param": "stMskStateDscSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 877662,
+    "name": "Com_stMskTrqDemandAFSSig_C",
+    "module": "Com",
+    "param": "stMskTrqDemandAFSSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 878108,
+    "name": "Com_stMskTrqDemandDscSig_C",
+    "module": "Com",
+    "param": "stMskTrqDemandDscSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 878554,
+    "name": "Com_stMskTrqDemandSTESig_C",
+    "module": "Com",
+    "param": "stMskTrqDemandSTESig",
+    "suffix": "C"
+  },
+  {
+    "offset": 879000,
+    "name": "Com_stMskTrqWhlDemSig_C",
+    "module": "Com",
+    "param": "stMskTrqWhlDemSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 879443,
+    "name": "Com_stMskVelocitySig_C",
+    "module": "Com",
+    "param": "stMskVelocitySig",
+    "suffix": "C"
+  },
+  {
+    "offset": 879885,
+    "name": "Com_stMskWheelSpeedSig_C",
+    "module": "Com",
+    "param": "stMskWheelSpeedSig",
+    "suffix": "C"
+  },
+  {
+    "offset": 880329,
+    "name": "Com_stTrqInrErr_C",
+    "module": "Com",
+    "param": "stTrqInrErr",
+    "suffix": "C"
+  },
+  {
+    "offset": 880766,
+    "name": "Com_swtACDemand_FA_C",
+    "module": "Com",
+    "param": "swtACDemand_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 881206,
+    "name": "Com_swtActvFlPmpEng_A_C",
+    "module": "Com",
+    "param": "swtActvFlPmpEng_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 881649,
+    "name": "Com_swtaDirect_C",
+    "module": "Com",
+    "param": "swtaDirect",
+    "suffix": "C"
+  },
+  {
+    "offset": 882085,
+    "name": "Com_swtAngAcpd_A_C",
+    "module": "Com",
+    "param": "swtAngAcpd_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 882523,
+    "name": "Com_swtAngAcpd_FA_C",
+    "module": "Com",
+    "param": "swtAngAcpd_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 882962,
+    "name": "Com_swtAngAcpd_FX_C",
+    "module": "Com",
+    "param": "swtAngAcpd_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 883401,
+    "name": "Com_swtASDdc_C",
+    "module": "Com",
+    "param": "swtASDdc",
+    "suffix": "C"
+  },
+  {
+    "offset": 883835,
+    "name": "Com_swtaSide_C",
+    "module": "Com",
+    "param": "swtaSide",
+    "suffix": "C"
+  },
+  {
+    "offset": 884269,
+    "name": "Com_swtATemp_A_C",
+    "module": "Com",
+    "param": "swtATemp_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 884705,
+    "name": "Com_swtATemp_FA_C",
+    "module": "Com",
+    "param": "swtATemp_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 885142,
+    "name": "Com_swtATemp_FX_C",
+    "module": "Com",
+    "param": "swtATemp_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 885579,
+    "name": "Com_swtBatteriespg_C",
+    "module": "Com",
+    "param": "swtBatteriespg",
+    "suffix": "C"
+  },
+  {
+    "offset": 886019,
+    "name": "Com_swtBNVltg_FA_C",
+    "module": "Com",
+    "param": "swtBNVltg_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 886457,
+    "name": "Com_swtBOSRst2_C",
+    "module": "Com",
+    "param": "swtBOSRst2",
+    "suffix": "C"
+  },
+  {
+    "offset": 886893,
+    "name": "Com_swtBOSRst_C",
+    "module": "Com",
+    "param": "swtBOSRst",
+    "suffix": "C"
+  },
+  {
+    "offset": 887328,
+    "name": "Com_swtBrPWhl_FX_C",
+    "module": "Com",
+    "param": "swtBrPWhl_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 887766,
+    "name": "Com_swtBtnDrvDyn_FX_C",
+    "module": "Com",
+    "param": "swtBtnDrvDyn_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 888207,
+    "name": "Com_swtCalcVehN_C",
+    "module": "Com",
+    "param": "swtCalcVehN",
+    "suffix": "C"
+  },
+  {
+    "offset": 888644,
+    "name": "Com_swtCalcVehVBd_C",
+    "module": "Com",
+    "param": "swtCalcVehVBd",
+    "suffix": "C"
+  },
+  {
+    "offset": 889083,
+    "name": "Com_swtCalcVehV_C",
+    "module": "Com",
+    "param": "swtCalcVehV",
+    "suffix": "C"
+  },
+  {
+    "offset": 889520,
+    "name": "Com_swtCBSOil_C",
+    "module": "Com",
+    "param": "swtCBSOil",
+    "suffix": "C"
+  },
+  {
+    "offset": 889955,
+    "name": "Com_swtCBSPFlt_C",
+    "module": "Com",
+    "param": "swtCBSPFlt",
+    "suffix": "C"
+  },
+  {
+    "offset": 890391,
+    "name": "Com_swtCodierungPwrmng_FA_C",
+    "module": "Com",
+    "param": "swtCodierungPwrmng_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 890838,
+    "name": "Com_swtCrCtlSpeed_C",
+    "module": "Com",
+    "param": "swtCrCtlSpeed",
+    "suffix": "C"
+  },
+  {
+    "offset": 891277,
+    "name": "Com_swtCtrCrshSwoEkp_A_C",
+    "module": "Com",
+    "param": "swtCtrCrshSwoEkp_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 891721,
+    "name": "Com_swtCtrCrshSwoEkp_FA_C",
+    "module": "Com",
+    "param": "swtCtrCrshSwoEkp_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 892166,
+    "name": "Com_swtDataPT2_FX_C",
+    "module": "Com",
+    "param": "swtDataPT2_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 892605,
+    "name": "Com_swtDataPT_FX_C",
+    "module": "Com",
+    "param": "swtDataPT_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 893043,
+    "name": "Com_swtDiaOBDEng_A_C",
+    "module": "Com",
+    "param": "swtDiaOBDEng_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 893483,
+    "name": "Com_swtDiaOBDGbx_A_C",
+    "module": "Com",
+    "param": "swtDiaOBDGbx_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 893923,
+    "name": "Com_swtDiensteID38_FA_C",
+    "module": "Com",
+    "param": "swtDiensteID38_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 894366,
+    "name": "Com_swtDienste_FA_C",
+    "module": "Com",
+    "param": "swtDienste_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 894805,
+    "name": "Com_swtDispRpmPt_FA_C",
+    "module": "Com",
+    "param": "swtDispRpmPt_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 895246,
+    "name": "Com_swtDriveTrainData1_A_C",
+    "module": "Com",
+    "param": "swtDriveTrainData1_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 895692,
+    "name": "Com_swtDriveTrainData1_FA_C",
+    "module": "Com",
+    "param": "swtDriveTrainData1_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 896139,
+    "name": "Com_swtDriveTrainData2_A_C",
+    "module": "Com",
+    "param": "swtDriveTrainData2_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 896585,
+    "name": "Com_swtDriveTrainData2_FA_C",
+    "module": "Com",
+    "param": "swtDriveTrainData2_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 897032,
+    "name": "Com_swtDtGrdtDrv_FA_C",
+    "module": "Com",
+    "param": "swtDtGrdtDrv_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 897473,
+    "name": "Com_swtElektrMOelMess_FA_C",
+    "module": "Com",
+    "param": "swtElektrMOelMess_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 897919,
+    "name": "Com_swtEngine1_FA_C",
+    "module": "Com",
+    "param": "swtEngine1_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 898358,
+    "name": "Com_swtEngineRpm_C",
+    "module": "Com",
+    "param": "swtEngineRpm",
+    "suffix": "C"
+  },
+  {
+    "offset": 898796,
+    "name": "Com_swtEngine_C",
+    "module": "Com",
+    "param": "swtEngine",
+    "suffix": "C"
+  },
+  {
+    "offset": 899231,
+    "name": "Com_swtFahrzeugtyp_C",
+    "module": "Com",
+    "param": "swtFahrzeugtyp",
+    "suffix": "C"
+  },
+  {
+    "offset": 899671,
+    "name": "Com_swtFahrzeugtyp_FA_C",
+    "module": "Com",
+    "param": "swtFahrzeugtyp_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 900114,
+    "name": "Com_swtFllupGpwsup_FA_C",
+    "module": "Com",
+    "param": "swtFllupGpwsup_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 900557,
+    "name": "Com_swtGbxData_A_C",
+    "module": "Com",
+    "param": "swtGbxData_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 900995,
+    "name": "Com_swtGbxData_FA_C",
+    "module": "Com",
+    "param": "swtGbxData_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 901434,
+    "name": "Com_swtGbxDriveTrain_FX_C",
+    "module": "Com",
+    "param": "swtGbxDriveTrain_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 901879,
+    "name": "Com_swtGearboxData2_C",
+    "module": "Com",
+    "param": "swtGearboxData2",
+    "suffix": "C"
+  },
+  {
+    "offset": 902320,
+    "name": "Com_swtGearboxData_C",
+    "module": "Com",
+    "param": "swtGearboxData",
+    "suffix": "C"
+  },
+  {
+    "offset": 902760,
+    "name": "Com_swtHeatAC_C",
+    "module": "Com",
+    "param": "swtHeatAC",
+    "suffix": "C"
+  },
+  {
+    "offset": 903195,
+    "name": "Com_swtHeatFlowEngine_C",
+    "module": "Com",
+    "param": "swtHeatFlowEngine",
+    "suffix": "C"
+  },
+  {
+    "offset": 903638,
+    "name": "Com_swtHtgUpTempSel_C",
+    "module": "Com",
+    "param": "swtHtgUpTempSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 904077,
+    "name": "Com_swtHtMgtEngCtr_FA_C",
+    "module": "Com",
+    "param": "swtHtMgtEngCtr_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 904520,
+    "name": "Com_swtHtqUpCoEOMOff_C",
+    "module": "Com",
+    "param": "swtHtqUpCoEOMOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 904962,
+    "name": "Com_swtKlemmen_A_C",
+    "module": "Com",
+    "param": "swtKlemmen_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 905400,
+    "name": "Com_swtKlemmen_FA_C",
+    "module": "Com",
+    "param": "swtKlemmen_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 905839,
+    "name": "Com_swtLenkradwinkel_C",
+    "module": "Com",
+    "param": "swtLenkradwinkel",
+    "suffix": "C"
+  },
+  {
+    "offset": 906281,
+    "name": "Com_swtLLDynDisp_C",
+    "module": "Com",
+    "param": "swtLLDynDisp",
+    "suffix": "C"
+  },
+  {
+    "offset": 906719,
+    "name": "Com_swtMileageRange_A_C",
+    "module": "Com",
+    "param": "swtMileageRange_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 907162,
+    "name": "Com_swtMileageRange_C",
+    "module": "Com",
+    "param": "swtMileageRange",
+    "suffix": "C"
+  },
+  {
+    "offset": 907603,
+    "name": "Com_swtMileageRange_FA_C",
+    "module": "Com",
+    "param": "swtMileageRange_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 908047,
+    "name": "Com_swtParkConsumer_C",
+    "module": "Com",
+    "param": "swtParkConsumer",
+    "suffix": "C"
+  },
+  {
+    "offset": 908488,
+    "name": "Com_swtPwrmngCtrCos_FA_C",
+    "module": "Com",
+    "param": "swtPwrmngCtrCos_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 908932,
+    "name": "Com_swtRelTime_A_C",
+    "module": "Com",
+    "param": "swtRelTime_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 909370,
+    "name": "Com_swtRelTime_FA_C",
+    "module": "Com",
+    "param": "swtRelTime_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 909809,
+    "name": "Com_swtReqEFan_C",
+    "module": "Com",
+    "param": "swtReqEFan",
+    "suffix": "C"
+  },
+  {
+    "offset": 910245,
+    "name": "Com_swtReqMSA_C",
+    "module": "Com",
+    "param": "swtReqMSA",
+    "suffix": "C"
+  },
+  {
+    "offset": 910680,
+    "name": "Com_swtRequestEMF_C",
+    "module": "Com",
+    "param": "swtRequestEMF",
+    "suffix": "C"
+  },
+  {
+    "offset": 911119,
+    "name": "Com_swtRpmWhl_FX_C",
+    "module": "Com",
+    "param": "swtRpmWhl_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 911557,
+    "name": "Com_swtSecCtrRel_FA_C",
+    "module": "Com",
+    "param": "swtSecCtrRel_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 911998,
+    "name": "Com_swtSensNOxDewDet_C",
+    "module": "Com",
+    "param": "swtSensNOxDewDet",
+    "suffix": "C"
+  },
+  {
+    "offset": 912440,
+    "name": "Com_swtSensNOxGnd_C",
+    "module": "Com",
+    "param": "swtSensNOxGnd",
+    "suffix": "C"
+  },
+  {
+    "offset": 912879,
+    "name": "Com_swtSensNOxUbatt_C",
+    "module": "Com",
+    "param": "swtSensNOxUbatt",
+    "suffix": "C"
+  },
+  {
+    "offset": 913320,
+    "name": "Com_swtShiftPaddle_FX_C",
+    "module": "Com",
+    "param": "swtShiftPaddle_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 913763,
+    "name": "Com_swtSlrdiGlbFZM_FA_C",
+    "module": "Com",
+    "param": "swtSlrdiGlbFZM_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 914206,
+    "name": "Com_swtSpdGovTrqCor_C",
+    "module": "Com",
+    "param": "swtSpdGovTrqCor",
+    "suffix": "C"
+  },
+  {
+    "offset": 914647,
+    "name": "Com_swtSpeedVehicle_FX_C",
+    "module": "Com",
+    "param": "swtSpeedVehicle_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 915091,
+    "name": "Com_swtStatACFront_FA_C",
+    "module": "Com",
+    "param": "swtStatACFront_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 915534,
+    "name": "Com_swtStateDsc_C",
+    "module": "Com",
+    "param": "swtStateDsc",
+    "suffix": "C"
+  },
+  {
+    "offset": 915971,
+    "name": "Com_swtStatEkp_A_C",
+    "module": "Com",
+    "param": "swtStatEkp_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 916409,
+    "name": "Com_swtStateSeat_FA_C",
+    "module": "Com",
+    "param": "swtStateSeat_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 916850,
+    "name": "Com_swtStatGang_FA_C",
+    "module": "Com",
+    "param": "swtStatGang_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 917290,
+    "name": "Com_swtStatGearRev_FA_C",
+    "module": "Com",
+    "param": "swtStatGearRev_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 917733,
+    "name": "Com_swtStatusBatterie_FA_C",
+    "module": "Com",
+    "param": "swtStatusBatterie_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 918179,
+    "name": "Com_swtStatusEGS_A_C",
+    "module": "Com",
+    "param": "swtStatusEGS_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 918619,
+    "name": "Com_swtStatusEGS_FA_C",
+    "module": "Com",
+    "param": "swtStatusEGS_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 919060,
+    "name": "Com_swtStatusEMF_C",
+    "module": "Com",
+    "param": "swtStatusEMF",
+    "suffix": "C"
+  },
+  {
+    "offset": 919498,
+    "name": "Com_swtStatusMSA_C",
+    "module": "Com",
+    "param": "swtStatusMSA",
+    "suffix": "C"
+  },
+  {
+    "offset": 919936,
+    "name": "Com_swtStatusMSA_FX_C",
+    "module": "Com",
+    "param": "swtStatusMSA_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 920377,
+    "name": "Com_swtStatZVKlappen_FA_C",
+    "module": "Com",
+    "param": "swtStatZVKlappen_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 920822,
+    "name": "Com_swtStConintDSC_FX_C",
+    "module": "Com",
+    "param": "swtStConintDSC_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 921265,
+    "name": "Com_swtStCospFuEng_FA_C",
+    "module": "Com",
+    "param": "swtStCospFuEng_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 921708,
+    "name": "Com_swtSteeringAngle_FX_C",
+    "module": "Com",
+    "param": "swtSteeringAngle_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 922153,
+    "name": "Com_swtStEnergGen_FA_C",
+    "module": "Com",
+    "param": "swtStEnergGen_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 922595,
+    "name": "Com_swtStKombi_C",
+    "module": "Com",
+    "param": "swtStKombi",
+    "suffix": "C"
+  },
+  {
+    "offset": 923031,
+    "name": "Com_swtTempRelTime_C",
+    "module": "Com",
+    "param": "swtTempRelTime",
+    "suffix": "C"
+  },
+  {
+    "offset": 923471,
+    "name": "Com_swtTest_C",
+    "module": "Com",
+    "param": "swtTest",
+    "suffix": "C"
+  },
+  {
+    "offset": 923904,
+    "name": "Com_swtTimeDate_C",
+    "module": "Com",
+    "param": "swtTimeDate",
+    "suffix": "C"
+  },
+  {
+    "offset": 924341,
+    "name": "Com_swtTimeDate_FA_C",
+    "module": "Com",
+    "param": "swtTimeDate_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 924781,
+    "name": "Com_swtTorque1_C",
+    "module": "Com",
+    "param": "swtTorque1",
+    "suffix": "C"
+  },
+  {
+    "offset": 925217,
+    "name": "Com_swtTorque2_C",
+    "module": "Com",
+    "param": "swtTorque2",
+    "suffix": "C"
+  },
+  {
+    "offset": 925653,
+    "name": "Com_swtTorque3_C",
+    "module": "Com",
+    "param": "swtTorque3",
+    "suffix": "C"
+  },
+  {
+    "offset": 926089,
+    "name": "Com_swtTrailer_FA_C",
+    "module": "Com",
+    "param": "swtTrailer_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 926528,
+    "name": "Com_swtTrqCrsh1_A_C",
+    "module": "Com",
+    "param": "swtTrqCrsh1_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 926967,
+    "name": "Com_swtTrqCrsh1_FA_C",
+    "module": "Com",
+    "param": "swtTrqCrsh1_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 927407,
+    "name": "Com_swtTrqCrsh1_FX_C",
+    "module": "Com",
+    "param": "swtTrqCrsh1_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 927847,
+    "name": "Com_swtTrqCrsh2_A_C",
+    "module": "Com",
+    "param": "swtTrqCrsh2_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 928286,
+    "name": "Com_swtTrqCrsh2_FA_C",
+    "module": "Com",
+    "param": "swtTrqCrsh2_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 928726,
+    "name": "Com_swtTrqCrsh3_A_C",
+    "module": "Com",
+    "param": "swtTrqCrsh3_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 929165,
+    "name": "Com_swtTrqCrsh3_FA_C",
+    "module": "Com",
+    "param": "swtTrqCrsh3_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 929605,
+    "name": "Com_swtTrqCrsh3_FX_C",
+    "module": "Com",
+    "param": "swtTrqCrsh3_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 930045,
+    "name": "Com_swtTrqDemandAFS_C",
+    "module": "Com",
+    "param": "swtTrqDemandAFS",
+    "suffix": "C"
+  },
+  {
+    "offset": 930486,
+    "name": "Com_swtTrqDemandDsc_C",
+    "module": "Com",
+    "param": "swtTrqDemandDsc",
+    "suffix": "C"
+  },
+  {
+    "offset": 930927,
+    "name": "Com_swtTrqDemandGbx_A_C",
+    "module": "Com",
+    "param": "swtTrqDemandGbx_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 931370,
+    "name": "Com_swtTrqDemandGbx_C",
+    "module": "Com",
+    "param": "swtTrqDemandGbx",
+    "suffix": "C"
+  },
+  {
+    "offset": 931811,
+    "name": "Com_swtTrqDemandGbx_FA_C",
+    "module": "Com",
+    "param": "swtTrqDemandGbx_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 932255,
+    "name": "Com_swtTrqDemandSTE_C",
+    "module": "Com",
+    "param": "swtTrqDemandSTE",
+    "suffix": "C"
+  },
+  {
+    "offset": 932696,
+    "name": "Com_swtTrqDemCrshDrDy_FX_C",
+    "module": "Com",
+    "param": "swtTrqDemCrshDrDy_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 933142,
+    "name": "Com_swtTrqWhlDemFAS_FX_C",
+    "module": "Com",
+    "param": "swtTrqWhlDemFAS_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 933586,
+    "name": "Com_swtTrqWhlDem_C",
+    "module": "Com",
+    "param": "swtTrqWhlDem",
+    "suffix": "C"
+  },
+  {
+    "offset": 934024,
+    "name": "Com_swtUbattCat2Ds_C",
+    "module": "Com",
+    "param": "swtUbattCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 934464,
+    "name": "Com_swtVehicleSpeed_A_C",
+    "module": "Com",
+    "param": "swtVehicleSpeed_A",
+    "suffix": "C"
+  },
+  {
+    "offset": 934907,
+    "name": "Com_swtVelocity_C",
+    "module": "Com",
+    "param": "swtVelocity",
+    "suffix": "C"
+  },
+  {
+    "offset": 935344,
+    "name": "Com_swtVelocity_FA_C",
+    "module": "Com",
+    "param": "swtVelocity_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 935784,
+    "name": "Com_swtVerbrauchersteuerung_C",
+    "module": "Com",
+    "param": "swtVerbrauchersteuerung",
+    "suffix": "C"
+  },
+  {
+    "offset": 936233,
+    "name": "Com_swtVerbraucherstg_FX_C",
+    "module": "Com",
+    "param": "swtVerbraucherstg_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 936679,
+    "name": "Com_swtVerbraucher_C",
+    "module": "Com",
+    "param": "swtVerbraucher",
+    "suffix": "C"
+  },
+  {
+    "offset": 937119,
+    "name": "Com_swtWheelSpeed_C",
+    "module": "Com",
+    "param": "swtWheelSpeed",
+    "suffix": "C"
+  },
+  {
+    "offset": 937558,
+    "name": "Com_swtWhlTrqPT1_FX_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT1_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 937999,
+    "name": "Com_swtWhlTrqPT2_FX_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT2_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 938440,
+    "name": "Com_swtWhlTrqPT3_FX_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT3_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 938881,
+    "name": "Com_swtWhlTrqPT4_FA_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT4_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 939322,
+    "name": "Com_swtWhlTrqPT4_FX_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT4_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 939763,
+    "name": "Com_swtWhlTrqPT5_FA_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT5_FA",
+    "suffix": "C"
+  },
+  {
+    "offset": 940204,
+    "name": "Com_swtWhlTrqPT5_FX_C",
+    "module": "Com",
+    "param": "swtWhlTrqPT5_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 940645,
+    "name": "Com_swtWMomPTStab_FX_C",
+    "module": "Com",
+    "param": "swtWMomPTStab_FX",
+    "suffix": "C"
+  },
+  {
+    "offset": 941087,
+    "name": "Com_tEngLimHi_C",
+    "module": "Com",
+    "param": "tEngLimHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 941526,
+    "name": "Com_tEngLimLo_C",
+    "module": "Com",
+    "param": "tEngLimLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 941965,
+    "name": "Com_tiACCSelfRec_C",
+    "module": "Com",
+    "param": "tiACCSelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 945076,
+    "name": "Com_tiFltADirect_C",
+    "module": "Com",
+    "param": "tiFltADirect",
+    "suffix": "C"
+  },
+  {
+    "offset": 945514,
+    "name": "Com_tiFltnTrbn_C",
+    "module": "Com",
+    "param": "tiFltnTrbn",
+    "suffix": "C"
+  },
+  {
+    "offset": 945951,
+    "name": "Com_tiHeatACSelfRec_C",
+    "module": "Com",
+    "param": "tiHeatACSelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 946393,
+    "name": "Com_tiNDynDisp_C",
+    "module": "Com",
+    "param": "tiNDynDisp",
+    "suffix": "C"
+  },
+  {
+    "offset": 946830,
+    "name": "Com_tiSysTimeOk_C",
+    "module": "Com",
+    "param": "tiSysTimeOk",
+    "suffix": "C"
+  },
+  {
+    "offset": 947268,
+    "name": "Com_tiSysTimeOut_C",
+    "module": "Com",
+    "param": "tiSysTimeOut",
+    "suffix": "C"
+  },
+  {
+    "offset": 947707,
+    "name": "Com_tiTrqAccPT1Flt_C",
+    "module": "Com",
+    "param": "tiTrqAccPT1Flt",
+    "suffix": "C"
+  },
+  {
+    "offset": 948147,
+    "name": "Com_tiTrqDemandAFSSelfRec_C",
+    "module": "Com",
+    "param": "tiTrqDemandAFSSelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 948595,
+    "name": "Com_tiTrqDemandSTESelfRec_C",
+    "module": "Com",
+    "param": "tiTrqDemandSTESelfRec",
+    "suffix": "C"
+  },
+  {
+    "offset": 949043,
+    "name": "Com_trqGbxMaxSubs_C",
+    "module": "Com",
+    "param": "trqGbxMaxSubs",
+    "suffix": "C"
+  },
+  {
+    "offset": 949483,
+    "name": "Com_tWaterVlv_C",
+    "module": "Com",
+    "param": "tWaterVlv",
+    "suffix": "C"
+  },
+  {
+    "offset": 949922,
+    "name": "Com_vT15Hw_C",
+    "module": "Com",
+    "param": "vT15Hw",
+    "suffix": "C"
+  },
+  {
+    "offset": 950357,
+    "name": "Com_vVehFAS_C",
+    "module": "Com",
+    "param": "vVehFAS",
+    "suffix": "C"
+  },
+  {
+    "offset": 951706,
+    "name": "Conv_facDfl_C",
+    "module": "Conv",
+    "param": "facDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 952186,
+    "name": "Conv_facGnTrqHiInc_C",
+    "module": "Conv",
+    "param": "facGnTrqHiInc",
+    "suffix": "C"
+  },
+  {
+    "offset": 952680,
+    "name": "Conv_facGnTrqResv_C",
+    "module": "Conv",
+    "param": "facGnTrqResv",
+    "suffix": "C"
+  },
+  {
+    "offset": 953160,
+    "name": "Conv_facNTrbnCorr_C",
+    "module": "Conv",
+    "param": "facNTrbnCorr",
+    "suffix": "C"
+  },
+  {
+    "offset": 953646,
+    "name": "Conv_facVelErr_C",
+    "module": "Conv",
+    "param": "facVelErr",
+    "suffix": "C"
+  },
+  {
+    "offset": 954134,
+    "name": "Conv_facVelNoErr_C",
+    "module": "Conv",
+    "param": "facVelNoErr",
+    "suffix": "C"
+  },
+  {
+    "offset": 956413,
+    "name": "Conv_nTrbnLoLim_C",
+    "module": "Conv",
+    "param": "nTrbnLoLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 956903,
+    "name": "Conv_nTrbnMinCorrVal_C",
+    "module": "Conv",
+    "param": "nTrbnMinCorrVal",
+    "suffix": "C"
+  },
+  {
+    "offset": 957364,
+    "name": "Conv_nTrbn_C",
+    "module": "Conv",
+    "param": "nTrbn",
+    "suffix": "C"
+  },
+  {
+    "offset": 957842,
+    "name": "Conv_rTrq_C",
+    "module": "Conv",
+    "param": "rTrq",
+    "suffix": "C"
+  },
+  {
+    "offset": 958289,
+    "name": "Conv_tiDfl_C",
+    "module": "Conv",
+    "param": "tiDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 958781,
+    "name": "Conv_tiDwnRglPT1_C",
+    "module": "Conv",
+    "param": "tiDwnRglPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 959267,
+    "name": "Conv_tiPT1_C",
+    "module": "Conv",
+    "param": "tiPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 959744,
+    "name": "Conv_tiRTraGearPT1_C",
+    "module": "Conv",
+    "param": "tiRTraGearPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 960184,
+    "name": "Conv_tiTrbnPT1_C",
+    "module": "Conv",
+    "param": "tiTrbnPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 960661,
+    "name": "Conv_tiTrqLdPT1_C",
+    "module": "Conv",
+    "param": "tiTrqLdPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 961142,
+    "name": "Conv_tiTrqResvPT1_C",
+    "module": "Conv",
+    "param": "tiTrqResvPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 961644,
+    "name": "Conv_tiUpRglPT1_C",
+    "module": "Conv",
+    "param": "tiUpRglPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 962102,
+    "name": "Conv_trqDfl_C",
+    "module": "Conv",
+    "param": "trqDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 962536,
+    "name": "Conv_trqGbx_MAP",
+    "module": "Conv",
+    "param": "trqGbx",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 963040,
+    "name": "Conv_trqLdActv_CW",
+    "module": "Conv",
+    "param": "trqLdActv",
+    "suffix": "CW"
+  },
+  {
+    "offset": 963517,
+    "name": "Conv_trqLdGnFacHysDec_C",
+    "module": "Conv",
+    "param": "trqLdGnFacHysDec",
+    "suffix": "C"
+  },
+  {
+    "offset": 963997,
+    "name": "Conv_trqLdMaxLim_MAP",
+    "module": "Conv",
+    "param": "trqLdMaxLim",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 964562,
+    "name": "Conv_trqLdReplCan_C",
+    "module": "Conv",
+    "param": "trqLdReplCan",
+    "suffix": "C"
+  },
+  {
+    "offset": 965031,
+    "name": "Conv_trqLdRevLvrPos_GCUR",
+    "module": "Conv",
+    "param": "trqLdRevLvrPos",
+    "suffix": "GCUR"
+  },
+  {
+    "offset": 965537,
+    "name": "Conv_trqLd_CW",
+    "module": "Conv",
+    "param": "trqLd",
+    "suffix": "CW"
+  },
+  {
+    "offset": 966953,
+    "name": "Conv_trqResvLoLim_C",
+    "module": "Conv",
+    "param": "trqResvLoLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 967424,
+    "name": "Conv_trqResvMinLim_C",
+    "module": "Conv",
+    "param": "trqResvMinLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 967935,
+    "name": "Conv_trqResvNeutrLvrPos_C",
+    "module": "Conv",
+    "param": "trqResvNeutrLvrPos",
+    "suffix": "C"
+  },
+  {
+    "offset": 968450,
+    "name": "Conv_trqResvPreFlt_C",
+    "module": "Conv",
+    "param": "trqResvPreFlt",
+    "suffix": "C"
+  },
+  {
+    "offset": 968920,
+    "name": "Conv_trqResvRepl_C",
+    "module": "Conv",
+    "param": "trqResvRepl",
+    "suffix": "C"
+  },
+  {
+    "offset": 969403,
+    "name": "Conv_trqStatSqLvrPosNeutr_C",
+    "module": "Conv",
+    "param": "trqStatSqLvrPosNeutr",
+    "suffix": "C"
+  },
+  {
+    "offset": 987461,
+    "name": "Cpu_swtClrEnvRAMVals_C",
+    "module": "Cpu",
+    "param": "swtClrEnvRAMVals",
+    "suffix": "C"
+  },
+  {
+    "offset": 6349072,
+    "name": "Diag_stOBDPtcol_C",
+    "module": "Diag",
+    "param": "stOBDPtcol",
+    "suffix": "C"
+  },
+  {
+    "offset": 6350859,
+    "name": "Diff_rTrqDfftl_C",
+    "module": "Diff",
+    "param": "rTrqDfftl",
+    "suffix": "C"
+  },
+  {
+    "offset": 6352270,
+    "name": "Dio_idxAFSSSpShOffOD_C",
+    "module": "Dio",
+    "param": "idxAFSSSpShOffOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6352712,
+    "name": "Dio_idxBrkMnID_C",
+    "module": "Dio",
+    "param": "idxBrkMnID",
+    "suffix": "C"
+  },
+  {
+    "offset": 6353148,
+    "name": "Dio_idxBrkRedID_C",
+    "module": "Dio",
+    "param": "idxBrkRedID",
+    "suffix": "C"
+  },
+  {
+    "offset": 6353585,
+    "name": "Dio_idxCByVlvOD_C",
+    "module": "Dio",
+    "param": "idxCByVlvOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6354022,
+    "name": "Dio_idxClthID_C",
+    "module": "Dio",
+    "param": "idxClthID",
+    "suffix": "C"
+  },
+  {
+    "offset": 6354457,
+    "name": "Dio_idxEBxFanOD_C",
+    "module": "Dio",
+    "param": "idxEBxFanOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6354894,
+    "name": "Dio_idxEGRVlvODDir_C",
+    "module": "Dio",
+    "param": "idxEGRVlvODDir",
+    "suffix": "C"
+  },
+  {
+    "offset": 6355334,
+    "name": "Dio_idxEGRVlvODDis_C",
+    "module": "Dio",
+    "param": "idxEGRVlvODDis",
+    "suffix": "C"
+  },
+  {
+    "offset": 6355774,
+    "name": "Dio_idxEMDmp0OD_C",
+    "module": "Dio",
+    "param": "idxEMDmp0OD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6356211,
+    "name": "Dio_idxEMDmp1OD_C",
+    "module": "Dio",
+    "param": "idxEMDmp1OD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6356648,
+    "name": "Dio_idxEngStAOD_C",
+    "module": "Dio",
+    "param": "idxEngStAOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6357085,
+    "name": "Dio_idxErrLmpMILOD_C",
+    "module": "Dio",
+    "param": "idxErrLmpMILOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6357525,
+    "name": "Dio_idxErrLmpSVSOD_C",
+    "module": "Dio",
+    "param": "idxErrLmpSVSOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6357965,
+    "name": "Dio_idxFlFltHtOD_C",
+    "module": "Dio",
+    "param": "idxFlFltHtOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6358403,
+    "name": "Dio_idxFlFltID_C",
+    "module": "Dio",
+    "param": "idxFlFltID",
+    "suffix": "C"
+  },
+  {
+    "offset": 6358839,
+    "name": "Dio_idxGbxNPosID_C",
+    "module": "Dio",
+    "param": "idxGbxNPosID",
+    "suffix": "C"
+  },
+  {
+    "offset": 6359277,
+    "name": "Dio_idxOilPLmpOD_C",
+    "module": "Dio",
+    "param": "idxOilPLmpOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6359715,
+    "name": "Dio_idxStrtOD_C",
+    "module": "Dio",
+    "param": "idxStrtOD",
+    "suffix": "C"
+  },
+  {
+    "offset": 6360150,
+    "name": "Dio_idxT50ID_C",
+    "module": "Dio",
+    "param": "idxT50ID",
+    "suffix": "C"
+  },
+  {
+    "offset": 6360584,
+    "name": "Dio_idxVSwVlvODDir_C",
+    "module": "Dio",
+    "param": "idxVSwVlvODDir",
+    "suffix": "C"
+  },
+  {
+    "offset": 6361024,
+    "name": "Dio_idxVSwVlvODDis_C",
+    "module": "Dio",
+    "param": "idxVSwVlvODDis",
+    "suffix": "C"
+  },
+  {
+    "offset": 6717953,
+    "name": "Eng_stOff_C",
+    "module": "Eng",
+    "param": "stOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6718384,
+    "name": "Eng_stRun_C",
+    "module": "Eng",
+    "param": "stRun",
+    "suffix": "C"
+  },
+  {
+    "offset": 6718843,
+    "name": "Eng_stStopEna_C",
+    "module": "Eng",
+    "param": "stStopEna",
+    "suffix": "C"
+  },
+  {
+    "offset": 6719307,
+    "name": "Eng_stStrtEna_C",
+    "module": "Eng",
+    "param": "stStrtEna",
+    "suffix": "C"
+  },
+  {
+    "offset": 6765036,
+    "name": "Epm_nNoSyncVerify_C",
+    "module": "Epm",
+    "param": "nNoSyncVerify",
+    "suffix": "C"
+  },
+  {
+    "offset": 6765510,
+    "name": "Epm_numCyl_C",
+    "module": "Epm",
+    "param": "numCyl",
+    "suffix": "C"
+  },
+  {
+    "offset": 6765989,
+    "name": "Epm_numReSync_C",
+    "module": "Epm",
+    "param": "numReSync",
+    "suffix": "C"
+  },
+  {
+    "offset": 6766501,
+    "name": "Epm_phiDiffMax_C",
+    "module": "Epm",
+    "param": "phiDiffMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 6767000,
+    "name": "Epm_phiGap2Zero_C",
+    "module": "Epm",
+    "param": "phiGap2Zero",
+    "suffix": "C"
+  },
+  {
+    "offset": 6767500,
+    "name": "Epm_phiGap2Zero_C",
+    "module": "Epm",
+    "param": "phiGap2Zero",
+    "suffix": "C"
+  },
+  {
+    "offset": 6768000,
+    "name": "Epm_phiGap2Zero_C",
+    "module": "Epm",
+    "param": "phiGap2Zero",
+    "suffix": "C"
+  },
+  {
+    "offset": 6768489,
+    "name": "Epm_phiIgrOfs_C",
+    "module": "Epm",
+    "param": "phiIgrOfs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6768988,
+    "name": "Epm_phiTdc1_C",
+    "module": "Epm",
+    "param": "phiTdc1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6769485,
+    "name": "Epm_phiTdc1_C",
+    "module": "Epm",
+    "param": "phiTdc1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6769963,
+    "name": "Epm_swtBlkInjCaSSync_C",
+    "module": "Epm",
+    "param": "swtBlkInjCaSSync",
+    "suffix": "C"
+  },
+  {
+    "offset": 6770474,
+    "name": "Epm_swtOpModeStgy_C",
+    "module": "Epm",
+    "param": "swtOpModeStgy",
+    "suffix": "C"
+  },
+  {
+    "offset": 6770941,
+    "name": "Epm_tiSpd2Zero_C",
+    "module": "Epm",
+    "param": "tiSpd2Zero",
+    "suffix": "C"
+  },
+  {
+    "offset": 6771458,
+    "name": "Epm_tiSpdGrdFlt_C",
+    "module": "Epm",
+    "param": "tiSpdGrdFlt",
+    "suffix": "C"
+  },
+  {
+    "offset": 6833276,
+    "name": "Etc_MaxReqTO_C",
+    "module": "Etc",
+    "param": "MaxReqTO",
+    "suffix": "C"
+  },
+  {
+    "offset": 6833750,
+    "name": "Exh_d2rInitNoCat2Ds_C",
+    "module": "Exh",
+    "param": "d2rInitNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6834231,
+    "name": "Exh_d2rInitNSCDs_C",
+    "module": "Exh",
+    "param": "d2rInitNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6834669,
+    "name": "Exh_ddvolHsLnNegPPFltDiff_C",
+    "module": "Exh",
+    "param": "ddvolHsLnNegPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6835122,
+    "name": "Exh_ddvolHsLnPosPPFltDiff_C",
+    "module": "Exh",
+    "param": "ddvolHsLnPosPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6835608,
+    "name": "Exh_dmAirIKiNoCat2Ds_C",
+    "module": "Exh",
+    "param": "dmAirIKiNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6836085,
+    "name": "Exh_dmAirIKiNSCDs_C",
+    "module": "Exh",
+    "param": "dmAirIKiNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6836551,
+    "name": "Exh_EvalMaxValNoCat2Ds_C",
+    "module": "Exh",
+    "param": "EvalMaxValNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6837015,
+    "name": "Exh_EvalMaxValNSCDs_C",
+    "module": "Exh",
+    "param": "EvalMaxValNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6837492,
+    "name": "Exh_EvalMinValNoCat2Ds_C",
+    "module": "Exh",
+    "param": "EvalMinValNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6837972,
+    "name": "Exh_EvalMinValNSCDs_C",
+    "module": "Exh",
+    "param": "EvalMinValNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6838464,
+    "name": "Exh_facMolMsNoCat2Ds_CUR",
+    "module": "Exh",
+    "param": "facMolMsNoCat2Ds",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6838988,
+    "name": "Exh_facMolMsNOxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "facMolMsNOxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6839455,
+    "name": "Exh_facMolMsNOxNSCDs_C",
+    "module": "Exh",
+    "param": "facMolMsNOxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6839955,
+    "name": "Exh_facMolMsNSCDs_CUR",
+    "module": "Exh",
+    "param": "facMolMsNSCDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6840461,
+    "name": "Exh_facNOxOfsAvrgNoCat2Ds_C",
+    "module": "Exh",
+    "param": "facNOxOfsAvrgNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6840935,
+    "name": "Exh_facNOxOfsAvrgNSCDs_C",
+    "module": "Exh",
+    "param": "facNOxOfsAvrgNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6841461,
+    "name": "Exh_facO2LeanNoCat2Ds_CUR",
+    "module": "Exh",
+    "param": "facO2LeanNoCat2Ds",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6842004,
+    "name": "Exh_facO2LeanNSCDs_CUR",
+    "module": "Exh",
+    "param": "facO2LeanNSCDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6842543,
+    "name": "Exh_facO2RichNoCat2Ds_CUR",
+    "module": "Exh",
+    "param": "facO2RichNoCat2Ds",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6843083,
+    "name": "Exh_facO2RichNSCDs_CUR",
+    "module": "Exh",
+    "param": "facO2RichNSCDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6847762,
+    "name": "Exh_idxDewDetNoCat2Ds_C",
+    "module": "Exh",
+    "param": "idxDewDetNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6848260,
+    "name": "Exh_idxDewDetNSCDs_C",
+    "module": "Exh",
+    "param": "idxDewDetNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6848764,
+    "name": "Exh_idxEGFldNoCat2Ds_C",
+    "module": "Exh",
+    "param": "idxEGFldNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6849280,
+    "name": "Exh_idxEGFldNSCDs_C",
+    "module": "Exh",
+    "param": "idxEGFldNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6849755,
+    "name": "Exh_IKiNgvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "IKiNgvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6850233,
+    "name": "Exh_IKiNgvNSCDs_C",
+    "module": "Exh",
+    "param": "IKiNgvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6850708,
+    "name": "Exh_IKiPsvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "IKiPsvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6851186,
+    "name": "Exh_IKiPsvNSCDs_C",
+    "module": "Exh",
+    "param": "IKiPsvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6853821,
+    "name": "Exh_mAirAdapActvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "mAirAdapActvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6854301,
+    "name": "Exh_mAirAdapActvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "mAirAdapActvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6854781,
+    "name": "Exh_mAirAdapActvNSCDs_C",
+    "module": "Exh",
+    "param": "mAirAdapActvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6855258,
+    "name": "Exh_mAirAdapActvNSCDs_C",
+    "module": "Exh",
+    "param": "mAirAdapActvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6855745,
+    "name": "Exh_mAirMaxCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "mAirMaxCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6856243,
+    "name": "Exh_mAirMaxCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "mAirMaxCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6856737,
+    "name": "Exh_mAirMinCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "mAirMinCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6857236,
+    "name": "Exh_mAirMinCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "mAirMinCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6857782,
+    "name": "Exh_mNOxOfsTstLimNoCat2Ds_C",
+    "module": "Exh",
+    "param": "mNOxOfsTstLimNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6858326,
+    "name": "Exh_mNOxOfsTstLimNSCDs_C",
+    "module": "Exh",
+    "param": "mNOxOfsTstLimNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6858770,
+    "name": "Exh_nChkTrgExhTMon_C",
+    "module": "Exh",
+    "param": "nChkTrgExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6859256,
+    "name": "Exh_nMaxCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "nMaxCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6859746,
+    "name": "Exh_nMaxCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "nMaxCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6860242,
+    "name": "Exh_nMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "nMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6860735,
+    "name": "Exh_nMaxNSCDs_C",
+    "module": "Exh",
+    "param": "nMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6861303,
+    "name": "Exh_nMaxR2LTstNoCat2Ds_C",
+    "module": "Exh",
+    "param": "nMaxR2LTstNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6861887,
+    "name": "Exh_nMaxR2LTstNSCDs_C",
+    "module": "Exh",
+    "param": "nMaxR2LTstNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6862375,
+    "name": "Exh_nMinCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "nMinCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6862866,
+    "name": "Exh_nMinCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "nMinCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6863363,
+    "name": "Exh_nMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "nMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6863857,
+    "name": "Exh_nMinNSCDs_C",
+    "module": "Exh",
+    "param": "nMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6866308,
+    "name": "Exh_numCntBckPPFltUs_C",
+    "module": "Exh",
+    "param": "numCntBckPPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6866750,
+    "name": "Exh_numCntMaxPPFltUs_C",
+    "module": "Exh",
+    "param": "numCntMaxPPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6867192,
+    "name": "Exh_numFldPPFltDiff_C",
+    "module": "Exh",
+    "param": "numFldPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6867633,
+    "name": "Exh_numFldPPFltUs_C",
+    "module": "Exh",
+    "param": "numFldPPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6868072,
+    "name": "Exh_numFldTOxiCatUs_C",
+    "module": "Exh",
+    "param": "numFldTOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6868513,
+    "name": "Exh_numFldTTrbnUs_C",
+    "module": "Exh",
+    "param": "numFldTTrbnUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6868952,
+    "name": "Exh_numModelTTrbnUs_C",
+    "module": "Exh",
+    "param": "numModelTTrbnUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6869393,
+    "name": "Exh_numSimTempPos1_C",
+    "module": "Exh",
+    "param": "numSimTempPos1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6869833,
+    "name": "Exh_numSimTempPos2_C",
+    "module": "Exh",
+    "param": "numSimTempPos2",
+    "suffix": "C"
+  },
+  {
+    "offset": 6870273,
+    "name": "Exh_numSimTempPos3_C",
+    "module": "Exh",
+    "param": "numSimTempPos3",
+    "suffix": "C"
+  },
+  {
+    "offset": 6870713,
+    "name": "Exh_numTempEngMon_C",
+    "module": "Exh",
+    "param": "numTempEngMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6871152,
+    "name": "Exh_numTempPos1_C",
+    "module": "Exh",
+    "param": "numTempPos1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6871589,
+    "name": "Exh_numTempPos2_C",
+    "module": "Exh",
+    "param": "numTempPos2",
+    "suffix": "C"
+  },
+  {
+    "offset": 6872026,
+    "name": "Exh_numTempPos3_C",
+    "module": "Exh",
+    "param": "numTempPos3",
+    "suffix": "C"
+  },
+  {
+    "offset": 6872463,
+    "name": "Exh_numTempSens_C",
+    "module": "Exh",
+    "param": "numTempSens",
+    "suffix": "C"
+  },
+  {
+    "offset": 6872900,
+    "name": "Exh_numTempStyChk_C",
+    "module": "Exh",
+    "param": "numTempStyChk",
+    "suffix": "C"
+  },
+  {
+    "offset": 6873339,
+    "name": "Exh_numTiStpNplPPFltDiff_C",
+    "module": "Exh",
+    "param": "numTiStpNplPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6873785,
+    "name": "Exh_numTOxiCatUs_C",
+    "module": "Exh",
+    "param": "numTOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6874223,
+    "name": "Exh_numTPFltUs_C",
+    "module": "Exh",
+    "param": "numTPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6874710,
+    "name": "Exh_pAdapPPFltDiffB1_C",
+    "module": "Exh",
+    "param": "pAdapPPFltDiffB1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6875205,
+    "name": "Exh_pAdapPPFltDiffB2_C",
+    "module": "Exh",
+    "param": "pAdapPPFltDiffB2",
+    "suffix": "C"
+  },
+  {
+    "offset": 6875649,
+    "name": "Exh_pBPAPTolcMaxPPFltDiff_C",
+    "module": "Exh",
+    "param": "pBPAPTolcMaxPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6876098,
+    "name": "Exh_pDiffTolcMaxPPFltDiff_C",
+    "module": "Exh",
+    "param": "pDiffTolcMaxPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6876603,
+    "name": "Exh_pEGFldNoCat2Ds_C",
+    "module": "Exh",
+    "param": "pEGFldNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6877099,
+    "name": "Exh_pEGFldNoCat2Ds_C",
+    "module": "Exh",
+    "param": "pEGFldNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6877595,
+    "name": "Exh_pEGFldNSCDs_C",
+    "module": "Exh",
+    "param": "pEGFldNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6878088,
+    "name": "Exh_pEGFldNSCDs_C",
+    "module": "Exh",
+    "param": "pEGFldNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6878525,
+    "name": "Exh_pHsLnNegPPFltDiff_C",
+    "module": "Exh",
+    "param": "pHsLnNegPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6878970,
+    "name": "Exh_pMaxPPFltDiff_C",
+    "module": "Exh",
+    "param": "pMaxPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6879411,
+    "name": "Exh_pMinNmrCldStrt_C",
+    "module": "Exh",
+    "param": "pMinNmrCldStrt",
+    "suffix": "C"
+  },
+  {
+    "offset": 6879853,
+    "name": "Exh_pMinPPFltDiff_C",
+    "module": "Exh",
+    "param": "pMinPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6880294,
+    "name": "Exh_pMntCor_CUR",
+    "module": "Exh",
+    "param": "pMntCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6880781,
+    "name": "Exh_pOfsValActMidPPFltDiff_C",
+    "module": "Exh",
+    "param": "pOfsValActMidPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6881231,
+    "name": "Exh_pPFltDiffMaxVar_C",
+    "module": "Exh",
+    "param": "pPFltDiffMaxVar",
+    "suffix": "C"
+  },
+  {
+    "offset": 6881718,
+    "name": "Exh_pPFltUsB1_C",
+    "module": "Exh",
+    "param": "pPFltUsB1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6882199,
+    "name": "Exh_pPFltUsB2_C",
+    "module": "Exh",
+    "param": "pPFltUsB2",
+    "suffix": "C"
+  },
+  {
+    "offset": 6882636,
+    "name": "Exh_pPFltUsBPMaxPPFltDiff_C",
+    "module": "Exh",
+    "param": "pPFltUsBPMaxPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6883085,
+    "name": "Exh_pTransfPPFltDiff_CUR",
+    "module": "Exh",
+    "param": "pTransfPPFltDiff",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6883545,
+    "name": "Exh_pTransfPPFltUs_CUR",
+    "module": "Exh",
+    "param": "pTransfPPFltUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6884002,
+    "name": "Exh_pUsTolcMaxPPFltDiff_C",
+    "module": "Exh",
+    "param": "pUsTolcMaxPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6884491,
+    "name": "Exh_qMaxCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "qMaxCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6884982,
+    "name": "Exh_qMaxCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "qMaxCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6885471,
+    "name": "Exh_qMinCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "qMinCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6885963,
+    "name": "Exh_qMinCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "qMinCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6886439,
+    "name": "Exh_rEGRMaxCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rEGRMaxCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6886916,
+    "name": "Exh_rEGRMaxCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "rEGRMaxCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6887391,
+    "name": "Exh_rEGRMinCmpChkNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rEGRMinCmpChkNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6887869,
+    "name": "Exh_rEGRMinCmpChkNSCDs_C",
+    "module": "Exh",
+    "param": "rEGRMinCmpChkNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6888313,
+    "name": "Exh_resFlowTolcPPFltDiff_C",
+    "module": "Exh",
+    "param": "resFlowTolcPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6888820,
+    "name": "Exh_rLamBinNoCat2Ds_CUR",
+    "module": "Exh",
+    "param": "rLamBinNoCat2Ds",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6889360,
+    "name": "Exh_rLamBinNSCDs_CUR",
+    "module": "Exh",
+    "param": "rLamBinNSCDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6889924,
+    "name": "Exh_rLamLeanLimNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rLamLeanLimNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6890447,
+    "name": "Exh_rLamLeanLimNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rLamLeanLimNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6890970,
+    "name": "Exh_rLamLeanLimNSCDs_C",
+    "module": "Exh",
+    "param": "rLamLeanLimNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6891490,
+    "name": "Exh_rLamLeanLimNSCDs_C",
+    "module": "Exh",
+    "param": "rLamLeanLimNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6891958,
+    "name": "Exh_rLamLinMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rLamLinMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6892428,
+    "name": "Exh_rLamLinMaxNSCDs_C",
+    "module": "Exh",
+    "param": "rLamLinMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6892895,
+    "name": "Exh_rLamLinMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rLamLinMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6893365,
+    "name": "Exh_rLamLinMinNSCDs_C",
+    "module": "Exh",
+    "param": "rLamLinMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6893891,
+    "name": "Exh_rLamOfsTstLimNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rLamOfsTstLimNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6894423,
+    "name": "Exh_rLamOfsTstLimNSCDs_C",
+    "module": "Exh",
+    "param": "rLamOfsTstLimNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6894942,
+    "name": "Exh_rLamRecNoCat2Ds_CUR",
+    "module": "Exh",
+    "param": "rLamRecNoCat2Ds",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6895502,
+    "name": "Exh_rLamRecNSCDs_CUR",
+    "module": "Exh",
+    "param": "rLamRecNSCDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6900488,
+    "name": "Exh_rNOxMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rNOxMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6900943,
+    "name": "Exh_rNOxMaxNSCDs_C",
+    "module": "Exh",
+    "param": "rNOxMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6901395,
+    "name": "Exh_rNOxMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rNOxMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6901850,
+    "name": "Exh_rNOxMinNSCDs_C",
+    "module": "Exh",
+    "param": "rNOxMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6902319,
+    "name": "Exh_rNOxOfsdiffMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rNOxOfsdiffMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6902800,
+    "name": "Exh_rNOxOfsdiffMinNSCDs_C",
+    "module": "Exh",
+    "param": "rNOxOfsdiffMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6903359,
+    "name": "Exh_rNOxOfsMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rNOxOfsMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6903915,
+    "name": "Exh_rNOxOfsMaxNSCDs_C",
+    "module": "Exh",
+    "param": "rNOxOfsMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6904440,
+    "name": "Exh_rNOxOfsMaxVarNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rNOxOfsMaxVarNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6904971,
+    "name": "Exh_rNOxOfsMaxVarNSCDs_C",
+    "module": "Exh",
+    "param": "rNOxOfsMaxVarNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6905438,
+    "name": "Exh_rNOxOfsMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rNOxOfsMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6905905,
+    "name": "Exh_rNOxOfsMinNSCDs_C",
+    "module": "Exh",
+    "param": "rNOxOfsMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6906404,
+    "name": "Exh_rNOxPresCompLeanNoCat2Ds_MAP",
+    "module": "Exh",
+    "param": "rNOxPresCompLeanNoCat2Ds",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 6906953,
+    "name": "Exh_rNOxPresCompLeanNSCDs_MAP",
+    "module": "Exh",
+    "param": "rNOxPresCompLeanNSCDs",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 6907472,
+    "name": "Exh_rO2LinMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rO2LinMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6907944,
+    "name": "Exh_rO2LinMaxNSCDs_C",
+    "module": "Exh",
+    "param": "rO2LinMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6908413,
+    "name": "Exh_rO2LinMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rO2LinMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6908885,
+    "name": "Exh_rO2LinMinNSCDs_C",
+    "module": "Exh",
+    "param": "rO2LinMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6909383,
+    "name": "Exh_rO2LinNoCat2Ds_CUR",
+    "module": "Exh",
+    "param": "rO2LinNoCat2Ds",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6909897,
+    "name": "Exh_rO2LinNSCDs_CUR",
+    "module": "Exh",
+    "param": "rO2LinNSCDs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6910416,
+    "name": "Exh_rO2MaxVarNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rO2MaxVarNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6910925,
+    "name": "Exh_rO2MaxVarNSCDs_C",
+    "module": "Exh",
+    "param": "rO2MaxVarNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6911388,
+    "name": "Exh_rPIDWinNgvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rPIDWinNgvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6911855,
+    "name": "Exh_rPIDWinNgvNSCDs_C",
+    "module": "Exh",
+    "param": "rPIDWinNgvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6912319,
+    "name": "Exh_rPIDWinPsvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "rPIDWinPsvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6912786,
+    "name": "Exh_rPIDWinPsvNSCDs_C",
+    "module": "Exh",
+    "param": "rPIDWinPsvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6917675,
+    "name": "Exh_stLckNplTTrbnUs_C",
+    "module": "Exh",
+    "param": "stLckNplTTrbnUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6918116,
+    "name": "Exh_stMaskLckNplTPFltUs_C",
+    "module": "Exh",
+    "param": "stMaskLckNplTPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6918641,
+    "name": "Exh_stMskCmpChkO2NoCat2Ds_C",
+    "module": "Exh",
+    "param": "stMskCmpChkO2NoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6919168,
+    "name": "Exh_stMskCmpChkO2NSCDs_C",
+    "module": "Exh",
+    "param": "stMskCmpChkO2NSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6919612,
+    "name": "Exh_stMskLckNplExhTMon_C",
+    "module": "Exh",
+    "param": "stMskLckNplExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6920056,
+    "name": "Exh_stMskLckNplTOxiCatUs_C",
+    "module": "Exh",
+    "param": "stMskLckNplTOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6920502,
+    "name": "Exh_stPresDevPrs_C",
+    "module": "Exh",
+    "param": "stPresDevPrs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6920940,
+    "name": "Exh_stStyPPFltDiff_C",
+    "module": "Exh",
+    "param": "stStyPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6921380,
+    "name": "Exh_stTempDevPrs_C",
+    "module": "Exh",
+    "param": "stTempDevPrs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6921818,
+    "name": "Exh_stTrgAftRunPPFltDiff_C",
+    "module": "Exh",
+    "param": "stTrgAftRunPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6922304,
+    "name": "Exh_swtAdapActvNoCat2Ds_C",
+    "module": "Exh",
+    "param": "swtAdapActvNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6922789,
+    "name": "Exh_swtAdapActvNSCDs_C",
+    "module": "Exh",
+    "param": "swtAdapActvNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6923231,
+    "name": "Exh_swtDflPPFltDiff_C",
+    "module": "Exh",
+    "param": "swtDflPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6923672,
+    "name": "Exh_swtDflPPFltUs_C",
+    "module": "Exh",
+    "param": "swtDflPPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6924111,
+    "name": "Exh_swtDflTPFltUs_C",
+    "module": "Exh",
+    "param": "swtDflTPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6924550,
+    "name": "Exh_swtEngOffTmr_C",
+    "module": "Exh",
+    "param": "swtEngOffTmr",
+    "suffix": "C"
+  },
+  {
+    "offset": 6924988,
+    "name": "Exh_swtEnvTPPFltUs_C",
+    "module": "Exh",
+    "param": "swtEnvTPPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6925428,
+    "name": "Exh_swtEnvTSensPrs_C",
+    "module": "Exh",
+    "param": "swtEnvTSensPrs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6925924,
+    "name": "Exh_swtNoCat2Ds_C",
+    "module": "Exh",
+    "param": "swtNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6926389,
+    "name": "Exh_swtNOxOfsCorrEnaNoCat2Ds_C",
+    "module": "Exh",
+    "param": "swtNOxOfsCorrEnaNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6926867,
+    "name": "Exh_swtNOxOfsCorrEnaNSCDs_C",
+    "module": "Exh",
+    "param": "swtNOxOfsCorrEnaNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6927370,
+    "name": "Exh_swtNSCDs_C",
+    "module": "Exh",
+    "param": "swtNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6927804,
+    "name": "Exh_swtOfsPPFltDiff_C",
+    "module": "Exh",
+    "param": "swtOfsPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6928245,
+    "name": "Exh_swtSensCfgPPFlt_C",
+    "module": "Exh",
+    "param": "swtSensCfgPPFlt",
+    "suffix": "C"
+  },
+  {
+    "offset": 6928686,
+    "name": "Exh_swtSensPrsTTrbnUs_C",
+    "module": "Exh",
+    "param": "swtSensPrsTTrbnUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6929129,
+    "name": "Exh_swtSensTOxiCatUs_C",
+    "module": "Exh",
+    "param": "swtSensTOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6929571,
+    "name": "Exh_swtStyCondExhTMon_C",
+    "module": "Exh",
+    "param": "swtStyCondExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6930014,
+    "name": "Exh_swtSvcChngPPFltDiff_C",
+    "module": "Exh",
+    "param": "swtSvcChngPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6930459,
+    "name": "Exh_swtTPFltUsASModSel_C",
+    "module": "Exh",
+    "param": "swtTPFltUsASModSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 6930903,
+    "name": "Exh_tCldStrtExhTMonDfl_C",
+    "module": "Exh",
+    "param": "tCldStrtExhTMonDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 6931351,
+    "name": "Exh_tDiffCldExhTMonMax_C",
+    "module": "Exh",
+    "param": "tDiffCldExhTMonMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 6931795,
+    "name": "Exh_tDiffNegTOxiCatUs_CUR",
+    "module": "Exh",
+    "param": "tDiffNegTOxiCatUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6932259,
+    "name": "Exh_tDiffNegTPFltUs_CUR",
+    "module": "Exh",
+    "param": "tDiffNegTPFltUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6932748,
+    "name": "Exh_tDiffNegTTrbnUs_CUR",
+    "module": "Exh",
+    "param": "tDiffNegTTrbnUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6933229,
+    "name": "Exh_tDiffNgvExhTMon1_CUR",
+    "module": "Exh",
+    "param": "tDiffNgvExhTMon1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6933687,
+    "name": "Exh_tDiffNgvExhTMon2_CUR",
+    "module": "Exh",
+    "param": "tDiffNgvExhTMon2",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6934133,
+    "name": "Exh_tDiffNgvExhTMon3_CUR",
+    "module": "Exh",
+    "param": "tDiffNgvExhTMon3",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6934579,
+    "name": "Exh_tDiffPosTOxiCatUs_CUR",
+    "module": "Exh",
+    "param": "tDiffPosTOxiCatUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6935026,
+    "name": "Exh_tDiffPosTPFltUs_CUR",
+    "module": "Exh",
+    "param": "tDiffPosTPFltUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6935471,
+    "name": "Exh_tDiffPosTTrbnUs_CUR",
+    "module": "Exh",
+    "param": "tDiffPosTTrbnUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6935928,
+    "name": "Exh_tDiffPsvExhTMon1_CUR",
+    "module": "Exh",
+    "param": "tDiffPsvExhTMon1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6936374,
+    "name": "Exh_tDiffPsvExhTMon2_CUR",
+    "module": "Exh",
+    "param": "tDiffPsvExhTMon2",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6936832,
+    "name": "Exh_tDiffPsvExhTMon3_CUR",
+    "module": "Exh",
+    "param": "tDiffPsvExhTMon3",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6937290,
+    "name": "Exh_tExhTMon1TolcMax_CUR",
+    "module": "Exh",
+    "param": "tExhTMon1TolcMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6937758,
+    "name": "Exh_tExhTMon2TolcMax_CUR",
+    "module": "Exh",
+    "param": "tExhTMon2TolcMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6938226,
+    "name": "Exh_tExhTMon3TolcMax_CUR",
+    "module": "Exh",
+    "param": "tExhTMon3TolcMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6938694,
+    "name": "Exh_tExhTMonMaxVar_C",
+    "module": "Exh",
+    "param": "tExhTMonMaxVar",
+    "suffix": "C"
+  },
+  {
+    "offset": 6939134,
+    "name": "Exh_tFrzMinPPFltUs_C",
+    "module": "Exh",
+    "param": "tFrzMinPPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6939633,
+    "name": "Exh_tiAdapFltInitNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiAdapFltInitNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6940135,
+    "name": "Exh_tiAdapFltInitNSCDs_C",
+    "module": "Exh",
+    "param": "tiAdapFltInitNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6940615,
+    "name": "Exh_tiAdapFltNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiAdapFltNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6941094,
+    "name": "Exh_tiAdapFltNSCDs_C",
+    "module": "Exh",
+    "param": "tiAdapFltNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6941599,
+    "name": "Exh_tiAvrgNOxOfsTstNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiAvrgNOxOfsTstNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6942113,
+    "name": "Exh_tiAvrgNOxOfsTstNSCDs_C",
+    "module": "Exh",
+    "param": "tiAvrgNOxOfsTstNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6942559,
+    "name": "Exh_tiChkTempPlausMax_CUR",
+    "module": "Exh",
+    "param": "tiChkTempPlausMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6943042,
+    "name": "Exh_tiDelOfsCalcPPFltDiff_C",
+    "module": "Exh",
+    "param": "tiDelOfsCalcPPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6943538,
+    "name": "Exh_tiDelOvrRunNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiDelOvrRunNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6944033,
+    "name": "Exh_tiDelOvrRunNSCDs_C",
+    "module": "Exh",
+    "param": "tiDelOvrRunNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6944592,
+    "name": "Exh_tiDlyCmpChkO2NoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiDlyCmpChkO2NoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6945155,
+    "name": "Exh_tiDlyCmpChkO2NSCDs_C",
+    "module": "Exh",
+    "param": "tiDlyCmpChkO2NSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6945635,
+    "name": "Exh_tiEvalFltNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiEvalFltNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6946114,
+    "name": "Exh_tiEvalFltNSCDs_C",
+    "module": "Exh",
+    "param": "tiEvalFltNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6946611,
+    "name": "Exh_tiEvalInitFltNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiEvalInitFltNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6947115,
+    "name": "Exh_tiEvalInitFltNSCDs_C",
+    "module": "Exh",
+    "param": "tiEvalInitFltNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6947587,
+    "name": "Exh_tiHtgSensMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiHtgSensMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6948062,
+    "name": "Exh_tiHtgSensMaxNSCDs_C",
+    "module": "Exh",
+    "param": "tiHtgSensMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6950608,
+    "name": "Exh_tiLckChkTempPlaus_C",
+    "module": "Exh",
+    "param": "tiLckChkTempPlaus",
+    "suffix": "C"
+  },
+  {
+    "offset": 6951051,
+    "name": "Exh_tiLckNplRgnTOxiCatUs_C",
+    "module": "Exh",
+    "param": "tiLckNplRgnTOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6951497,
+    "name": "Exh_tiLckNplRgnTPFltUs_C",
+    "module": "Exh",
+    "param": "tiLckNplRgnTPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6951941,
+    "name": "Exh_tiLckNplRgnTTrbnUs_C",
+    "module": "Exh",
+    "param": "tiLckNplRgnTTrbnUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6952386,
+    "name": "Exh_tiLckNplTOxiCatUs_C",
+    "module": "Exh",
+    "param": "tiLckNplTOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6952829,
+    "name": "Exh_tiLckNplTPFltUs_C",
+    "module": "Exh",
+    "param": "tiLckNplTPFltUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6953270,
+    "name": "Exh_tiLckNplTTrbnUs_C",
+    "module": "Exh",
+    "param": "tiLckNplTTrbnUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6953712,
+    "name": "Exh_tiLckPlausRgnExhTMon_C",
+    "module": "Exh",
+    "param": "tiLckPlausRgnExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6954158,
+    "name": "Exh_tiLckStrtExhTMon_C",
+    "module": "Exh",
+    "param": "tiLckStrtExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6954666,
+    "name": "Exh_tiLoHiOfsDebNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiLoHiOfsDebNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6955179,
+    "name": "Exh_tiLoHiOfsDebNSCDs_C",
+    "module": "Exh",
+    "param": "tiLoHiOfsDebNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6955623,
+    "name": "Exh_tiLPFltPT1TOxiCatUs_C",
+    "module": "Exh",
+    "param": "tiLPFltPT1TOxiCatUs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6956068,
+    "name": "Exh_tiMinSnceStop_C",
+    "module": "Exh",
+    "param": "tiMinSnceStop",
+    "suffix": "C"
+  },
+  {
+    "offset": 6956509,
+    "name": "Exh_tIncrExhTMon1_C",
+    "module": "Exh",
+    "param": "tIncrExhTMon1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6956948,
+    "name": "Exh_tIncrExhTMon2_C",
+    "module": "Exh",
+    "param": "tIncrExhTMon2",
+    "suffix": "C"
+  },
+  {
+    "offset": 6957387,
+    "name": "Exh_tIncrExhTMon3_C",
+    "module": "Exh",
+    "param": "tIncrExhTMon3",
+    "suffix": "C"
+  },
+  {
+    "offset": 6957921,
+    "name": "Exh_tiNOxDlyNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiNOxDlyNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6958403,
+    "name": "Exh_tiNOxDlyNSCDs_C",
+    "module": "Exh",
+    "param": "tiNOxDlyNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6958956,
+    "name": "Exh_tiNOxR2LTstMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiNOxR2LTstMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6959518,
+    "name": "Exh_tiNOxR2LTstMaxNSCDs_C",
+    "module": "Exh",
+    "param": "tiNOxR2LTstMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6960011,
+    "name": "Exh_tiO2EvalNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiO2EvalNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6960501,
+    "name": "Exh_tiO2EvalNSCDs_C",
+    "module": "Exh",
+    "param": "tiO2EvalNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6960940,
+    "name": "Exh_tiPPFltDiffStyChk_C",
+    "module": "Exh",
+    "param": "tiPPFltDiffStyChk",
+    "suffix": "C"
+  },
+  {
+    "offset": 6961434,
+    "name": "Exh_tiPT1NoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiPT1NoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6961924,
+    "name": "Exh_tiPT1NSCDs_C",
+    "module": "Exh",
+    "param": "tiPT1NSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6962360,
+    "name": "Exh_tiPT1PPFltDiff_C",
+    "module": "Exh",
+    "param": "tiPT1PPFltDiff",
+    "suffix": "C"
+  },
+  {
+    "offset": 6962839,
+    "name": "Exh_tiPT1rNOxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tiPT1rNOxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6963321,
+    "name": "Exh_tiPT1rNOxNSCDs_C",
+    "module": "Exh",
+    "param": "tiPT1rNOxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6963761,
+    "name": "Exh_tiTempStyChk_C",
+    "module": "Exh",
+    "param": "tiTempStyChk",
+    "suffix": "C"
+  },
+  {
+    "offset": 6964199,
+    "name": "Exh_tMaxExhTMon_C",
+    "module": "Exh",
+    "param": "tMaxExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6964706,
+    "name": "Exh_tMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6965214,
+    "name": "Exh_tMaxNSCDs_C",
+    "module": "Exh",
+    "param": "tMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6965653,
+    "name": "Exh_tMinExhTMon_C",
+    "module": "Exh",
+    "param": "tMinExhTMon",
+    "suffix": "C"
+  },
+  {
+    "offset": 6966160,
+    "name": "Exh_tMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "tMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6966668,
+    "name": "Exh_tMinNSCDs_C",
+    "module": "Exh",
+    "param": "tMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6967107,
+    "name": "Exh_tMntCortOxiCat_MAP",
+    "module": "Exh",
+    "param": "tMntCortOxiCat",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 6967588,
+    "name": "Exh_tMntCor_MAP",
+    "module": "Exh",
+    "param": "tMntCor",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 6968106,
+    "name": "Exh_tPFltUsB1_C",
+    "module": "Exh",
+    "param": "tPFltUsB1",
+    "suffix": "C"
+  },
+  {
+    "offset": 6968589,
+    "name": "Exh_tPFltUsB2_C",
+    "module": "Exh",
+    "param": "tPFltUsB2",
+    "suffix": "C"
+  },
+  {
+    "offset": 6973557,
+    "name": "Exh_tTransfTPFltUs_CUR",
+    "module": "Exh",
+    "param": "tTransfTPFltUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6974002,
+    "name": "Exh_tTransfTTrbnUs_CUR",
+    "module": "Exh",
+    "param": "tTransfTTrbnUs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 6974462,
+    "name": "Exh_tUnLckTempPlaus_C",
+    "module": "Exh",
+    "param": "tUnLckTempPlaus",
+    "suffix": "C"
+  },
+  {
+    "offset": 6974929,
+    "name": "Exh_uBattMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "uBattMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6975394,
+    "name": "Exh_uBattMaxNSCDs_C",
+    "module": "Exh",
+    "param": "uBattMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6975856,
+    "name": "Exh_uBattMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "uBattMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6976321,
+    "name": "Exh_uBattMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "uBattMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6976786,
+    "name": "Exh_uBattMinNSCDs_C",
+    "module": "Exh",
+    "param": "uBattMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6977248,
+    "name": "Exh_uBattMinNSCDs_C",
+    "module": "Exh",
+    "param": "uBattMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6977713,
+    "name": "Exh_uLamBinMaxNoCat2Ds_C",
+    "module": "Exh",
+    "param": "uLamBinMaxNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6978183,
+    "name": "Exh_uLamBinMaxNSCDs_C",
+    "module": "Exh",
+    "param": "uLamBinMaxNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6978675,
+    "name": "Exh_uLamBinMinNoCat2Ds_C",
+    "module": "Exh",
+    "param": "uLamBinMinNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6979145,
+    "name": "Exh_uLamBinMinNSCDs_C",
+    "module": "Exh",
+    "param": "uLamBinMinNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 6979666,
+    "name": "Exh_uLamLeanLimNoCat2Ds_C",
+    "module": "Exh",
+    "param": "uLamLeanLimNoCat2Ds",
+    "suffix": "C"
+  },
+  {
+    "offset": 6980191,
+    "name": "Exh_uLamLeanLimNSCDs_C",
+    "module": "Exh",
+    "param": "uLamLeanLimNSCDs",
+    "suffix": "C"
+  },
+  {
+    "offset": 7017187,
+    "name": "Fan_rCnv_CUR",
+    "module": "Fan",
+    "param": "rCnv",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 7017702,
+    "name": "Fan_rPsDisbl_C",
+    "module": "Fan",
+    "param": "rPsDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 7018230,
+    "name": "Fan_stPsDiaDisbl_C",
+    "module": "Fan",
+    "param": "stPsDiaDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 7018733,
+    "name": "Fan_stPsDisbl_C",
+    "module": "Fan",
+    "param": "stPsDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 7019168,
+    "name": "Fan_tiAfterrun_C",
+    "module": "Fan",
+    "param": "tiAfterrun",
+    "suffix": "C"
+  },
+  {
+    "offset": 7019605,
+    "name": "Fan_typ4WinDia_C",
+    "module": "Fan",
+    "param": "typ4WinDia",
+    "suffix": "C"
+  },
+  {
+    "offset": 7113147,
+    "name": "Frm_MoFFrmFalsify_C",
+    "module": "Frm",
+    "param": "MoFFrmFalsify",
+    "suffix": "C"
+  },
+  {
+    "offset": 7122783,
+    "name": "Gbx_bASTIntv_C",
+    "module": "Gbx",
+    "param": "bASTIntv",
+    "suffix": "C"
+  },
+  {
+    "offset": 7123256,
+    "name": "Gbx_bASTNeutr_C",
+    "module": "Gbx",
+    "param": "bASTNeutr",
+    "suffix": "C"
+  },
+  {
+    "offset": 7123691,
+    "name": "Gbx_ctNPosUnPlsDec_C",
+    "module": "Gbx",
+    "param": "ctNPosUnPlsDec",
+    "suffix": "C"
+  },
+  {
+    "offset": 7124131,
+    "name": "Gbx_ctNPosUnPlsHigh_C",
+    "module": "Gbx",
+    "param": "ctNPosUnPlsHigh",
+    "suffix": "C"
+  },
+  {
+    "offset": 7124572,
+    "name": "Gbx_ctNPosUnPlsLow_C",
+    "module": "Gbx",
+    "param": "ctNPosUnPlsLow",
+    "suffix": "C"
+  },
+  {
+    "offset": 7125898,
+    "name": "Gbx_tiNPosPls_C",
+    "module": "Gbx",
+    "param": "tiNPosPls",
+    "suffix": "C"
+  },
+  {
+    "offset": 7126334,
+    "name": "Gbx_tiNPosUnPls_C",
+    "module": "Gbx",
+    "param": "tiNPosUnPls",
+    "suffix": "C"
+  },
+  {
+    "offset": 7126772,
+    "name": "Gbx_trqNPosMax_C",
+    "module": "Gbx",
+    "param": "trqNPosMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 7127209,
+    "name": "Gbx_trqNPosMin_C",
+    "module": "Gbx",
+    "param": "trqNPosMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 7331721,
+    "name": "Ibs_ctRst_C",
+    "module": "Ibs",
+    "param": "ctRst",
+    "suffix": "C"
+  },
+  {
+    "offset": 8392326,
+    "name": "Layer_dmAirPerTimeCor_C",
+    "module": "Layer",
+    "param": "dmAirPerTimeCor",
+    "suffix": "C"
+  },
+  {
+    "offset": 8392769,
+    "name": "Layer_dmAirPerTimeIMax_C",
+    "module": "Layer",
+    "param": "dmAirPerTimeIMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8393216,
+    "name": "Layer_dmAirPerTimeIMin_C",
+    "module": "Layer",
+    "param": "dmAirPerTimeIMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 8393663,
+    "name": "Layer_nEngRunHi_C",
+    "module": "Layer",
+    "param": "nEngRunHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 8394102,
+    "name": "Layer_nEngRunLo_C",
+    "module": "Layer",
+    "param": "nEngRunLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 8394541,
+    "name": "Layer_nEngSpdDelta_C",
+    "module": "Layer",
+    "param": "nEngSpdDelta",
+    "suffix": "C"
+  },
+  {
+    "offset": 8394983,
+    "name": "Layer_nVarMax_C",
+    "module": "Layer",
+    "param": "nVarMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8395420,
+    "name": "Layer_qSetDelta_C",
+    "module": "Layer",
+    "param": "qSetDelta",
+    "suffix": "C"
+  },
+  {
+    "offset": 8395862,
+    "name": "Layer_stCarType_C",
+    "module": "Layer",
+    "param": "stCarType",
+    "suffix": "C"
+  },
+  {
+    "offset": 8396299,
+    "name": "Layer_stMSARec_C",
+    "module": "Layer",
+    "param": "stMSARec",
+    "suffix": "C"
+  },
+  {
+    "offset": 8396735,
+    "name": "Layer_stPCRBits_C",
+    "module": "Layer",
+    "param": "stPCRBits",
+    "suffix": "C"
+  },
+  {
+    "offset": 8397172,
+    "name": "Layer_stTrqLimMsk_C",
+    "module": "Layer",
+    "param": "stTrqLimMsk",
+    "suffix": "C"
+  },
+  {
+    "offset": 8397611,
+    "name": "Layer_swtNekpFlt_C",
+    "module": "Layer",
+    "param": "swtNekpFlt",
+    "suffix": "C"
+  },
+  {
+    "offset": 8398049,
+    "name": "Layer_tiAirPerTimeI_C",
+    "module": "Layer",
+    "param": "tiAirPerTimeI",
+    "suffix": "C"
+  },
+  {
+    "offset": 8398491,
+    "name": "Layer_tiCBS4TimeOut_C",
+    "module": "Layer",
+    "param": "tiCBS4TimeOut",
+    "suffix": "C"
+  },
+  {
+    "offset": 8398933,
+    "name": "Layer_tiDesVoltStat_C",
+    "module": "Layer",
+    "param": "tiDesVoltStat",
+    "suffix": "C"
+  },
+  {
+    "offset": 8399375,
+    "name": "Layer_tiEngSpdStat_C",
+    "module": "Layer",
+    "param": "tiEngSpdStat",
+    "suffix": "C"
+  },
+  {
+    "offset": 8399816,
+    "name": "Layer_tiEngStA_C",
+    "module": "Layer",
+    "param": "tiEngStA",
+    "suffix": "C"
+  },
+  {
+    "offset": 8400253,
+    "name": "Layer_tiInjCtlStat_C",
+    "module": "Layer",
+    "param": "tiInjCtlStat",
+    "suffix": "C"
+  },
+  {
+    "offset": 8400694,
+    "name": "Layer_tiNkw_grad_fpt1_C",
+    "module": "Layer",
+    "param": "tiNkw_grad_fpt1",
+    "suffix": "C"
+  },
+  {
+    "offset": 8401138,
+    "name": "Layer_tiPSPFltPT1_C",
+    "module": "Layer",
+    "param": "tiPSPFltPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 8401578,
+    "name": "Layer_trqAltMax_C",
+    "module": "Layer",
+    "param": "trqAltMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8402016,
+    "name": "Layer_trqAltMin_C",
+    "module": "Layer",
+    "param": "trqAltMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 8402454,
+    "name": "Layer_uDesDelta_C",
+    "module": "Layer",
+    "param": "uDesDelta",
+    "suffix": "C"
+  },
+  {
+    "offset": 8544085,
+    "name": "Lub_dmFlAddBas_MAP",
+    "module": "Lub",
+    "param": "dmFlAddBas",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 8544677,
+    "name": "Lub_dmFlEvpBas_MAP",
+    "module": "Lub",
+    "param": "dmFlEvpBas",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 8545244,
+    "name": "Lub_dmFlOilRmvBas_MAP",
+    "module": "Lub",
+    "param": "dmFlOilRmvBas",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 8545867,
+    "name": "Lub_facFlAddTempEng_CUR",
+    "module": "Lub",
+    "param": "facFlAddTempEng",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 8546433,
+    "name": "Lub_facFlEvpTemp_CUR",
+    "module": "Lub",
+    "param": "facFlEvpTemp",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 8546970,
+    "name": "Lub_facFlOilRmvMs_CUR",
+    "module": "Lub",
+    "param": "facFlOilRmvMs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 8547510,
+    "name": "Lub_facFlOilRmvTemp_CUR",
+    "module": "Lub",
+    "param": "facFlOilRmvTemp",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 8548020,
+    "name": "Lub_lOilChngEEPSubs_C",
+    "module": "Lub",
+    "param": "lOilChngEEPSubs",
+    "suffix": "C"
+  },
+  {
+    "offset": 8548508,
+    "name": "Lub_lOilChngLim_C",
+    "module": "Lub",
+    "param": "lOilChngLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 8548997,
+    "name": "Lub_mFlEEPSubs_C",
+    "module": "Lub",
+    "param": "mFlEEPSubs",
+    "suffix": "C"
+  },
+  {
+    "offset": 8549507,
+    "name": "Lub_mLvl2Ms_MAP",
+    "module": "Lub",
+    "param": "mLvl2Ms",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 8549996,
+    "name": "Lub_mOilEngDflMax_C",
+    "module": "Lub",
+    "param": "mOilEngDflMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8550457,
+    "name": "Lub_mOilEngDflMin_C",
+    "module": "Lub",
+    "param": "mOilEngDflMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 8550949,
+    "name": "Lub_mOilEngSensVldMax_C",
+    "module": "Lub",
+    "param": "mOilEngSensVldMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8551445,
+    "name": "Lub_mOilEngSensVldMin_C",
+    "module": "Lub",
+    "param": "mOilEngSensVldMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 8551922,
+    "name": "Lub_mOilRmvEEPSubs_C",
+    "module": "Lub",
+    "param": "mOilRmvEEPSubs",
+    "suffix": "C"
+  },
+  {
+    "offset": 8552390,
+    "name": "Lub_mTotMaxCrit_C",
+    "module": "Lub",
+    "param": "mTotMaxCrit",
+    "suffix": "C"
+  },
+  {
+    "offset": 8552854,
+    "name": "Lub_mTotMinCrit_C",
+    "module": "Lub",
+    "param": "mTotMinCrit",
+    "suffix": "C"
+  },
+  {
+    "offset": 8553338,
+    "name": "Lub_numTempEng_C",
+    "module": "Lub",
+    "param": "numTempEng",
+    "suffix": "C"
+  },
+  {
+    "offset": 8553818,
+    "name": "Lub_numTempOil_C",
+    "module": "Lub",
+    "param": "numTempOil",
+    "suffix": "C"
+  },
+  {
+    "offset": 8554317,
+    "name": "Lub_rFlOilCritFldt_C",
+    "module": "Lub",
+    "param": "rFlOilCritFldt",
+    "suffix": "C"
+  },
+  {
+    "offset": 8554820,
+    "name": "Lub_rFlOilDflMinCritFldt_C",
+    "module": "Lub",
+    "param": "rFlOilDflMinCritFldt",
+    "suffix": "C"
+  },
+  {
+    "offset": 8555296,
+    "name": "Lub_rhoFuel_C",
+    "module": "Lub",
+    "param": "rhoFuel",
+    "suffix": "C"
+  },
+  {
+    "offset": 8555813,
+    "name": "Lub_swtOilSensVldMaxMnl_C",
+    "module": "Lub",
+    "param": "swtOilSensVldMaxMnl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8556337,
+    "name": "Lub_swtOilSensVldMinMnl_C",
+    "module": "Lub",
+    "param": "swtOilSensVldMinMnl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8556832,
+    "name": "Lub_swtSrvVal_C",
+    "module": "Lub",
+    "param": "swtSrvVal",
+    "suffix": "C"
+  },
+  {
+    "offset": 8557358,
+    "name": "Lub_tiMsOilSensVldDeb_C",
+    "module": "Lub",
+    "param": "tiMsOilSensVldDeb",
+    "suffix": "C"
+  },
+  {
+    "offset": 8714865,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8715357,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8715849,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8716341,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8716833,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8717325,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8717817,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8718309,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8718801,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8719293,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8719785,
+    "name": "Mo_trqIdcMax_C",
+    "module": "Mo",
+    "param": "trqIdcMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 8734100,
+    "name": "Oil_ctIniDlyLvl_C",
+    "module": "Oil",
+    "param": "ctIniDlyLvl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8734537,
+    "name": "Oil_ctLoTimeLvl_C",
+    "module": "Oil",
+    "param": "ctLoTimeLvl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8734974,
+    "name": "Oil_ctTOutErrLvl_C",
+    "module": "Oil",
+    "param": "ctTOutErrLvl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8736296,
+    "name": "Oil_stDflPSwmp_C",
+    "module": "Oil",
+    "param": "stDflPSwmp",
+    "suffix": "C"
+  },
+  {
+    "offset": 8736732,
+    "name": "Oil_swtSensVar_C",
+    "module": "Oil",
+    "param": "swtSensVar",
+    "suffix": "C"
+  },
+  {
+    "offset": 8737168,
+    "name": "Oil_tiBtwRegRd_C",
+    "module": "Oil",
+    "param": "tiBtwRegRd",
+    "suffix": "C"
+  },
+  {
+    "offset": 8737605,
+    "name": "Oil_tiLoTimeMaxLvl_C",
+    "module": "Oil",
+    "param": "tiLoTimeMaxLvl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8738046,
+    "name": "Oil_tiLoTimeMinLvl_C",
+    "module": "Oil",
+    "param": "tiLoTimeMinLvl",
+    "suffix": "C"
+  },
+  {
+    "offset": 8738487,
+    "name": "Oil_tiTOutLvl_C",
+    "module": "Oil",
+    "param": "tiTOutLvl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9294316,
+    "name": "Rail_ctATSSel_C",
+    "module": "Rail",
+    "param": "ctATSSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9294811,
+    "name": "Rail_dpPCVSetShOffDec_C",
+    "module": "Rail",
+    "param": "dpPCVSetShOffDec",
+    "suffix": "C"
+  },
+  {
+    "offset": 9296241,
+    "name": "Rail_dpSetPointDec_CUR",
+    "module": "Rail",
+    "param": "dpSetPointDec",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9296804,
+    "name": "Rail_dpSetPointInc_MAP",
+    "module": "Rail",
+    "param": "dpSetPointInc",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9298377,
+    "name": "Rail_dvolDvtLim_C",
+    "module": "Rail",
+    "param": "dvolDvtLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9298872,
+    "name": "Rail_dvolLeak_MAP",
+    "module": "Rail",
+    "param": "dvolLeak",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9299399,
+    "name": "Rail_dvolMeUnClose_CUR",
+    "module": "Rail",
+    "param": "dvolMeUnClose",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9299937,
+    "name": "Rail_dvolMeUnCtlInitI_CUR",
+    "module": "Rail",
+    "param": "dvolMeUnCtlInitI",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9300442,
+    "name": "Rail_dvolMeUnCtlLoLim_C",
+    "module": "Rail",
+    "param": "dvolMeUnCtlLoLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9300954,
+    "name": "Rail_dvolMeUnCtlType_CUR",
+    "module": "Rail",
+    "param": "dvolMeUnCtlType",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9301456,
+    "name": "Rail_dvolMeUnCtlUpLim_C",
+    "module": "Rail",
+    "param": "dvolMeUnCtlUpLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9301929,
+    "name": "Rail_dvolMeUnCtlUpLim_CUR",
+    "module": "Rail",
+    "param": "dvolMeUnCtlUpLim",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9302498,
+    "name": "Rail_dvolMeUnLimFst_CUR",
+    "module": "Rail",
+    "param": "dvolMeUnLimFst",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9302994,
+    "name": "Rail_dvolMeUnOpn_CUR",
+    "module": "Rail",
+    "param": "dvolMeUnOpn",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9303485,
+    "name": "Rail_dvolMeUnShutOffErr_C",
+    "module": "Rail",
+    "param": "dvolMeUnShutOffErr",
+    "suffix": "C"
+  },
+  {
+    "offset": 9303964,
+    "name": "Rail_dvolMeUnShutOff_C",
+    "module": "Rail",
+    "param": "dvolMeUnShutOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 9304466,
+    "name": "Rail_dvolOff_C",
+    "module": "Rail",
+    "param": "dvolOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 9304942,
+    "name": "Rail_dvolPCVClose_CUR",
+    "module": "Rail",
+    "param": "dvolPCVClose",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9305436,
+    "name": "Rail_dvolPCVOpn_CUR",
+    "module": "Rail",
+    "param": "dvolPCVOpn",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9305953,
+    "name": "Rail_dvolPreCtlBas_MAP",
+    "module": "Rail",
+    "param": "dvolPreCtlBas",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9306530,
+    "name": "Rail_dvolPreCtlOfs_MAP",
+    "module": "Rail",
+    "param": "dvolPreCtlOfs",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9307144,
+    "name": "Rail_dvolPreCtlPoI1_MAP",
+    "module": "Rail",
+    "param": "dvolPreCtlPoI1",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9307734,
+    "name": "Rail_dvolPreCtlPoI2_MAP",
+    "module": "Rail",
+    "param": "dvolPreCtlPoI2",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9308301,
+    "name": "Rail_dvolPreCtl_C",
+    "module": "Rail",
+    "param": "dvolPreCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9308812,
+    "name": "Rail_dvolRedOfsLimHi_C",
+    "module": "Rail",
+    "param": "dvolRedOfsLimHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9309329,
+    "name": "Rail_dvolRedOfsLimLo_C",
+    "module": "Rail",
+    "param": "dvolRedOfsLimLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9309830,
+    "name": "Rail_dvolStrt_C",
+    "module": "Rail",
+    "param": "dvolStrt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9310328,
+    "name": "Rail_facAPPrSetPDynCor_CUR",
+    "module": "Rail",
+    "param": "facAPPrSetPDynCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9310867,
+    "name": "Rail_facAPSetPDynCor_CUR",
+    "module": "Rail",
+    "param": "facAPSetPDynCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9311457,
+    "name": "Rail_facDQSetPDynCor_CUR",
+    "module": "Rail",
+    "param": "facDQSetPDynCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9311942,
+    "name": "Rail_facEGRpSetPCor_CUR",
+    "module": "Rail",
+    "param": "facEGRpSetPCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9312492,
+    "name": "Rail_facETSetPDynCor_CUR",
+    "module": "Rail",
+    "param": "facETSetPDynCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9313048,
+    "name": "Rail_facIASetPDynCor_CUR",
+    "module": "Rail",
+    "param": "facIASetPDynCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9313533,
+    "name": "Rail_facIMTSpSetPCor_CUR",
+    "module": "Rail",
+    "param": "facIMTSpSetPCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9314104,
+    "name": "Rail_facLeakAged_C",
+    "module": "Rail",
+    "param": "facLeakAged",
+    "suffix": "C"
+  },
+  {
+    "offset": 9314592,
+    "name": "Rail_facMeUnDvt_CUR",
+    "module": "Rail",
+    "param": "facMeUnDvt",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9315098,
+    "name": "Rail_facMeUnSetPoint_CUR",
+    "module": "Rail",
+    "param": "facMeUnSetPoint",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9315675,
+    "name": "Rail_facOvrMeUnNegIncr_C",
+    "module": "Rail",
+    "param": "facOvrMeUnNegIncr",
+    "suffix": "C"
+  },
+  {
+    "offset": 9316237,
+    "name": "Rail_facOvrPCVNegIncr_C",
+    "module": "Rail",
+    "param": "facOvrPCVNegIncr",
+    "suffix": "C"
+  },
+  {
+    "offset": 9316730,
+    "name": "Rail_facPCVDvt_CUR",
+    "module": "Rail",
+    "param": "facPCVDvt",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9317260,
+    "name": "Rail_facPCVFast_C",
+    "module": "Rail",
+    "param": "facPCVFast",
+    "suffix": "C"
+  },
+  {
+    "offset": 9317697,
+    "name": "Rail_facpSetPointVehCor_CUR",
+    "module": "Rail",
+    "param": "facpSetPointVehCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9318158,
+    "name": "Rail_facpSetPointVehTempCor_CUR",
+    "module": "Rail",
+    "param": "facpSetPointVehTempCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9318713,
+    "name": "Rail_facSetPointAPSCor_CUR",
+    "module": "Rail",
+    "param": "facSetPointAPSCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9319260,
+    "name": "Rail_facSetPointAPSCStrt_CUR",
+    "module": "Rail",
+    "param": "facSetPointAPSCStrt",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9319847,
+    "name": "Rail_facSetPointATSCor_CUR",
+    "module": "Rail",
+    "param": "facSetPointATSCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9320409,
+    "name": "Rail_facSetPointATSCStrt_CUR",
+    "module": "Rail",
+    "param": "facSetPointATSCStrt",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9320977,
+    "name": "Rail_facSetPointETSCor0Rgn_GCUR",
+    "module": "Rail",
+    "param": "facSetPointETSCor0Rgn",
+    "suffix": "GCUR"
+  },
+  {
+    "offset": 9321548,
+    "name": "Rail_facSetPointETSCor1Rgn_GCUR",
+    "module": "Rail",
+    "param": "facSetPointETSCor1Rgn",
+    "suffix": "GCUR"
+  },
+  {
+    "offset": 9322169,
+    "name": "Rail_facSetPointETSCor1_CUR",
+    "module": "Rail",
+    "param": "facSetPointETSCor1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9322723,
+    "name": "Rail_facSetPointETSCor_CUR",
+    "module": "Rail",
+    "param": "facSetPointETSCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9323285,
+    "name": "Rail_facSetPointETSCStrt_CUR",
+    "module": "Rail",
+    "param": "facSetPointETSCStrt",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9323836,
+    "name": "Rail_facSetPointFTSCor_CUR",
+    "module": "Rail",
+    "param": "facSetPointFTSCor",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9324347,
+    "name": "Rail_facSetPointRmp0Val_GCUR",
+    "module": "Rail",
+    "param": "facSetPointRmp0Val",
+    "suffix": "GCUR"
+  },
+  {
+    "offset": 9324898,
+    "name": "Rail_facSetPointRmp1Val_GCUR",
+    "module": "Rail",
+    "param": "facSetPointRmp1Val",
+    "suffix": "GCUR"
+  },
+  {
+    "offset": 9326641,
+    "name": "Rail_iMeUnClsHpTst_C",
+    "module": "Rail",
+    "param": "iMeUnClsHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9327082,
+    "name": "Rail_lTotDstMin_C",
+    "module": "Rail",
+    "param": "lTotDstMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9327570,
+    "name": "Rail_MeUnCtlDKd_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlDKd",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9328096,
+    "name": "Rail_MeUnCtlIKiHpTst_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlIKiHpTst",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9328645,
+    "name": "Rail_MeUnCtlIKiNeg_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlIKiNeg",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9329192,
+    "name": "Rail_MeUnCtlIKiPos_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlIKiPos",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9329731,
+    "name": "Rail_MeUnCtlIKi_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlIKi",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9330260,
+    "name": "Rail_MeUnCtlPKpHpTst_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlPKpHpTst",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9330807,
+    "name": "Rail_MeUnCtlPKpNeg_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlPKpNeg",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9331352,
+    "name": "Rail_MeUnCtlPKpPos_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlPKpPos",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9331889,
+    "name": "Rail_MeUnCtlPKp_CUR",
+    "module": "Rail",
+    "param": "MeUnCtlPKp",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9336281,
+    "name": "Rail_nCloseCtl_C",
+    "module": "Rail",
+    "param": "nCloseCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9336761,
+    "name": "Rail_nDiffMaxHpTst_C",
+    "module": "Rail",
+    "param": "nDiffMaxHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9337247,
+    "name": "Rail_nEngSpdLim_C",
+    "module": "Rail",
+    "param": "nEngSpdLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9337771,
+    "name": "Rail_nMeUnFrzI_C",
+    "module": "Rail",
+    "param": "nMeUnFrzI",
+    "suffix": "C"
+  },
+  {
+    "offset": 9338275,
+    "name": "Rail_nRedOfsLimHi_C",
+    "module": "Rail",
+    "param": "nRedOfsLimHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9338787,
+    "name": "Rail_nRedOfsLimLo_C",
+    "module": "Rail",
+    "param": "nRedOfsLimLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9339288,
+    "name": "Rail_nStrtLim_C",
+    "module": "Rail",
+    "param": "nStrtLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9339797,
+    "name": "Rail_nThresStrt_C",
+    "module": "Rail",
+    "param": "nThresStrt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9340303,
+    "name": "Rail_numRevDel_C",
+    "module": "Rail",
+    "param": "numRevDel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9340820,
+    "name": "Rail_numRevPlaus_C",
+    "module": "Rail",
+    "param": "numRevPlaus",
+    "suffix": "C"
+  },
+  {
+    "offset": 9341315,
+    "name": "Rail_pCloseCtl_C",
+    "module": "Rail",
+    "param": "pCloseCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9341801,
+    "name": "Rail_pCPCFltMax_C",
+    "module": "Rail",
+    "param": "pCPCFltMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9342337,
+    "name": "Rail_pCPCFltMin_CUR",
+    "module": "Rail",
+    "param": "pCPCFltMin",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9342846,
+    "name": "Rail_PCVCtlDKd_CUR",
+    "module": "Rail",
+    "param": "PCVCtlDKd",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9343383,
+    "name": "Rail_PCVCtlIKiNeg_CUR",
+    "module": "Rail",
+    "param": "PCVCtlIKiNeg",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9343923,
+    "name": "Rail_PCVCtlIKiPos_CUR",
+    "module": "Rail",
+    "param": "PCVCtlIKiPos",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9344455,
+    "name": "Rail_PCVCtlIKi_CUR",
+    "module": "Rail",
+    "param": "PCVCtlIKi",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9344992,
+    "name": "Rail_PCVCtlPKpNeg_CUR",
+    "module": "Rail",
+    "param": "PCVCtlPKpNeg",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9345532,
+    "name": "Rail_PCVCtlPKpPos_CUR",
+    "module": "Rail",
+    "param": "PCVCtlPKpPos",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9346064,
+    "name": "Rail_PCVCtlPKp_CUR",
+    "module": "Rail",
+    "param": "PCVCtlPKp",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9350378,
+    "name": "Rail_pDiffCloseCtl_C",
+    "module": "Rail",
+    "param": "pDiffCloseCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9350863,
+    "name": "Rail_pDiffMaxHpTst_C",
+    "module": "Rail",
+    "param": "pDiffMaxHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9351369,
+    "name": "Rail_pDltHiHpTst_C",
+    "module": "Rail",
+    "param": "pDltHiHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9351877,
+    "name": "Rail_pDltTmrUpHpTst_C",
+    "module": "Rail",
+    "param": "pDltTmrUpHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9352389,
+    "name": "Rail_pDvtFltMin_C",
+    "module": "Rail",
+    "param": "pDvtFltMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9352900,
+    "name": "Rail_pDvtRedOfsLimHi_C",
+    "module": "Rail",
+    "param": "pDvtRedOfsLimHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9353418,
+    "name": "Rail_pDvtRedOfsLimLo_C",
+    "module": "Rail",
+    "param": "pDvtRedOfsLimLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9353918,
+    "name": "Rail_pFltMinZFC_C",
+    "module": "Rail",
+    "param": "pFltMinZFC",
+    "suffix": "C"
+  },
+  {
+    "offset": 9354435,
+    "name": "Rail_pMeUnCtlIWinNeg_C",
+    "module": "Rail",
+    "param": "pMeUnCtlIWinNeg",
+    "suffix": "C"
+  },
+  {
+    "offset": 9354956,
+    "name": "Rail_pMeUnCtlIWinPos_C",
+    "module": "Rail",
+    "param": "pMeUnCtlIWinPos",
+    "suffix": "C"
+  },
+  {
+    "offset": 9355478,
+    "name": "Rail_pMeUnCtlPWinNeg_C",
+    "module": "Rail",
+    "param": "pMeUnCtlPWinNeg",
+    "suffix": "C"
+  },
+  {
+    "offset": 9355999,
+    "name": "Rail_pMeUnCtlPWinPos_C",
+    "module": "Rail",
+    "param": "pMeUnCtlPWinPos",
+    "suffix": "C"
+  },
+  {
+    "offset": 9356514,
+    "name": "Rail_pMeUnCtlTypeHi_C",
+    "module": "Rail",
+    "param": "pMeUnCtlTypeHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9357029,
+    "name": "Rail_pMeUnCtlTypeLo_C",
+    "module": "Rail",
+    "param": "pMeUnCtlTypeLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9357582,
+    "name": "Rail_pMeUnDvtFst_CUR",
+    "module": "Rail",
+    "param": "pMeUnDvtFst",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9358123,
+    "name": "Rail_pMeUnDvtMax_CUR",
+    "module": "Rail",
+    "param": "pMeUnDvtMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9358697,
+    "name": "Rail_pMeUnDvtMin2_CUR",
+    "module": "Rail",
+    "param": "pMeUnDvtMin2",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9359270,
+    "name": "Rail_pMeUnDvtMin_CUR",
+    "module": "Rail",
+    "param": "pMeUnDvtMin",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9359805,
+    "name": "Rail_pMeUnPreCtlOff_C",
+    "module": "Rail",
+    "param": "pMeUnPreCtlOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 9360327,
+    "name": "Rail_pMeUnPreCtlOn_C",
+    "module": "Rail",
+    "param": "pMeUnPreCtlOn",
+    "suffix": "C"
+  },
+  {
+    "offset": 9360820,
+    "name": "Rail_pMinSetSubst_C",
+    "module": "Rail",
+    "param": "pMinSetSubst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9361319,
+    "name": "Rail_pOpnCtl_C",
+    "module": "Rail",
+    "param": "pOpnCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9361807,
+    "name": "Rail_pOvrMeUnThresHigh_C",
+    "module": "Rail",
+    "param": "pOvrMeUnThresHigh",
+    "suffix": "C"
+  },
+  {
+    "offset": 9362306,
+    "name": "Rail_pOvrMeUnThresLow_C",
+    "module": "Rail",
+    "param": "pOvrMeUnThresLow",
+    "suffix": "C"
+  },
+  {
+    "offset": 9362802,
+    "name": "Rail_pOvrPCVThresHigh_C",
+    "module": "Rail",
+    "param": "pOvrPCVThresHigh",
+    "suffix": "C"
+  },
+  {
+    "offset": 9363299,
+    "name": "Rail_pOvrPCVThresLow_C",
+    "module": "Rail",
+    "param": "pOvrPCVThresLow",
+    "suffix": "C"
+  },
+  {
+    "offset": 9363806,
+    "name": "Rail_pPCVCloseOfs_CUR",
+    "module": "Rail",
+    "param": "pPCVCloseOfs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9364349,
+    "name": "Rail_pPCVCtlIWinNeg_C",
+    "module": "Rail",
+    "param": "pPCVCtlIWinNeg",
+    "suffix": "C"
+  },
+  {
+    "offset": 9364872,
+    "name": "Rail_pPCVCtlIWinPos_C",
+    "module": "Rail",
+    "param": "pPCVCtlIWinPos",
+    "suffix": "C"
+  },
+  {
+    "offset": 9365408,
+    "name": "Rail_pPCVCtlLoLimStrt_C",
+    "module": "Rail",
+    "param": "pPCVCtlLoLimStrt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9365923,
+    "name": "Rail_pPCVCtlLoLim_C",
+    "module": "Rail",
+    "param": "pPCVCtlLoLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9366445,
+    "name": "Rail_pPCVCtlPWinNeg_C",
+    "module": "Rail",
+    "param": "pPCVCtlPWinNeg",
+    "suffix": "C"
+  },
+  {
+    "offset": 9366968,
+    "name": "Rail_pPCVCtlPWinPos_C",
+    "module": "Rail",
+    "param": "pPCVCtlPWinPos",
+    "suffix": "C"
+  },
+  {
+    "offset": 9367503,
+    "name": "Rail_pPCVCtlUpLimStrt_C",
+    "module": "Rail",
+    "param": "pPCVCtlUpLimStrt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9368017,
+    "name": "Rail_pPCVCtlUpLim_C",
+    "module": "Rail",
+    "param": "pPCVCtlUpLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9368538,
+    "name": "Rail_pPCVDvtMax_CUR",
+    "module": "Rail",
+    "param": "pPCVDvtMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9369121,
+    "name": "Rail_pPCVInitI_MAP",
+    "module": "Rail",
+    "param": "pPCVInitI",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9369668,
+    "name": "Rail_pPCVRedOfs_CUR",
+    "module": "Rail",
+    "param": "pPCVRedOfs",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9370212,
+    "name": "Rail_pPCVSetMax_CUR",
+    "module": "Rail",
+    "param": "pPCVSetMax",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9370744,
+    "name": "Rail_pPreCtl_C",
+    "module": "Rail",
+    "param": "pPreCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9371242,
+    "name": "Rail_pPreCtl_MAP",
+    "module": "Rail",
+    "param": "pPreCtl",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9371790,
+    "name": "Rail_pRedOfsLim_C",
+    "module": "Rail",
+    "param": "pRedOfsLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9372291,
+    "name": "Rail_pSetMaxHpTst_C",
+    "module": "Rail",
+    "param": "pSetMaxHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9372786,
+    "name": "Rail_pSetMinHpTst_C",
+    "module": "Rail",
+    "param": "pSetMinHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9373294,
+    "name": "Rail_pSetMin_CUR",
+    "module": "Rail",
+    "param": "pSetMin",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9373805,
+    "name": "Rail_pSetPBaseNoEGR_MAP",
+    "module": "Rail",
+    "param": "pSetPBaseNoEGR",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9374355,
+    "name": "Rail_pSetPDynCor_MAP",
+    "module": "Rail",
+    "param": "pSetPDynCor",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9374868,
+    "name": "Rail_pSetPEgrLPCor_MAP",
+    "module": "Rail",
+    "param": "pSetPEgrLPCor",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9375482,
+    "name": "Rail_pSetPointAPSCStrt_MAP",
+    "module": "Rail",
+    "param": "pSetPointAPSCStrt",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9376018,
+    "name": "Rail_pSetPointBase_MAP",
+    "module": "Rail",
+    "param": "pSetPointBase",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9376573,
+    "name": "Rail_pSetPointBattMin_CUR",
+    "module": "Rail",
+    "param": "pSetPointBattMin",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9377171,
+    "name": "Rail_pSetPointETSCStrt_MAP",
+    "module": "Rail",
+    "param": "pSetPointETSCStrt",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9377739,
+    "name": "Rail_pSetPointFTSCor_MAP",
+    "module": "Rail",
+    "param": "pSetPointFTSCor",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9378266,
+    "name": "Rail_pSetPointInit_C",
+    "module": "Rail",
+    "param": "pSetPointInit",
+    "suffix": "C"
+  },
+  {
+    "offset": 9378797,
+    "name": "Rail_pSetPointLimNFlTemp_C",
+    "module": "Rail",
+    "param": "pSetPointLimNFlTemp",
+    "suffix": "C"
+  },
+  {
+    "offset": 9379373,
+    "name": "Rail_pSetPointLimNFlTemp_MAP",
+    "module": "Rail",
+    "param": "pSetPointLimNFlTemp",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9379903,
+    "name": "Rail_pSetPointMaxDef_C",
+    "module": "Rail",
+    "param": "pSetPointMaxDef",
+    "suffix": "C"
+  },
+  {
+    "offset": 9380389,
+    "name": "Rail_pSetPointMaxDef_MAP",
+    "module": "Rail",
+    "param": "pSetPointMaxDef",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9380956,
+    "name": "Rail_pSetPointMax_MAP",
+    "module": "Rail",
+    "param": "pSetPointMax",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9381480,
+    "name": "Rail_pSetPointMinDef_C",
+    "module": "Rail",
+    "param": "pSetPointMinDef",
+    "suffix": "C"
+  },
+  {
+    "offset": 9382008,
+    "name": "Rail_pSetPointMin_MAP",
+    "module": "Rail",
+    "param": "pSetPointMin",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9382552,
+    "name": "Rail_pSetPointRed_C",
+    "module": "Rail",
+    "param": "pSetPointRed",
+    "suffix": "C"
+  },
+  {
+    "offset": 9384138,
+    "name": "Rail_pSetPointVehCor_MAP",
+    "module": "Rail",
+    "param": "pSetPointVehCor",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9384694,
+    "name": "Rail_pSetPointZFCMax_C",
+    "module": "Rail",
+    "param": "pSetPointZFCMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9385201,
+    "name": "Rail_pSetPointZFCMin_C",
+    "module": "Rail",
+    "param": "pSetPointZFCMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9386821,
+    "name": "Rail_pSetPoint_C",
+    "module": "Rail",
+    "param": "pSetPoint",
+    "suffix": "C"
+  },
+  {
+    "offset": 9387309,
+    "name": "Rail_pSetZLHpTst_C",
+    "module": "Rail",
+    "param": "pSetZLHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9387801,
+    "name": "Rail_pStepHpTst_C",
+    "module": "Rail",
+    "param": "pStepHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9388296,
+    "name": "Rail_pStrtLim_C",
+    "module": "Rail",
+    "param": "pStrtLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9388808,
+    "name": "Rail_pTmrDwn1HpTst_C",
+    "module": "Rail",
+    "param": "pTmrDwn1HpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9389326,
+    "name": "Rail_pTmrDwn2HpTst_C",
+    "module": "Rail",
+    "param": "pTmrDwn2HpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9389815,
+    "name": "Rail_qCPCtlTypeHys_C",
+    "module": "Rail",
+    "param": "qCPCtlTypeHys",
+    "suffix": "C"
+  },
+  {
+    "offset": 9390349,
+    "name": "Rail_qCPCtlTypeRgnHys_C",
+    "module": "Rail",
+    "param": "qCPCtlTypeRgnHys",
+    "suffix": "C"
+  },
+  {
+    "offset": 9390852,
+    "name": "Rail_qCPCtlTypeRgn_CUR",
+    "module": "Rail",
+    "param": "qCPCtlTypeRgn",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9391363,
+    "name": "Rail_qCPCtlType_CUR",
+    "module": "Rail",
+    "param": "qCPCtlType",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9391873,
+    "name": "Rail_qDiffMaxHpTst_C",
+    "module": "Rail",
+    "param": "qDiffMaxHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9392366,
+    "name": "Rail_qMeUnCtlTypeHys_C",
+    "module": "Rail",
+    "param": "qMeUnCtlTypeHys",
+    "suffix": "C"
+  },
+  {
+    "offset": 9392864,
+    "name": "Rail_qMeUnCtlType_CUR",
+    "module": "Rail",
+    "param": "qMeUnCtlType",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9393409,
+    "name": "Rail_qRedOfsLimHi_C",
+    "module": "Rail",
+    "param": "qRedOfsLimHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9393922,
+    "name": "Rail_qRedOfsLimLo_C",
+    "module": "Rail",
+    "param": "qRedOfsLimLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9394398,
+    "name": "Rail_qSetSubstLim_C",
+    "module": "Rail",
+    "param": "qSetSubstLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9394879,
+    "name": "Rail_rAccPedHpTst_C",
+    "module": "Rail",
+    "param": "rAccPedHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9395383,
+    "name": "Rail_rFltMinSlpZFC_C",
+    "module": "Rail",
+    "param": "rFltMinSlpZFC",
+    "suffix": "C"
+  },
+  {
+    "offset": 9395865,
+    "name": "Rail_stCtlLoopSel_C",
+    "module": "Rail",
+    "param": "stCtlLoopSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9396346,
+    "name": "Rail_stCtlLoopSel_C",
+    "module": "Rail",
+    "param": "stCtlLoopSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9396827,
+    "name": "Rail_stCtlLoopSel_C",
+    "module": "Rail",
+    "param": "stCtlLoopSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9397327,
+    "name": "Rail_stMskCoEOMOpModeHpTst_C",
+    "module": "Rail",
+    "param": "stMskCoEOMOpModeHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9397820,
+    "name": "Rail_stOpModeRgn_C",
+    "module": "Rail",
+    "param": "stOpModeRgn",
+    "suffix": "C"
+  },
+  {
+    "offset": 9398314,
+    "name": "Rail_stPreCtlMeUnSel_C",
+    "module": "Rail",
+    "param": "stPreCtlMeUnSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9398841,
+    "name": "Rail_stRgnDelMsk_C",
+    "module": "Rail",
+    "param": "stRgnDelMsk",
+    "suffix": "C"
+  },
+  {
+    "offset": 9399351,
+    "name": "Rail_stSetPointRmpSel_CA",
+    "module": "Rail",
+    "param": "stSetPointRmpSel",
+    "suffix": "CA"
+  },
+  {
+    "offset": 9399914,
+    "name": "Rail_stSetPointSel_C",
+    "module": "Rail",
+    "param": "stSetPointSel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9400464,
+    "name": "Rail_stTrqLimFlSysActv_C",
+    "module": "Rail",
+    "param": "stTrqLimFlSysActv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9400992,
+    "name": "Rail_swt5StepHpTst_C",
+    "module": "Rail",
+    "param": "swt5StepHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9401521,
+    "name": "Rail_swtCtlParHpTst_C",
+    "module": "Rail",
+    "param": "swtCtlParHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9402011,
+    "name": "Rail_swtCtlType_C",
+    "module": "Rail",
+    "param": "swtCtlType",
+    "suffix": "C"
+  },
+  {
+    "offset": 9402516,
+    "name": "Rail_swtDvolPreCtl_C",
+    "module": "Rail",
+    "param": "swtDvolPreCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9403058,
+    "name": "Rail_swtMeUnCtlIInit_C",
+    "module": "Rail",
+    "param": "swtMeUnCtlIInit",
+    "suffix": "C"
+  },
+  {
+    "offset": 9403571,
+    "name": "Rail_swtNoChkRefHpTst_C",
+    "module": "Rail",
+    "param": "swtNoChkRefHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9404085,
+    "name": "Rail_swtPCVInitI_C",
+    "module": "Rail",
+    "param": "swtPCVInitI",
+    "suffix": "C"
+  },
+  {
+    "offset": 9404590,
+    "name": "Rail_swtPPreCtl_C",
+    "module": "Rail",
+    "param": "swtPPreCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9405077,
+    "name": "Rail_swtPSetPoint_C",
+    "module": "Rail",
+    "param": "swtPSetPoint",
+    "suffix": "C"
+  },
+  {
+    "offset": 9405556,
+    "name": "Rail_tClntMinHpTst_C",
+    "module": "Rail",
+    "param": "tClntMinHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9406081,
+    "name": "Rail_tiDvtPressRedOfsPT1_C",
+    "module": "Rail",
+    "param": "tiDvtPressRedOfsPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9406613,
+    "name": "Rail_tiFrzIDel_C",
+    "module": "Rail",
+    "param": "tiFrzIDel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9407102,
+    "name": "Rail_tiMaxSetSubst_C",
+    "module": "Rail",
+    "param": "tiMaxSetSubst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9407608,
+    "name": "Rail_tiMeUnCtlDT1_CUR",
+    "module": "Rail",
+    "param": "tiMeUnCtlDT1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9408128,
+    "name": "Rail_tiMeUnCtlPT1_CUR",
+    "module": "Rail",
+    "param": "tiMeUnCtlPT1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9408699,
+    "name": "Rail_tiMeUnRmpDur_CUR",
+    "module": "Rail",
+    "param": "tiMeUnRmpDur",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9409229,
+    "name": "Rail_tiPCVCtlDT1_CUR",
+    "module": "Rail",
+    "param": "tiPCVCtlDT1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9409766,
+    "name": "Rail_tiPCVRmpDur_CUR",
+    "module": "Rail",
+    "param": "tiPCVRmpDur",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9410330,
+    "name": "Rail_tiPCVRmpToOfs_C",
+    "module": "Rail",
+    "param": "tiPCVRmpToOfs",
+    "suffix": "C"
+  },
+  {
+    "offset": 9410849,
+    "name": "Rail_tiPCVRmpToRedOfs_C",
+    "module": "Rail",
+    "param": "tiPCVRmpToRedOfs",
+    "suffix": "C"
+  },
+  {
+    "offset": 9411293,
+    "name": "Rail_tiPMonStrtLim1_C",
+    "module": "Rail",
+    "param": "tiPMonStrtLim1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9411786,
+    "name": "Rail_tiPMonStrtLim_C",
+    "module": "Rail",
+    "param": "tiPMonStrtLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9412295,
+    "name": "Rail_tiPT1CPCDvt_C",
+    "module": "Rail",
+    "param": "tiPT1CPCDvt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9412809,
+    "name": "Rail_tiShutOffDblCtl_C",
+    "module": "Rail",
+    "param": "tiShutOffDblCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9413286,
+    "name": "Rail_tiStepHpTst_C",
+    "module": "Rail",
+    "param": "tiStepHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9413755,
+    "name": "Rail_tiStrtHpTst_C",
+    "module": "Rail",
+    "param": "tiStrtHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9414253,
+    "name": "Rail_tiSwtCPCMax_C",
+    "module": "Rail",
+    "param": "tiSwtCPCMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9414760,
+    "name": "Rail_tiSwtCtlTypeDel_C",
+    "module": "Rail",
+    "param": "tiSwtCtlTypeDel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9415276,
+    "name": "Rail_tiSwtToMeUnCtl_C",
+    "module": "Rail",
+    "param": "tiSwtToMeUnCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9415758,
+    "name": "Rail_tiWaitAftDropHpTst_C",
+    "module": "Rail",
+    "param": "tiWaitAftDropHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9416245,
+    "name": "Rail_tiWaitHiHpTst_C",
+    "module": "Rail",
+    "param": "tiWaitHiHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9416726,
+    "name": "Rail_tiWaitLoHpTst_C",
+    "module": "Rail",
+    "param": "tiWaitLoHpTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9417265,
+    "name": "Rail_tiZFCDemDel_C",
+    "module": "Rail",
+    "param": "tiZFCDemDel",
+    "suffix": "C"
+  },
+  {
+    "offset": 9417751,
+    "name": "Rail_tiZFCPT1_C",
+    "module": "Rail",
+    "param": "tiZFCPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9418254,
+    "name": "Rail_tMeUnCtlTypeHi_C",
+    "module": "Rail",
+    "param": "tMeUnCtlTypeHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9418772,
+    "name": "Rail_tMeUnCtlTypeLo_C",
+    "module": "Rail",
+    "param": "tMeUnCtlTypeLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9419287,
+    "name": "Rail_trqFlTempLimMeUn_MAP",
+    "module": "Rail",
+    "param": "trqFlTempLimMeUn",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9419840,
+    "name": "Rail_trqFlTempLimPCV_MAP",
+    "module": "Rail",
+    "param": "trqFlTempLimPCV",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9420390,
+    "name": "Rail_tSwtCPCHi_C",
+    "module": "Rail",
+    "param": "tSwtCPCHi",
+    "suffix": "C"
+  },
+  {
+    "offset": 9420899,
+    "name": "Rail_tSwtCPCLo_C",
+    "module": "Rail",
+    "param": "tSwtCPCLo",
+    "suffix": "C"
+  },
+  {
+    "offset": 9421393,
+    "name": "Rail_vMeUnThresShutOff_C",
+    "module": "Rail",
+    "param": "vMeUnThresShutOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 9421869,
+    "name": "Rail_volInjVlvCtl_C",
+    "module": "Rail",
+    "param": "volInjVlvCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9422369,
+    "name": "Rail_vVehSpdLim_C",
+    "module": "Rail",
+    "param": "vVehSpdLim",
+    "suffix": "C"
+  },
+  {
+    "offset": 9422878,
+    "name": "Reset_xGrpId_C",
+    "module": "Reset",
+    "param": "xGrpId",
+    "suffix": "C"
+  },
+  {
+    "offset": 9423373,
+    "name": "Reset_xTrgId_C",
+    "module": "Reset",
+    "param": "xTrgId",
+    "suffix": "C"
+  },
+  {
+    "offset": 9596776,
+    "name": "Shtr_ctDebAKKErrEntrMax_C",
+    "module": "Shtr",
+    "param": "ctDebAKKErrEntrMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9597221,
+    "name": "Shtr_ctDebIncAKKErrEntr_C",
+    "module": "Shtr",
+    "param": "ctDebIncAKKErrEntr",
+    "suffix": "C"
+  },
+  {
+    "offset": 9597666,
+    "name": "Shtr_ctDebIncPKKErrEntr_C",
+    "module": "Shtr",
+    "param": "ctDebIncPKKErrEntr",
+    "suffix": "C"
+  },
+  {
+    "offset": 9598111,
+    "name": "Shtr_ctDebPKKErrEntrMax_C",
+    "module": "Shtr",
+    "param": "ctDebPKKErrEntrMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9598556,
+    "name": "Shtr_ctPKKLrnThres_C",
+    "module": "Shtr",
+    "param": "ctPKKLrnThres",
+    "suffix": "C"
+  },
+  {
+    "offset": 9598996,
+    "name": "Shtr_ctPwrStgOnMax_C",
+    "module": "Shtr",
+    "param": "ctPwrStgOnMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9599436,
+    "name": "Shtr_ctSysCntThres_C",
+    "module": "Shtr",
+    "param": "ctSysCntThres",
+    "suffix": "C"
+  },
+  {
+    "offset": 9606297,
+    "name": "Shtr_rOffOffTst_C",
+    "module": "Shtr",
+    "param": "rOffOffTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9606734,
+    "name": "Shtr_rOffOnTst_C",
+    "module": "Shtr",
+    "param": "rOffOnTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9607170,
+    "name": "Shtr_rOnOffTst_C",
+    "module": "Shtr",
+    "param": "rOnOffTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9607606,
+    "name": "Shtr_rOnOnTst_C",
+    "module": "Shtr",
+    "param": "rOnOnTst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9608041,
+    "name": "Shtr_rOutDiag_C",
+    "module": "Shtr",
+    "param": "rOutDiag",
+    "suffix": "C"
+  },
+  {
+    "offset": 9608476,
+    "name": "Shtr_rOutInit_C",
+    "module": "Shtr",
+    "param": "rOutInit",
+    "suffix": "C"
+  },
+  {
+    "offset": 9608911,
+    "name": "Shtr_rOutMan_C",
+    "module": "Shtr",
+    "param": "rOutMan",
+    "suffix": "C"
+  },
+  {
+    "offset": 9609345,
+    "name": "Shtr_rOutMax_C",
+    "module": "Shtr",
+    "param": "rOutMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9609779,
+    "name": "Shtr_rOutMin_C",
+    "module": "Shtr",
+    "param": "rOutMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9610213,
+    "name": "Shtr_rOutPKKLrn_C",
+    "module": "Shtr",
+    "param": "rOutPKKLrn",
+    "suffix": "C"
+  },
+  {
+    "offset": 9610726,
+    "name": "Shtr_rPsDisbl_C",
+    "module": "Shtr",
+    "param": "rPsDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9611161,
+    "name": "Shtr_stAKKErrRls_C",
+    "module": "Shtr",
+    "param": "stAKKErrRls",
+    "suffix": "C"
+  },
+  {
+    "offset": 9611599,
+    "name": "Shtr_stManCtl_C",
+    "module": "Shtr",
+    "param": "stManCtl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9612034,
+    "name": "Shtr_stPKKActv_C",
+    "module": "Shtr",
+    "param": "stPKKActv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9612470,
+    "name": "Shtr_stPKKActv_C",
+    "module": "Shtr",
+    "param": "stPKKActv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9613026,
+    "name": "Shtr_stPsDisbl_C",
+    "module": "Shtr",
+    "param": "stPsDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9613462,
+    "name": "Shtr_stPwrStgDiag_C",
+    "module": "Shtr",
+    "param": "stPwrStgDiag",
+    "suffix": "C"
+  },
+  {
+    "offset": 9613901,
+    "name": "Shtr_tiAKKLrnThres_C",
+    "module": "Shtr",
+    "param": "tiAKKLrnThres",
+    "suffix": "C"
+  },
+  {
+    "offset": 9614341,
+    "name": "Shtr_tiAKKOkDeb_C",
+    "module": "Shtr",
+    "param": "tiAKKOkDeb",
+    "suffix": "C"
+  },
+  {
+    "offset": 9614779,
+    "name": "Shtr_tiDebSelfDet_C",
+    "module": "Shtr",
+    "param": "tiDebSelfDet",
+    "suffix": "C"
+  },
+  {
+    "offset": 9615219,
+    "name": "Shtr_tiDiagDeb_C",
+    "module": "Shtr",
+    "param": "tiDiagDeb",
+    "suffix": "C"
+  },
+  {
+    "offset": 9615656,
+    "name": "Shtr_tiPKKLrnThres_C",
+    "module": "Shtr",
+    "param": "tiPKKLrnThres",
+    "suffix": "C"
+  },
+  {
+    "offset": 9616096,
+    "name": "Shtr_tiPKKTimerMax_C",
+    "module": "Shtr",
+    "param": "tiPKKTimerMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9616536,
+    "name": "Shtr_tiPKKTimerMin_C",
+    "module": "Shtr",
+    "param": "tiPKKTimerMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9616976,
+    "name": "Shtr_tiSysDiagMax1_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9617416,
+    "name": "Shtr_tiSysDiagMax2_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax2",
+    "suffix": "C"
+  },
+  {
+    "offset": 9617856,
+    "name": "Shtr_tiSysDiagMax3_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax3",
+    "suffix": "C"
+  },
+  {
+    "offset": 9618296,
+    "name": "Shtr_tiSysDiagMax4_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax4",
+    "suffix": "C"
+  },
+  {
+    "offset": 9618736,
+    "name": "Shtr_tiSysDiagMax5_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax5",
+    "suffix": "C"
+  },
+  {
+    "offset": 9619176,
+    "name": "Shtr_tiSysDiagMax6_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax6",
+    "suffix": "C"
+  },
+  {
+    "offset": 9619616,
+    "name": "Shtr_tiSysDiagMax_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9620055,
+    "name": "Shtr_tiSysDiagMin1_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMin1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9620495,
+    "name": "Shtr_tiSysDiagMin2_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMin2",
+    "suffix": "C"
+  },
+  {
+    "offset": 9620935,
+    "name": "Shtr_tiSysDiagMin3_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMin3",
+    "suffix": "C"
+  },
+  {
+    "offset": 9621375,
+    "name": "Shtr_tiSysDiagMin4_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMin4",
+    "suffix": "C"
+  },
+  {
+    "offset": 9621815,
+    "name": "Shtr_tiSysDiagMin5_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMin5",
+    "suffix": "C"
+  },
+  {
+    "offset": 9622255,
+    "name": "Shtr_tiSysDiagMin6_C",
+    "module": "Shtr",
+    "param": "tiSysDiagMin6",
+    "suffix": "C"
+  },
+  {
+    "offset": 9622695,
+    "name": "Shtr_tiSysRst_C",
+    "module": "Shtr",
+    "param": "tiSysRst",
+    "suffix": "C"
+  },
+  {
+    "offset": 9623131,
+    "name": "Shtr_tiSysTstThres_C",
+    "module": "Shtr",
+    "param": "tiSysTstThres",
+    "suffix": "C"
+  },
+  {
+    "offset": 9623571,
+    "name": "Shtr_uBattMax_C",
+    "module": "Shtr",
+    "param": "uBattMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9624007,
+    "name": "Shtr_uBatt_C",
+    "module": "Shtr",
+    "param": "uBatt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9624440,
+    "name": "Shtr_uBatt_C",
+    "module": "Shtr",
+    "param": "uBatt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9624873,
+    "name": "Shtr_uBatt_C",
+    "module": "Shtr",
+    "param": "uBatt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9681166,
+    "name": "Strt_stPsDiaDisbl_C",
+    "module": "Strt",
+    "param": "stPsDiaDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9681651,
+    "name": "Strt_stPsDisbl_C",
+    "module": "Strt",
+    "param": "stPsDisbl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9844689,
+    "name": "Tra_bAST_C",
+    "module": "Tra",
+    "param": "bAST",
+    "suffix": "C"
+  },
+  {
+    "offset": 9845171,
+    "name": "Tra_bCanAirCanPtd_C",
+    "module": "Tra",
+    "param": "bCanAirCanPtd",
+    "suffix": "C"
+  },
+  {
+    "offset": 9845639,
+    "name": "Tra_bCANASTIntv_C",
+    "module": "Tra",
+    "param": "bCANASTIntv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9846128,
+    "name": "Tra_bCanClntCanPtd_C",
+    "module": "Tra",
+    "param": "bCanClntCanPtd",
+    "suffix": "C"
+  },
+  {
+    "offset": 9846617,
+    "name": "Tra_bCANIdlSetP_C",
+    "module": "Tra",
+    "param": "bCANIdlSetP",
+    "suffix": "C"
+  },
+  {
+    "offset": 9847096,
+    "name": "Tra_bCanInfoCan_C",
+    "module": "Tra",
+    "param": "bCanInfoCan",
+    "suffix": "C"
+  },
+  {
+    "offset": 9847569,
+    "name": "Tra_bCanLevPos_C",
+    "module": "Tra",
+    "param": "bCanLevPos",
+    "suffix": "C"
+  },
+  {
+    "offset": 9848044,
+    "name": "Tra_bCanLoRng_C",
+    "module": "Tra",
+    "param": "bCanLoRng",
+    "suffix": "C"
+  },
+  {
+    "offset": 9848526,
+    "name": "Tra_bCanPlausDecIntv_C",
+    "module": "Tra",
+    "param": "bCanPlausDecIntv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9849016,
+    "name": "Tra_bCanPlausIncIntv_C",
+    "module": "Tra",
+    "param": "bCanPlausIncIntv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9849512,
+    "name": "Tra_bCanRevGear_C",
+    "module": "Tra",
+    "param": "bCanRevGear",
+    "suffix": "C"
+  },
+  {
+    "offset": 9850030,
+    "name": "Tra_bCanRTra_C",
+    "module": "Tra",
+    "param": "bCanRTra",
+    "suffix": "C"
+  },
+  {
+    "offset": 9850542,
+    "name": "Tra_bFltIdlSpdDes_C",
+    "module": "Tra",
+    "param": "bFltIdlSpdDes",
+    "suffix": "C"
+  },
+  {
+    "offset": 9851028,
+    "name": "Tra_bGbxNPosEna_C",
+    "module": "Tra",
+    "param": "bGbxNPosEna",
+    "suffix": "C"
+  },
+  {
+    "offset": 9851507,
+    "name": "Tra_bStrtStopEnaDfl_C",
+    "module": "Tra",
+    "param": "bStrtStopEnaDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9853728,
+    "name": "Tra_dnTSCLimRmp2_C",
+    "module": "Tra",
+    "param": "dnTSCLimRmp2",
+    "suffix": "C"
+  },
+  {
+    "offset": 9854170,
+    "name": "Tra_drAPP1Min_C",
+    "module": "Tra",
+    "param": "drAPP1Min",
+    "suffix": "C"
+  },
+  {
+    "offset": 9854607,
+    "name": "Tra_drAPPFlt_C",
+    "module": "Tra",
+    "param": "drAPPFlt",
+    "suffix": "C"
+  },
+  {
+    "offset": 9856807,
+    "name": "Tra_dtrqLimUp_C",
+    "module": "Tra",
+    "param": "dtrqLimUp",
+    "suffix": "C"
+  },
+  {
+    "offset": 9860829,
+    "name": "Tra_facConv_C",
+    "module": "Tra",
+    "param": "facConv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9861262,
+    "name": "Tra_facLimUp_CUR",
+    "module": "Tra",
+    "param": "facLimUp",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9861736,
+    "name": "Tra_facVnCor_C",
+    "module": "Tra",
+    "param": "facVnCor",
+    "suffix": "C"
+  },
+  {
+    "offset": 9862210,
+    "name": "Tra_nASTDes_C",
+    "module": "Tra",
+    "param": "nASTDes",
+    "suffix": "C"
+  },
+  {
+    "offset": 9862668,
+    "name": "Tra_nEngMin_C",
+    "module": "Tra",
+    "param": "nEngMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9863103,
+    "name": "Tra_nHtgUpActMax_C",
+    "module": "Tra",
+    "param": "nHtgUpActMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9863570,
+    "name": "Tra_nMax_C",
+    "module": "Tra",
+    "param": "nMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9864002,
+    "name": "Tra_nMinBrk_MAP",
+    "module": "Tra",
+    "param": "nMinBrk",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9864505,
+    "name": "Tra_nMin_C",
+    "module": "Tra",
+    "param": "nMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9864937,
+    "name": "Tra_nMin_MAP",
+    "module": "Tra",
+    "param": "nMin",
+    "suffix": "MAP"
+  },
+  {
+    "offset": 9865410,
+    "name": "Tra_nRmpTSC1Delta_C",
+    "module": "Tra",
+    "param": "nRmpTSC1Delta",
+    "suffix": "C"
+  },
+  {
+    "offset": 9865853,
+    "name": "Tra_nRmpTSC2Delta_C",
+    "module": "Tra",
+    "param": "nRmpTSC2Delta",
+    "suffix": "C"
+  },
+  {
+    "offset": 9866296,
+    "name": "Tra_nSpaMaxLowGear_C",
+    "module": "Tra",
+    "param": "nSpaMaxLowGear",
+    "suffix": "C"
+  },
+  {
+    "offset": 9866738,
+    "name": "Tra_nSpaMaxShiftDwn_C",
+    "module": "Tra",
+    "param": "nSpaMaxShiftDwn",
+    "suffix": "C"
+  },
+  {
+    "offset": 9867181,
+    "name": "Tra_nTSCDeltaInit_C",
+    "module": "Tra",
+    "param": "nTSCDeltaInit",
+    "suffix": "C"
+  },
+  {
+    "offset": 9867622,
+    "name": "Tra_nTSCLimLoRmp2_C",
+    "module": "Tra",
+    "param": "nTSCLimLoRmp2",
+    "suffix": "C"
+  },
+  {
+    "offset": 9868063,
+    "name": "Tra_nTSCLimMax_C",
+    "module": "Tra",
+    "param": "nTSCLimMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9868501,
+    "name": "Tra_nTSCLimRmp2_C",
+    "module": "Tra",
+    "param": "nTSCLimRmp2",
+    "suffix": "C"
+  },
+  {
+    "offset": 9868940,
+    "name": "Tra_nTSCLimRmpOff_C",
+    "module": "Tra",
+    "param": "nTSCLimRmpOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 9869381,
+    "name": "Tra_nTSCSlip_C",
+    "module": "Tra",
+    "param": "nTSCSlip",
+    "suffix": "C"
+  },
+  {
+    "offset": 9869847,
+    "name": "Tra_numLevPosCan_C",
+    "module": "Tra",
+    "param": "numLevPosCan",
+    "suffix": "C"
+  },
+  {
+    "offset": 9870285,
+    "name": "Tra_numSpaLowGear_CUR",
+    "module": "Tra",
+    "param": "numSpaLowGear",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9870773,
+    "name": "Tra_numSpaMaxStep_C",
+    "module": "Tra",
+    "param": "numSpaMaxStep",
+    "suffix": "C"
+  },
+  {
+    "offset": 9871212,
+    "name": "Tra_numSpaNoGear_C",
+    "module": "Tra",
+    "param": "numSpaNoGear",
+    "suffix": "C"
+  },
+  {
+    "offset": 9871650,
+    "name": "Tra_rAPPActv_C",
+    "module": "Tra",
+    "param": "rAPPActv",
+    "suffix": "C"
+  },
+  {
+    "offset": 9872084,
+    "name": "Tra_rAPPCondOff_C",
+    "module": "Tra",
+    "param": "rAPPCondOff",
+    "suffix": "C"
+  },
+  {
+    "offset": 9872521,
+    "name": "Tra_rAPP_C",
+    "module": "Tra",
+    "param": "rAPP",
+    "suffix": "C"
+  },
+  {
+    "offset": 9872997,
+    "name": "Tra_rClgDem_C",
+    "module": "Tra",
+    "param": "rClgDem",
+    "suffix": "C"
+  },
+  {
+    "offset": 9873430,
+    "name": "Tra_rTraDfl_C",
+    "module": "Tra",
+    "param": "rTraDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9873921,
+    "name": "Tra_rV2NDfl_C",
+    "module": "Tra",
+    "param": "rV2NDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9874363,
+    "name": "Tra_rV2NMax_C",
+    "module": "Tra",
+    "param": "rV2NMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9874805,
+    "name": "Tra_rV2NMin_C",
+    "module": "Tra",
+    "param": "rV2NMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9875301,
+    "name": "Tra_rVn1H_C",
+    "module": "Tra",
+    "param": "rVn1H",
+    "suffix": "C"
+  },
+  {
+    "offset": 9875795,
+    "name": "Tra_rVn1L_C",
+    "module": "Tra",
+    "param": "rVn1L",
+    "suffix": "C"
+  },
+  {
+    "offset": 9876294,
+    "name": "Tra_rVn1To2Des_C",
+    "module": "Tra",
+    "param": "rVn1To2Des",
+    "suffix": "C"
+  },
+  {
+    "offset": 9876793,
+    "name": "Tra_rVn2H_C",
+    "module": "Tra",
+    "param": "rVn2H",
+    "suffix": "C"
+  },
+  {
+    "offset": 9877287,
+    "name": "Tra_rVn2L_C",
+    "module": "Tra",
+    "param": "rVn2L",
+    "suffix": "C"
+  },
+  {
+    "offset": 9877786,
+    "name": "Tra_rVn2To3Des_C",
+    "module": "Tra",
+    "param": "rVn2To3Des",
+    "suffix": "C"
+  },
+  {
+    "offset": 9878285,
+    "name": "Tra_rVn3H_C",
+    "module": "Tra",
+    "param": "rVn3H",
+    "suffix": "C"
+  },
+  {
+    "offset": 9878779,
+    "name": "Tra_rVn3L_C",
+    "module": "Tra",
+    "param": "rVn3L",
+    "suffix": "C"
+  },
+  {
+    "offset": 9879278,
+    "name": "Tra_rVn3To4Des_C",
+    "module": "Tra",
+    "param": "rVn3To4Des",
+    "suffix": "C"
+  },
+  {
+    "offset": 9879777,
+    "name": "Tra_rVn4H_C",
+    "module": "Tra",
+    "param": "rVn4H",
+    "suffix": "C"
+  },
+  {
+    "offset": 9880271,
+    "name": "Tra_rVn4L_C",
+    "module": "Tra",
+    "param": "rVn4L",
+    "suffix": "C"
+  },
+  {
+    "offset": 9880770,
+    "name": "Tra_rVn4To5Des_C",
+    "module": "Tra",
+    "param": "rVn4To5Des",
+    "suffix": "C"
+  },
+  {
+    "offset": 9881269,
+    "name": "Tra_rVn5H_C",
+    "module": "Tra",
+    "param": "rVn5H",
+    "suffix": "C"
+  },
+  {
+    "offset": 9881763,
+    "name": "Tra_rVn5L_C",
+    "module": "Tra",
+    "param": "rVn5L",
+    "suffix": "C"
+  },
+  {
+    "offset": 9882262,
+    "name": "Tra_rVn5To6Des_C",
+    "module": "Tra",
+    "param": "rVn5To6Des",
+    "suffix": "C"
+  },
+  {
+    "offset": 9882761,
+    "name": "Tra_rVn6H_C",
+    "module": "Tra",
+    "param": "rVn6H",
+    "suffix": "C"
+  },
+  {
+    "offset": 9883255,
+    "name": "Tra_rVn6L_C",
+    "module": "Tra",
+    "param": "rVn6L",
+    "suffix": "C"
+  },
+  {
+    "offset": 9883749,
+    "name": "Tra_rVnRH_C",
+    "module": "Tra",
+    "param": "rVnRH",
+    "suffix": "C"
+  },
+  {
+    "offset": 9884243,
+    "name": "Tra_rVnRL_C",
+    "module": "Tra",
+    "param": "rVnRL",
+    "suffix": "C"
+  },
+  {
+    "offset": 9885561,
+    "name": "Tra_stCoEOMASTAdptDemMsk_C",
+    "module": "Tra",
+    "param": "stCoEOMASTAdptDemMsk",
+    "suffix": "C"
+  },
+  {
+    "offset": 9886007,
+    "name": "Tra_stConvBrk_C",
+    "module": "Tra",
+    "param": "stConvBrk",
+    "suffix": "C"
+  },
+  {
+    "offset": 9886442,
+    "name": "Tra_stGearbxHtgUpActMsk_C",
+    "module": "Tra",
+    "param": "stGearbxHtgUpActMsk",
+    "suffix": "C"
+  },
+  {
+    "offset": 9886887,
+    "name": "Tra_stGearHtgUpAct_C",
+    "module": "Tra",
+    "param": "stGearHtgUpAct",
+    "suffix": "C"
+  },
+  {
+    "offset": 9887361,
+    "name": "Tra_stLevPosD_C",
+    "module": "Tra",
+    "param": "stLevPosD",
+    "suffix": "C"
+  },
+  {
+    "offset": 9887814,
+    "name": "Tra_stPrtCfg_C",
+    "module": "Tra",
+    "param": "stPrtCfg",
+    "suffix": "C"
+  },
+  {
+    "offset": 9888270,
+    "name": "Tra_stTraType_C",
+    "module": "Tra",
+    "param": "stTraType",
+    "suffix": "C"
+  },
+  {
+    "offset": 9888705,
+    "name": "Tra_stTrqDemMsk_C",
+    "module": "Tra",
+    "param": "stTrqDemMsk",
+    "suffix": "C"
+  },
+  {
+    "offset": 9889142,
+    "name": "Tra_swtAdj_C",
+    "module": "Tra",
+    "param": "swtAdj",
+    "suffix": "C"
+  },
+  {
+    "offset": 9889574,
+    "name": "Tra_swtDfl_C",
+    "module": "Tra",
+    "param": "swtDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9890006,
+    "name": "Tra_swtDrvAway_C",
+    "module": "Tra",
+    "param": "swtDrvAway",
+    "suffix": "C"
+  },
+  {
+    "offset": 9890442,
+    "name": "Tra_swtNTSC_C",
+    "module": "Tra",
+    "param": "swtNTSC",
+    "suffix": "C"
+  },
+  {
+    "offset": 9890909,
+    "name": "Tra_swtRmpPtd_C",
+    "module": "Tra",
+    "param": "swtRmpPtd",
+    "suffix": "C"
+  },
+  {
+    "offset": 9891384,
+    "name": "Tra_tClntDes_C",
+    "module": "Tra",
+    "param": "tClntDes",
+    "suffix": "C"
+  },
+  {
+    "offset": 9891858,
+    "name": "Tra_tiASTDes_C",
+    "module": "Tra",
+    "param": "tiASTDes",
+    "suffix": "C"
+  },
+  {
+    "offset": 9894226,
+    "name": "Tra_tiNPT1_C",
+    "module": "Tra",
+    "param": "tiNPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9894714,
+    "name": "Tra_tiV2NPT1_C",
+    "module": "Tra",
+    "param": "tiV2NPT1",
+    "suffix": "C"
+  },
+  {
+    "offset": 9895198,
+    "name": "Tra_tOilDfl_C",
+    "module": "Tra",
+    "param": "tOilDfl",
+    "suffix": "C"
+  },
+  {
+    "offset": 9895664,
+    "name": "Tra_trqDesMaxTrq_CUR",
+    "module": "Tra",
+    "param": "trqDesMaxTrq",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9896157,
+    "name": "Tra_trqDesMax_C",
+    "module": "Tra",
+    "param": "trqDesMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9896631,
+    "name": "Tra_trqDesMin_C",
+    "module": "Tra",
+    "param": "trqDesMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9897100,
+    "name": "Tra_trqInMax_C",
+    "module": "Tra",
+    "param": "trqInMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9897535,
+    "name": "Tra_trqLiGovMin_C",
+    "module": "Tra",
+    "param": "trqLiGovMin",
+    "suffix": "C"
+  },
+  {
+    "offset": 9898005,
+    "name": "Tra_trqLos_C",
+    "module": "Tra",
+    "param": "trqLos",
+    "suffix": "C"
+  },
+  {
+    "offset": 9898438,
+    "name": "Tra_trqMaxErr_CUR",
+    "module": "Tra",
+    "param": "trqMaxErr",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9898948,
+    "name": "Tra_trqMaxGear1_CUR",
+    "module": "Tra",
+    "param": "trqMaxGear1",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9899460,
+    "name": "Tra_trqMaxGear2_CUR",
+    "module": "Tra",
+    "param": "trqMaxGear2",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9899972,
+    "name": "Tra_trqMaxGear3_CUR",
+    "module": "Tra",
+    "param": "trqMaxGear3",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9900484,
+    "name": "Tra_trqMaxGear4_CUR",
+    "module": "Tra",
+    "param": "trqMaxGear4",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9900996,
+    "name": "Tra_trqMaxGear5_CUR",
+    "module": "Tra",
+    "param": "trqMaxGear5",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9901508,
+    "name": "Tra_trqMaxGear6_CUR",
+    "module": "Tra",
+    "param": "trqMaxGear6",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9902020,
+    "name": "Tra_trqMaxGearR_CUR",
+    "module": "Tra",
+    "param": "trqMaxGearR",
+    "suffix": "CUR"
+  },
+  {
+    "offset": 9902507,
+    "name": "Tra_vHtgUpActMax_C",
+    "module": "Tra",
+    "param": "vHtgUpActMax",
+    "suffix": "C"
+  },
+  {
+    "offset": 9902948,
+    "name": "Tra_vLimRTra_C",
+    "module": "Tra",
+    "param": "vLimRTra",
+    "suffix": "C"
+  },
+  {
+    "offset": 9903413,
+    "name": "Tra_vMinTrqRed_C",
+    "module": "Tra",
+    "param": "vMinTrqRed",
+    "suffix": "C"
+  },
+  {
+    "offset": 9903903,
+    "name": "Tra_vMin_C",
+    "module": "Tra",
+    "param": "vMin",
+    "suffix": "C"
+  }
+]
